@@ -7,22 +7,22 @@ vNine
 vNine is a web application that provides users with completely customizable visualization of 
 futures market data.
 
-vNine Export
-------------
+vNineFeed Web API
+-----------------
 
 vNine Export is a Windows applet that allows users to quickly export and download raw market data in 
 both csv file and raw binary formats. It can be extremely beneficial for logging important findings 
 in vNine.
 
 Binary output
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 Binary output can be downloaded using the vNineFeed Rest API.
 
 CSV output
 ~~~~~~~~~~
 
-CSV output can be downloaded using the Export feature in the V3 browser client or programmatically via the web
+CSV output can be downloaded using the Export feature in the vNine browser client or programmatically via the web
 API.
 
 The resulting output is in a .zip (compressed) file containing a .csv (comma separated values) text file

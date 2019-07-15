@@ -7,23 +7,15 @@ Vertex Analytics | vNine Export
 ================================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Overview
 
    about
-   rest
    csv
    installation
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Output
-
-   restOutput
-   csvOutput
-
-.. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Reference
 
    vxa_feed.h
