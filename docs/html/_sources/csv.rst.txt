@@ -1,5 +1,5 @@
-CSV Web API
-===========
+vNineFeed Web API
+=================
 
 Event Level Data Requests
 -------------------------
@@ -45,7 +45,17 @@ Ex.::
 
 See the VertexUserServicer.cs class or request the User Server REST API document.
 
-.. note:: A script to pull multiple days of data for a contract must only use one query type per date range and have a rest after each request of 500 milliseconds. For example, if you'd like a month's worth of data for both 'all' and 'tradesOnly' for a contract, first, run a script to get all events for the date range. Once that has completed, run a script to get all trades data. Although, before you begin running your script for proper use, we recommend setting up a time with us to perform a test run of it so that we can monitor everything and make sure it is running optimally.End of Session (EOS) data Requests-----------------------------------| There is a different format to the URL when requesting EOS data. | The events parameter is removed, and the date parameter is changed to allow users to request a date range:| https://{address}/V1/EOS/{exchangeName}/{symbol}?startdate={startDate}&enddate={endDate}| Again, you must additionally supply an access token in the header.
+.. note:: A script to pull multiple days of data for a contract must only use one query type per date range and have a rest after each request of 500 milliseconds. For example, if you'd like a month's worth of data for both 'all' and 'tradesOnly' for a contract, first, run a script to get all events for the date range. Once that has completed, run a script to get all trades data. Although, before you begin running your script for proper use, we recommend setting up a time with us to perform a test run of it so that we can monitor everything and make sure it is running optimally.
+
+End of Session (EOS) data Requests
+-----------------------------------
+
+| There is a different format to the URL when requesting EOS data. 
+
+| The events parameter is removed, and the date parameter is changed to allow users to request a date range:
+| https://{address}/V1/EOS/{exchangeName}/{symbol}?startdate={startDate}&enddate={endDate}
+
+| Again, you must additionally supply an access token in the header.
 
 Ex.::
 
@@ -69,10 +79,13 @@ Once the parameters are set and the URL is executed against the real Vertex API,
 |		"total" : 13678259,
 |		"fileName" : "ESH8_20180202_10_OptRec_Events_20180202",
 |		"Url" : "https://***********/V1/Data/ESH8_20180202/ESH8_20180202_10_OptRec_Events_20180202.zip"
-| }}| As the request is being processed, the status code, progress count, and other fields reflect the current state of the request. 
+| }}
+
+| As the request is being processed, the status code, progress count, and other fields reflect the current state of the request. 
 | Continue to make the request to see updates until "completed" is true.
 
 .. note:: If the request is successful, the status code will be 4, completed will be true, and the URL is provided to download the file. 
 .. note:: If there is an error with the request, the status code is not 4 but completed will still be true. A good coding practice is to time out the client if the progress byte count is not incrementing after a certain amount of time.
 
-| You should use the statusText for display purposes, as the specific wording of the text in statusText may change in the future.| Use statusCode for programming state management.
+| You should use the statusText for display purposes, as the specific wording of the text in statusText may change in the future.
+| Use statusCode for programming state management.
