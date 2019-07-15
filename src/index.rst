@@ -3,8 +3,8 @@
 
 |
 
-Vertex Analytics | vNine Export
-================================
+Vertex Analytics | vNineFeed Web API
+====================================
 
 .. toctree::
    :maxdepth: 2
