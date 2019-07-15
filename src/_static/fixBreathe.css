@@ -1,0 +1,5 @@
+.rst-content dl:not(.docutils)
+code.descname {
+    font-weight: bold;
+    padding-left: 10px;
+}

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structvxa__feed_1_1_session_statistics" kind="struct" language="C++" prot="public">
+    <compoundname>vxa_feed::SessionStatistics</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvxa__feed_1_1_session_statistics_1a16c0ff9c1213b408b6da392653ecce72" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t vxa_feed::SessionStatistics::instrumentId</definition>
+        <argsstring></argsstring>
+        <name>instrumentId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="302" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_session_statistics_1adf5f9c149d2e1ecf11cfd76d58a61c97" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t vxa_feed::SessionStatistics::price</definition>
+        <argsstring></argsstring>
+        <name>price</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="303" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_session_statistics_1a0c429befca047a2d537d41f000182754" prot="public" static="no" mutable="no">
+        <type>OpenCloseSettlFlag</type>
+        <definition>OpenCloseSettlFlag vxa_feed::SessionStatistics::openCloseSettlFlag</definition>
+        <argsstring></argsstring>
+        <name>openCloseSettlFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="304" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_session_statistics_1a0e668f224c1d3ecd45a7f52ba204225c" prot="public" static="no" mutable="no">
+        <type>BookAction</type>
+        <definition>BookAction vxa_feed::SessionStatistics::action</definition>
+        <argsstring></argsstring>
+        <name>action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="305" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_session_statistics_1a58f2b78e98548d2c9b5d6df32005f9f8" prot="public" static="no" mutable="no">
+        <type>StatisticsType</type>
+        <definition>StatisticsType vxa_feed::SessionStatistics::statType</definition>
+        <argsstring></argsstring>
+        <name>statType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="306" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_session_statistics_1ae656ecacd973f25d066001fc568f595a" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t vxa_feed::SessionStatistics::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="307" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="301" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="300" bodyend="308"/>
+    <listofallmembers>
+      <member refid="structvxa__feed_1_1_session_statistics_1a0e668f224c1d3ecd45a7f52ba204225c" prot="public" virt="non-virtual"><scope>vxa_feed::SessionStatistics</scope><name>action</name></member>
+      <member refid="structvxa__feed_1_1_session_statistics_1a16c0ff9c1213b408b6da392653ecce72" prot="public" virt="non-virtual"><scope>vxa_feed::SessionStatistics</scope><name>instrumentId</name></member>
+      <member refid="structvxa__feed_1_1_session_statistics_1a0c429befca047a2d537d41f000182754" prot="public" virt="non-virtual"><scope>vxa_feed::SessionStatistics</scope><name>openCloseSettlFlag</name></member>
+      <member refid="structvxa__feed_1_1_session_statistics_1adf5f9c149d2e1ecf11cfd76d58a61c97" prot="public" virt="non-virtual"><scope>vxa_feed::SessionStatistics</scope><name>price</name></member>
+      <member refid="structvxa__feed_1_1_session_statistics_1ae656ecacd973f25d066001fc568f595a" prot="public" virt="non-virtual"><scope>vxa_feed::SessionStatistics</scope><name>size</name></member>
+      <member refid="structvxa__feed_1_1_session_statistics_1a58f2b78e98548d2c9b5d6df32005f9f8" prot="public" virt="non-virtual"><scope>vxa_feed::SessionStatistics</scope><name>statType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

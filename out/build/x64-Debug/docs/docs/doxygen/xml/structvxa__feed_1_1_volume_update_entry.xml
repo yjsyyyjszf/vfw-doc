@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structvxa__feed_1_1_volume_update_entry" kind="struct" language="C++" prot="public">
+    <compoundname>vxa_feed::VolumeUpdateEntry</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvxa__feed_1_1_volume_update_entry_1aa09fe74044991a290926a2d3daa5efe4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t vxa_feed::VolumeUpdateEntry::marketVolume</definition>
+        <argsstring></argsstring>
+        <name>marketVolume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="243" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_volume_update_entry_1a6af617de8572fc8ece9741185e12daf2" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t vxa_feed::VolumeUpdateEntry::vwap</definition>
+        <argsstring></argsstring>
+        <name>vwap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="244" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="242" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="241" bodyend="245"/>
+    <listofallmembers>
+      <member refid="structvxa__feed_1_1_volume_update_entry_1aa09fe74044991a290926a2d3daa5efe4" prot="public" virt="non-virtual"><scope>vxa_feed::VolumeUpdateEntry</scope><name>marketVolume</name></member>
+      <member refid="structvxa__feed_1_1_volume_update_entry_1a6af617de8572fc8ece9741185e12daf2" prot="public" virt="non-virtual"><scope>vxa_feed::VolumeUpdateEntry</scope><name>vwap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

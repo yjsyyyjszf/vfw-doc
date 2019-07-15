@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Web API Output &mdash; vNineFeed Web API 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/fixAll.css" type="text/css" />
+  <link rel="stylesheet" href="_static/fixBreathe.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="vxa_feed.h" href="vxa_feed.h.html" />
+    <link rel="prev" title="Rest API Output" href="restOutput.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> vNineFeed Web API
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About vNineFeed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest.html">vNineFeed Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="csv.html">CSV Web API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Output</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="restOutput.html">Rest API Output</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Web API Output</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#programmatically-processing-the-csv">Programmatically Processing the CSV</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#essential-knowledge">Essential Knowledge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#best-practices">Best Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#recommendations">Recommendations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#general-notes">General Notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#time-resolution">Time Resolution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#real-vs-generated-messages">Real vs Generated Messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vertex-exclusive-messages">Vertex Exclusive Messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#order-ids-channel-sequences-and-instrument-sequences">Order IDs, Channel Sequences, and Instrument Sequences</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="vxa_feed.h.html">vxa_feed.h</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">vNineFeed Web API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Web API Output</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="web-api-output">
+<h1>Web API Output<a class="headerlink" href="#web-api-output" title="Permalink to this headline">¶</a></h1>
+<p>vNine Export allows users to quickly download raw market data as a csv file in one of two ways.</p>
+<div class="line-block">
+<div class="line">The .csv (comma-separated values) file can simply be imported into Excel and viewed in varioius text editors.</div>
+<div class="line">Although, perhaps most useful is the ability to programatically read the data in so easily.</div>
+<div class="line">This versatility makes it ideal for many different use-cases.</div>
+</div>
+<div class="section" id="programmatically-processing-the-csv">
+<h2>Programmatically Processing the CSV<a class="headerlink" href="#programmatically-processing-the-csv" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="essential-knowledge">
+<h3>Essential Knowledge<a class="headerlink" href="#essential-knowledge" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Read until the first comma on a line. That is the message key. If the key does not match anything your code recognizes, skip the entire line.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>(This allows new keys to be introduced to the exporter in the future without breaking your code)</p>
+</div>
+<ul>
+<li><p>Check the FV (file version) message on the first line of the file to make sure your program is compatible with the version it describes.</p></li>
+<li><p>Fields never contain newlines or carriage returns, not even within quotes, so you can safely read one line at a time to capture an entire record.</p></li>
+<li><p>If a field intentionally contains leading whitespace, trailing whitespace, a comma, or a quotation mark, the entire field will be enclosed in quote marks.</p>
+<blockquote>
+<div><ul class="simple">
+<li><ol class="upperalpha simple">
+<li><p>“˽˽˽gems,˽semi-precious,˽and˽”“look-alikes”“˽˽˽” (Before processing the CSV)</p></li>
+</ol>
+</li>
+<li><ol class="upperalpha simple" start="2">
+<li><p>˽˽˽gems,˽semi-precious,˽and˽”look-alikes”˽˽˽ (After processing the CSV)</p></li>
+</ol>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A is a single field that has leading whitespace, commas, a quoted term, and trailing whitespace.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In practice, very few messages contain quoted data, but you can anticipate that exchange instrument descriptions and user markup will likely contain commas and possibly even quotes within.</p>
+</div>
+<ul class="simple">
+<li><p>Do not assume the maximum length of a single line. For example, do not hard code a 1KB buffer length.</p></li>
+<li><p>You can only ensure that your program has successfully processed everything once it processes an EO message.</p></li>
+</ul>
+</div>
+<div class="section" id="best-practices">
+<h3>Best Practices<a class="headerlink" href="#best-practices" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>You can ignore lines that are blank or contain only whitespace.</p></li>
+<li><p>You can ignore leading and trailing whitespace around unquoted fields. (That is: 1, 2 , 3 is the same as 1,2,3)</p></li>
+<li><p>Simply ignore sections at the end of each line that your program doesn’t understand. This allows new fields to be appended to the end of the line without breaking your code. (Keep in mind quoted commas)</p></li>
+<li><p>Dates are stored in YearMonthDay (YYYYMMDD) format. That means they can be read as integers with easy sorting mechanisms and little concern for ambiguities in regional formats.</p></li>
+</ul>
+</div>
+<div class="section" id="recommendations">
+<h3>Recommendations<a class="headerlink" href="#recommendations" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Display an alert if your program runs across an FC message of type ERROR or WARN.</p></li>
+<li><p>While many of the most common field types and values are described here, the exchange has the capability to change them. Your program should be able to handle unexpected field values gracefully.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="general-notes">
+<h2>General Notes<a class="headerlink" href="#general-notes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="time-resolution">
+<h3>Time Resolution<a class="headerlink" href="#time-resolution" title="Permalink to this headline">¶</a></h3>
+<p>The Vertex format supports nanosecond resolution. However, the final digits may be zero or some other pattern if the exchange does not output that many digits.</p>
+<div class="line-block">
+<div class="line">Exchange server clocks are not synchronized with each other or some universal clock to the nanosecond.</div>
+<div class="line">Therefore, the accuracy of timestamps can vary. Generally, timestamps within the same channel should be comparable to one another.</div>
+<div class="line">Timestamps default to UTC time, not your timezone nor the timezone of the exchange. Although, this can be manipulated.</div>
+</div>
+</div>
+<div class="section" id="real-vs-generated-messages">
+<h3>Real vs Generated Messages<a class="headerlink" href="#real-vs-generated-messages" title="Permalink to this headline">¶</a></h3>
+<p>A real message is a message that was literally received from that specific exchange. A generated message has the same format, but was assembled by Vertex from other message types to provide a consistent output. Real or generated messages have a field indicating their state.</p>
+</div>
+<div class="section" id="vertex-exclusive-messages">
+<h3>Vertex Exclusive Messages<a class="headerlink" href="#vertex-exclusive-messages" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Besides messages received from the exchange itself, the CSV file contains supplementary message types created by Vertex to make the file easier to process or more informative.</div>
+<div class="line">For example, the file begins with a version message that is followed by a message with information aboutthe instrument.</div>
+<div class="line">Additionally, the file can include markup messages, which are comments about events made by your users on the vNine client or generated by Vertex Analytics analysis engines.</div>
+<div class="line">All Vertex exclusive messages are labeled as such in this documentation.</div>
+</div>
+</div>
+<div class="section" id="order-ids-channel-sequences-and-instrument-sequences">
+<h3>Order IDs, Channel Sequences, and Instrument Sequences<a class="headerlink" href="#order-ids-channel-sequences-and-instrument-sequences" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Each exchange has rules for when a number is changed, reused, or rolled over. Generally, you can expect that a sequence number is only unique for an instrument for a given day, for a given exchange.</div>
+<div class="line">Some exchanges retain order IDs across days and across order changes; other exchanges do not.</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="vxa_feed.h.html" class="btn btn-neutral float-right" title="vxa_feed.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="restOutput.html" class="btn btn-neutral float-left" title="Rest API Output" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Blake Boris
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

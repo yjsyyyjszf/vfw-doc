@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structvxa__feed_1_1_daily_statistics_entry" kind="struct" language="C++" prot="public">
+    <compoundname>vxa_feed::DailyStatisticsEntry</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvxa__feed_1_1_daily_statistics_entry_1ad9b82fccde60ab539213dbdb16943c09" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t vxa_feed::DailyStatisticsEntry::instrumentId</definition>
+        <argsstring></argsstring>
+        <name>instrumentId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="285" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_daily_statistics_entry_1a206a5563b3b80db022dbcc0e7874793d" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t vxa_feed::DailyStatisticsEntry::price</definition>
+        <argsstring></argsstring>
+        <name>price</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="286" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_daily_statistics_entry_1a792acd91f0dcf1ebda2db562ff3289dd" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t vxa_feed::DailyStatisticsEntry::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="287" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_daily_statistics_entry_1af5fa85170b009c6ea9e48195b2cfbcb3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t vxa_feed::DailyStatisticsEntry::tradingReferenceDate</definition>
+        <argsstring></argsstring>
+        <name>tradingReferenceDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="288" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_daily_statistics_entry_1a3c25c28af338ba3ee2dfbe2e700f5a48" prot="public" static="no" mutable="no">
+        <type>SettlPriceType</type>
+        <definition>SettlPriceType vxa_feed::DailyStatisticsEntry::settlPriceType</definition>
+        <argsstring></argsstring>
+        <name>settlPriceType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="289" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_daily_statistics_entry_1a37daf3db518bd82825d593b4072830d6" prot="public" static="no" mutable="no">
+        <type>DailyStatisticsType</type>
+        <definition>DailyStatisticsType vxa_feed::DailyStatisticsEntry::dailyStatsType</definition>
+        <argsstring></argsstring>
+        <name>dailyStatsType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="290" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="284" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="283" bodyend="291"/>
+    <listofallmembers>
+      <member refid="structvxa__feed_1_1_daily_statistics_entry_1a37daf3db518bd82825d593b4072830d6" prot="public" virt="non-virtual"><scope>vxa_feed::DailyStatisticsEntry</scope><name>dailyStatsType</name></member>
+      <member refid="structvxa__feed_1_1_daily_statistics_entry_1ad9b82fccde60ab539213dbdb16943c09" prot="public" virt="non-virtual"><scope>vxa_feed::DailyStatisticsEntry</scope><name>instrumentId</name></member>
+      <member refid="structvxa__feed_1_1_daily_statistics_entry_1a206a5563b3b80db022dbcc0e7874793d" prot="public" virt="non-virtual"><scope>vxa_feed::DailyStatisticsEntry</scope><name>price</name></member>
+      <member refid="structvxa__feed_1_1_daily_statistics_entry_1a3c25c28af338ba3ee2dfbe2e700f5a48" prot="public" virt="non-virtual"><scope>vxa_feed::DailyStatisticsEntry</scope><name>settlPriceType</name></member>
+      <member refid="structvxa__feed_1_1_daily_statistics_entry_1a792acd91f0dcf1ebda2db562ff3289dd" prot="public" virt="non-virtual"><scope>vxa_feed::DailyStatisticsEntry</scope><name>size</name></member>
+      <member refid="structvxa__feed_1_1_daily_statistics_entry_1af5fa85170b009c6ea9e48195b2cfbcb3" prot="public" virt="non-virtual"><scope>vxa_feed::DailyStatisticsEntry</scope><name>tradingReferenceDate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

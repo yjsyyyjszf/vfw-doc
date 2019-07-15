@@ -1,0 +1,1430 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>vxa_feed.h &mdash; vNineFeed Web API 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/fixAll.css" type="text/css" />
+  <link rel="stylesheet" href="_static/fixBreathe.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Web API Output" href="csvOutput.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> vNineFeed Web API
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About vNineFeed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest.html">vNineFeed Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="csv.html">CSV Web API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="restOutput.html">Rest API Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="csvOutput.html">Web API Output</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">vxa_feed.h</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#variables">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#structs">Structs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#enums">Enums</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">vNineFeed Web API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>vxa_feed.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="vxa-feed-h">
+<h1>vxa_feed.h<a class="headerlink" href="#vxa-feed-h" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed10PRICE_NULLE">
+<span id="_CPPv3N8vxa_feed10PRICE_NULLE"></span><span id="_CPPv2N8vxa_feed10PRICE_NULLE"></span><span id="vxa_feed::PRICE_NULL__int32_tC"></span><span class="target" id="vxa__feed_8h_1af079e3c48838cb09514a66efff46d32f"></span><em class="property">const</em> int32_t <code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">PRICE_NULL</code> = 2147483647<a class="headerlink" href="#_CPPv4N8vxa_feed10PRICE_NULLE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed13PRICE_NULL_32E">
+<span id="_CPPv3N8vxa_feed13PRICE_NULL_32E"></span><span id="_CPPv2N8vxa_feed13PRICE_NULL_32E"></span><span id="vxa_feed::PRICE_NULL_32__int32_tC"></span><span class="target" id="vxa__feed_8h_1acf3ebc458a01261017a44106d9f16e30"></span><em class="property">const</em> int32_t <code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">PRICE_NULL_32</code> = std::numeric_limits&lt;int32_t&gt;::max()<a class="headerlink" href="#_CPPv4N8vxa_feed13PRICE_NULL_32E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed13PRICE_NULL_64E">
+<span id="_CPPv3N8vxa_feed13PRICE_NULL_64E"></span><span id="_CPPv2N8vxa_feed13PRICE_NULL_64E"></span><span id="vxa_feed::PRICE_NULL_64__int64_tC"></span><span class="target" id="vxa__feed_8h_1ac6abdba4a96a73b9b97c24ec700713a4"></span><em class="property">const</em> int64_t <code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">PRICE_NULL_64</code> = std::numeric_limits&lt;int64_t&gt;::max()<a class="headerlink" href="#_CPPv4N8vxa_feed13PRICE_NULL_64E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed14PRICE_CONSTANTE">
+<span id="_CPPv3N8vxa_feed14PRICE_CONSTANTE"></span><span id="_CPPv2N8vxa_feed14PRICE_CONSTANTE"></span><span id="vxa_feed::PRICE_CONSTANT__int32_tC"></span><span class="target" id="vxa__feed_8h_1ad269b2c88ba72c03b7a9b19d2fe0554a"></span><em class="property">const</em> int32_t <code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">PRICE_CONSTANT</code> = 10000000<a class="headerlink" href="#_CPPv4N8vxa_feed14PRICE_CONSTANTE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17sNullInstrumentIDE">
+<span id="_CPPv3N8vxa_feed17sNullInstrumentIDE"></span><span id="_CPPv2N8vxa_feed17sNullInstrumentIDE"></span><span id="vxa_feed::sNullInstrumentID__uint32_tC"></span><span class="target" id="vxa__feed_8h_1a58059e67071ccb063259628e04816bab"></span><em class="property">const</em> uint32_t <code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">sNullInstrumentID</code> = std::numeric_limits&lt;int32_t&gt;::max()<a class="headerlink" href="#_CPPv4N8vxa_feed17sNullInstrumentIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed14sGroupSettleIDE">
+<span id="_CPPv3N8vxa_feed14sGroupSettleIDE"></span><span id="_CPPv2N8vxa_feed14sGroupSettleIDE"></span><span id="vxa_feed::sGroupSettleID__uint32_tC"></span><span class="target" id="vxa__feed_8h_1a63b034739a8450e61bed262f3181b126"></span><em class="property">const</em> uint32_t <code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">sGroupSettleID</code> = (std::numeric_limits&lt;uint32_t&gt;::max() - 2)<a class="headerlink" href="#_CPPv4N8vxa_feed14sGroupSettleIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="structs">
+<h2>Structs<a class="headerlink" href="#structs" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed20AuctionClearingPriceE">
+<span id="_CPPv3N8vxa_feed20AuctionClearingPriceE"></span><span id="_CPPv2N8vxa_feed20AuctionClearingPriceE"></span><span id="vxa_feed::AuctionClearingPrice"></span><span class="target" id="structvxa__feed_1_1_auction_clearing_price"></span><em class="property">struct </em><code class="sig-name descname">AuctionClearingPrice</code><a class="headerlink" href="#_CPPv4N8vxa_feed20AuctionClearingPriceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed20AuctionClearingPrice5priceE">
+<span id="_CPPv3N8vxa_feed20AuctionClearingPrice5priceE"></span><span id="_CPPv2N8vxa_feed20AuctionClearingPrice5priceE"></span><span id="vxa_feed::AuctionClearingPrice::price__int64_t"></span><span class="target" id="structvxa__feed_1_1_auction_clearing_price_1a7e69861eeeb59aaa1322058d9179a296"></span>int64_t <code class="sig-name descname">price</code><a class="headerlink" href="#_CPPv4N8vxa_feed20AuctionClearingPrice5priceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed20AuctionClearingPrice8quantityE">
+<span id="_CPPv3N8vxa_feed20AuctionClearingPrice8quantityE"></span><span id="_CPPv2N8vxa_feed20AuctionClearingPrice8quantityE"></span><span id="vxa_feed::AuctionClearingPrice::quantity__uint32_t"></span><span class="target" id="structvxa__feed_1_1_auction_clearing_price_1a14f3cda1a7f2de1e4b2a82e91dbbe2d3"></span>uint32_t <code class="sig-name descname">quantity</code><a class="headerlink" href="#_CPPv4N8vxa_feed20AuctionClearingPrice8quantityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed14BookLevelEntryE">
+<span id="_CPPv3N8vxa_feed14BookLevelEntryE"></span><span id="_CPPv2N8vxa_feed14BookLevelEntryE"></span><span id="vxa_feed::BookLevelEntry"></span><span class="target" id="structvxa__feed_1_1_book_level_entry"></span><em class="property">struct </em><code class="sig-name descname">BookLevelEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed14BookLevelEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed14BookLevelEntry5priceE">
+<span id="_CPPv3N8vxa_feed14BookLevelEntry5priceE"></span><span id="_CPPv2N8vxa_feed14BookLevelEntry5priceE"></span><span id="vxa_feed::BookLevelEntry::price__int64_t"></span><span class="target" id="structvxa__feed_1_1_book_level_entry_1ae5d74f13f77d4aa1888e837b0810de79"></span>int64_t <code class="sig-name descname">price</code><a class="headerlink" href="#_CPPv4N8vxa_feed14BookLevelEntry5priceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed14BookLevelEntry6aggQtyE">
+<span id="_CPPv3N8vxa_feed14BookLevelEntry6aggQtyE"></span><span id="_CPPv2N8vxa_feed14BookLevelEntry6aggQtyE"></span><span id="vxa_feed::BookLevelEntry::aggQty__int32_t"></span><span class="target" id="structvxa__feed_1_1_book_level_entry_1a07c56e1fa609aaba62c0eef8487114ce"></span>int32_t <code class="sig-name descname">aggQty</code><a class="headerlink" href="#_CPPv4N8vxa_feed14BookLevelEntry6aggQtyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed14BookLevelEntry14numberOfOrdersE">
+<span id="_CPPv3N8vxa_feed14BookLevelEntry14numberOfOrdersE"></span><span id="_CPPv2N8vxa_feed14BookLevelEntry14numberOfOrdersE"></span><span id="vxa_feed::BookLevelEntry::numberOfOrders__int32_t"></span><span class="target" id="structvxa__feed_1_1_book_level_entry_1a780bca461d2d794cdc2cd5fa504e4851"></span>int32_t <code class="sig-name descname">numberOfOrders</code><a class="headerlink" href="#_CPPv4N8vxa_feed14BookLevelEntry14numberOfOrdersE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed14BookLevelEntry14impliedsAggQtyE">
+<span id="_CPPv3N8vxa_feed14BookLevelEntry14impliedsAggQtyE"></span><span id="_CPPv2N8vxa_feed14BookLevelEntry14impliedsAggQtyE"></span><span id="vxa_feed::BookLevelEntry::impliedsAggQty__int32_t"></span><span class="target" id="structvxa__feed_1_1_book_level_entry_1a8f43db64be7c45af03f63b7fb3d2e7af"></span>int32_t <code class="sig-name descname">impliedsAggQty</code><a class="headerlink" href="#_CPPv4N8vxa_feed14BookLevelEntry14impliedsAggQtyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed14BookLevelEntry21impliedNumberOfOrdersE">
+<span id="_CPPv3N8vxa_feed14BookLevelEntry21impliedNumberOfOrdersE"></span><span id="_CPPv2N8vxa_feed14BookLevelEntry21impliedNumberOfOrdersE"></span><span id="vxa_feed::BookLevelEntry::impliedNumberOfOrders__int32_t"></span><span class="target" id="structvxa__feed_1_1_book_level_entry_1a1e8b2bd9e7763408edc2cdf40c2b7ff1"></span>int32_t <code class="sig-name descname">impliedNumberOfOrders</code><a class="headerlink" href="#_CPPv4N8vxa_feed14BookLevelEntry21impliedNumberOfOrdersE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed14BookLevelEntry10priceLevelE">
+<span id="_CPPv3N8vxa_feed14BookLevelEntry10priceLevelE"></span><span id="_CPPv2N8vxa_feed14BookLevelEntry10priceLevelE"></span><span id="vxa_feed::BookLevelEntry::priceLevel__uint8_t"></span><span class="target" id="structvxa__feed_1_1_book_level_entry_1a20752748f0ace4778e754a0cd89f3c9b"></span>uint8_t <code class="sig-name descname">priceLevel</code><a class="headerlink" href="#_CPPv4N8vxa_feed14BookLevelEntry10priceLevelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed14BookLevelEntry6actionE">
+<span id="_CPPv3N8vxa_feed14BookLevelEntry6actionE"></span><span id="_CPPv2N8vxa_feed14BookLevelEntry6actionE"></span><span id="vxa_feed::BookLevelEntry::action__BookAction"></span><span class="target" id="structvxa__feed_1_1_book_level_entry_1a60a27f9e642abd423ce9b363aab49131"></span><a class="reference internal" href="#_CPPv4N8vxa_feed10BookActionE" title="vxa_feed::BookAction">BookAction</a> <code class="sig-name descname">action</code><a class="headerlink" href="#_CPPv4N8vxa_feed14BookLevelEntry6actionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed14BookLevelEntry8bookTypeE">
+<span id="_CPPv3N8vxa_feed14BookLevelEntry8bookTypeE"></span><span id="_CPPv2N8vxa_feed14BookLevelEntry8bookTypeE"></span><span id="vxa_feed::BookLevelEntry::bookType__BookType"></span><span class="target" id="structvxa__feed_1_1_book_level_entry_1afed02c347d0271373010530983c44335"></span><a class="reference internal" href="#_CPPv4N8vxa_feed8BookTypeE" title="vxa_feed::BookType">BookType</a> <code class="sig-name descname">bookType</code><a class="headerlink" href="#_CPPv4N8vxa_feed14BookLevelEntry8bookTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed14BookLevelEntry12bookEndEventE">
+<span id="_CPPv3N8vxa_feed14BookLevelEntry12bookEndEventE"></span><span id="_CPPv2N8vxa_feed14BookLevelEntry12bookEndEventE"></span><span id="vxa_feed::BookLevelEntry::bookEndEvent__b"></span><span class="target" id="structvxa__feed_1_1_book_level_entry_1ad1f309a36cd0964658df04e7f53ffc8c"></span>bool <code class="sig-name descname">bookEndEvent</code><a class="headerlink" href="#_CPPv4N8vxa_feed14BookLevelEntry12bookEndEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed17ChannelResetEntryE">
+<span id="_CPPv3N8vxa_feed17ChannelResetEntryE"></span><span id="_CPPv2N8vxa_feed17ChannelResetEntryE"></span><span id="vxa_feed::ChannelResetEntry"></span><span class="target" id="structvxa__feed_1_1_channel_reset_entry"></span><em class="property">struct </em><code class="sig-name descname">ChannelResetEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed17ChannelResetEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17ChannelResetEntry4typeE">
+<span id="_CPPv3N8vxa_feed17ChannelResetEntry4typeE"></span><span id="_CPPv2N8vxa_feed17ChannelResetEntry4typeE"></span><span id="vxa_feed::ChannelResetEntry::type__BookType"></span><span class="target" id="structvxa__feed_1_1_channel_reset_entry_1a7ff2e789c4cbb9617d8dcaa4b916b743"></span><a class="reference internal" href="#_CPPv4N8vxa_feed8BookTypeE" title="vxa_feed::BookType">BookType</a> <code class="sig-name descname">type</code><a class="headerlink" href="#_CPPv4N8vxa_feed17ChannelResetEntry4typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed20DailyStatisticsEntryE">
+<span id="_CPPv3N8vxa_feed20DailyStatisticsEntryE"></span><span id="_CPPv2N8vxa_feed20DailyStatisticsEntryE"></span><span id="vxa_feed::DailyStatisticsEntry"></span><span class="target" id="structvxa__feed_1_1_daily_statistics_entry"></span><em class="property">struct </em><code class="sig-name descname">DailyStatisticsEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed20DailyStatisticsEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed20DailyStatisticsEntry12instrumentIdE">
+<span id="_CPPv3N8vxa_feed20DailyStatisticsEntry12instrumentIdE"></span><span id="_CPPv2N8vxa_feed20DailyStatisticsEntry12instrumentIdE"></span><span id="vxa_feed::DailyStatisticsEntry::instrumentId__uint32_t"></span><span class="target" id="structvxa__feed_1_1_daily_statistics_entry_1ad9b82fccde60ab539213dbdb16943c09"></span>uint32_t <code class="sig-name descname">instrumentId</code><a class="headerlink" href="#_CPPv4N8vxa_feed20DailyStatisticsEntry12instrumentIdE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed20DailyStatisticsEntry5priceE">
+<span id="_CPPv3N8vxa_feed20DailyStatisticsEntry5priceE"></span><span id="_CPPv2N8vxa_feed20DailyStatisticsEntry5priceE"></span><span id="vxa_feed::DailyStatisticsEntry::price__int64_t"></span><span class="target" id="structvxa__feed_1_1_daily_statistics_entry_1a206a5563b3b80db022dbcc0e7874793d"></span>int64_t <code class="sig-name descname">price</code><a class="headerlink" href="#_CPPv4N8vxa_feed20DailyStatisticsEntry5priceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed20DailyStatisticsEntry4sizeE">
+<span id="_CPPv3N8vxa_feed20DailyStatisticsEntry4sizeE"></span><span id="_CPPv2N8vxa_feed20DailyStatisticsEntry4sizeE"></span><span id="vxa_feed::DailyStatisticsEntry::size__int32_t"></span><span class="target" id="structvxa__feed_1_1_daily_statistics_entry_1a792acd91f0dcf1ebda2db562ff3289dd"></span>int32_t <code class="sig-name descname">size</code><a class="headerlink" href="#_CPPv4N8vxa_feed20DailyStatisticsEntry4sizeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed20DailyStatisticsEntry20tradingReferenceDateE">
+<span id="_CPPv3N8vxa_feed20DailyStatisticsEntry20tradingReferenceDateE"></span><span id="_CPPv2N8vxa_feed20DailyStatisticsEntry20tradingReferenceDateE"></span><span id="vxa_feed::DailyStatisticsEntry::tradingReferenceDate__uint16_t"></span><span class="target" id="structvxa__feed_1_1_daily_statistics_entry_1af5fa85170b009c6ea9e48195b2cfbcb3"></span>uint16_t <code class="sig-name descname">tradingReferenceDate</code><a class="headerlink" href="#_CPPv4N8vxa_feed20DailyStatisticsEntry20tradingReferenceDateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed20DailyStatisticsEntry14settlPriceTypeE">
+<span id="_CPPv3N8vxa_feed20DailyStatisticsEntry14settlPriceTypeE"></span><span id="_CPPv2N8vxa_feed20DailyStatisticsEntry14settlPriceTypeE"></span><span id="vxa_feed::DailyStatisticsEntry::settlPriceType__SettlPriceType"></span><span class="target" id="structvxa__feed_1_1_daily_statistics_entry_1a3c25c28af338ba3ee2dfbe2e700f5a48"></span><a class="reference internal" href="#_CPPv4N8vxa_feed14SettlPriceTypeE" title="vxa_feed::SettlPriceType">SettlPriceType</a> <code class="sig-name descname">settlPriceType</code><a class="headerlink" href="#_CPPv4N8vxa_feed20DailyStatisticsEntry14settlPriceTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed20DailyStatisticsEntry14dailyStatsTypeE">
+<span id="_CPPv3N8vxa_feed20DailyStatisticsEntry14dailyStatsTypeE"></span><span id="_CPPv2N8vxa_feed20DailyStatisticsEntry14dailyStatsTypeE"></span><span id="vxa_feed::DailyStatisticsEntry::dailyStatsType__DailyStatisticsType"></span><span class="target" id="structvxa__feed_1_1_daily_statistics_entry_1a37daf3db518bd82825d593b4072830d6"></span><a class="reference internal" href="#_CPPv4N8vxa_feed19DailyStatisticsTypeE" title="vxa_feed::DailyStatisticsType">DailyStatisticsType</a> <code class="sig-name descname">dailyStatsType</code><a class="headerlink" href="#_CPPv4N8vxa_feed20DailyStatisticsEntry14dailyStatsTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed25IncrementalOrderBookEntryE">
+<span id="_CPPv3N8vxa_feed25IncrementalOrderBookEntryE"></span><span id="_CPPv2N8vxa_feed25IncrementalOrderBookEntryE"></span><span id="vxa_feed::IncrementalOrderBookEntry"></span><span class="target" id="structvxa__feed_1_1_incremental_order_book_entry"></span><em class="property">struct </em><code class="sig-name descname">IncrementalOrderBookEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed25IncrementalOrderBookEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed25IncrementalOrderBookEntry7orderIDE">
+<span id="_CPPv3N8vxa_feed25IncrementalOrderBookEntry7orderIDE"></span><span id="_CPPv2N8vxa_feed25IncrementalOrderBookEntry7orderIDE"></span><span id="vxa_feed::IncrementalOrderBookEntry::orderID__uint64_t"></span><span class="target" id="structvxa__feed_1_1_incremental_order_book_entry_1a430837f2bc295d3434dca389850a086b"></span>uint64_t <code class="sig-name descname">orderID</code><a class="headerlink" href="#_CPPv4N8vxa_feed25IncrementalOrderBookEntry7orderIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed25IncrementalOrderBookEntry11origOrderIdE">
+<span id="_CPPv3N8vxa_feed25IncrementalOrderBookEntry11origOrderIdE"></span><span id="_CPPv2N8vxa_feed25IncrementalOrderBookEntry11origOrderIdE"></span><span id="vxa_feed::IncrementalOrderBookEntry::origOrderId__uint64_t"></span><span class="target" id="structvxa__feed_1_1_incremental_order_book_entry_1a5f21ba2214b9256ad62ca221ad6d5e21"></span>uint64_t <code class="sig-name descname">origOrderId</code><a class="headerlink" href="#_CPPv4N8vxa_feed25IncrementalOrderBookEntry11origOrderIdE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed25IncrementalOrderBookEntry8priorityE">
+<span id="_CPPv3N8vxa_feed25IncrementalOrderBookEntry8priorityE"></span><span id="_CPPv2N8vxa_feed25IncrementalOrderBookEntry8priorityE"></span><span id="vxa_feed::IncrementalOrderBookEntry::priority__uint64_t"></span><span class="target" id="structvxa__feed_1_1_incremental_order_book_entry_1a9c6360d09e56391347d14ce35b0d22a5"></span>uint64_t <code class="sig-name descname">priority</code><a class="headerlink" href="#_CPPv4N8vxa_feed25IncrementalOrderBookEntry8priorityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed25IncrementalOrderBookEntry5priceE">
+<span id="_CPPv3N8vxa_feed25IncrementalOrderBookEntry5priceE"></span><span id="_CPPv2N8vxa_feed25IncrementalOrderBookEntry5priceE"></span><span id="vxa_feed::IncrementalOrderBookEntry::price__int64_t"></span><span class="target" id="structvxa__feed_1_1_incremental_order_book_entry_1a0c19b5a733c923ca64fac6558c31a971"></span>int64_t <code class="sig-name descname">price</code><a class="headerlink" href="#_CPPv4N8vxa_feed25IncrementalOrderBookEntry5priceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed25IncrementalOrderBookEntry11prevOrderIdE">
+<span id="_CPPv3N8vxa_feed25IncrementalOrderBookEntry11prevOrderIdE"></span><span id="_CPPv2N8vxa_feed25IncrementalOrderBookEntry11prevOrderIdE"></span><span id="vxa_feed::IncrementalOrderBookEntry::prevOrderId__uint64_t"></span><span class="target" id="structvxa__feed_1_1_incremental_order_book_entry_1a0ccd2326c06c70c5bfa99b756c09d251"></span>uint64_t <code class="sig-name descname">prevOrderId</code><a class="headerlink" href="#_CPPv4N8vxa_feed25IncrementalOrderBookEntry11prevOrderIdE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed25IncrementalOrderBookEntry15displayQuantityE">
+<span id="_CPPv3N8vxa_feed25IncrementalOrderBookEntry15displayQuantityE"></span><span id="_CPPv2N8vxa_feed25IncrementalOrderBookEntry15displayQuantityE"></span><span id="vxa_feed::IncrementalOrderBookEntry::displayQuantity__int32_t"></span><span class="target" id="structvxa__feed_1_1_incremental_order_book_entry_1aecea0fd519c21740caef79d81aeeb202"></span>int32_t <code class="sig-name descname">displayQuantity</code><a class="headerlink" href="#_CPPv4N8vxa_feed25IncrementalOrderBookEntry15displayQuantityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed25IncrementalOrderBookEntry6actionE">
+<span id="_CPPv3N8vxa_feed25IncrementalOrderBookEntry6actionE"></span><span id="_CPPv2N8vxa_feed25IncrementalOrderBookEntry6actionE"></span><span id="vxa_feed::IncrementalOrderBookEntry::action__BookAction"></span><span class="target" id="structvxa__feed_1_1_incremental_order_book_entry_1a08922f3e7fa99d9c681e32ea98211350"></span><a class="reference internal" href="#_CPPv4N8vxa_feed10BookActionE" title="vxa_feed::BookAction">BookAction</a> <code class="sig-name descname">action</code><a class="headerlink" href="#_CPPv4N8vxa_feed25IncrementalOrderBookEntry6actionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed25IncrementalOrderBookEntry8bookTypeE">
+<span id="_CPPv3N8vxa_feed25IncrementalOrderBookEntry8bookTypeE"></span><span id="_CPPv2N8vxa_feed25IncrementalOrderBookEntry8bookTypeE"></span><span id="vxa_feed::IncrementalOrderBookEntry::bookType__BookType"></span><span class="target" id="structvxa__feed_1_1_incremental_order_book_entry_1a8dab0793fca05724edff12f9b312e199"></span><a class="reference internal" href="#_CPPv4N8vxa_feed8BookTypeE" title="vxa_feed::BookType">BookType</a> <code class="sig-name descname">bookType</code><a class="headerlink" href="#_CPPv4N8vxa_feed25IncrementalOrderBookEntry8bookTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed25IncrementalOrderBookEntry10isSnapShotE">
+<span id="_CPPv3N8vxa_feed25IncrementalOrderBookEntry10isSnapShotE"></span><span id="_CPPv2N8vxa_feed25IncrementalOrderBookEntry10isSnapShotE"></span><span id="vxa_feed::IncrementalOrderBookEntry::isSnapShot__b"></span><span class="target" id="structvxa__feed_1_1_incremental_order_book_entry_1a01ba1f3377563b09a5a4ccf9b376ab34"></span>bool <code class="sig-name descname">isSnapShot</code><a class="headerlink" href="#_CPPv4N8vxa_feed25IncrementalOrderBookEntry10isSnapShotE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed17InvestigatedTradeE">
+<span id="_CPPv3N8vxa_feed17InvestigatedTradeE"></span><span id="_CPPv2N8vxa_feed17InvestigatedTradeE"></span><span id="vxa_feed::InvestigatedTrade"></span><span class="target" id="structvxa__feed_1_1_investigated_trade"></span><em class="property">struct </em><code class="sig-name descname">InvestigatedTrade</code><a class="headerlink" href="#_CPPv4N8vxa_feed17InvestigatedTradeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17InvestigatedTrade7OrderIDE">
+<span id="_CPPv3N8vxa_feed17InvestigatedTrade7OrderIDE"></span><span id="_CPPv2N8vxa_feed17InvestigatedTrade7OrderIDE"></span><span id="vxa_feed::InvestigatedTrade::OrderID__uint64_t"></span><span class="target" id="structvxa__feed_1_1_investigated_trade_1affa51a5a578636f6e4b2ef0d0eb612c0"></span>uint64_t <code class="sig-name descname">OrderID</code><a class="headerlink" href="#_CPPv4N8vxa_feed17InvestigatedTrade7OrderIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17InvestigatedTrade5priceE">
+<span id="_CPPv3N8vxa_feed17InvestigatedTrade5priceE"></span><span id="_CPPv2N8vxa_feed17InvestigatedTrade5priceE"></span><span id="vxa_feed::InvestigatedTrade::price__int64_t"></span><span class="target" id="structvxa__feed_1_1_investigated_trade_1a999347abd3ab87366e4529b0f407262e"></span>int64_t <code class="sig-name descname">price</code><a class="headerlink" href="#_CPPv4N8vxa_feed17InvestigatedTrade5priceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17InvestigatedTrade8quantityE">
+<span id="_CPPv3N8vxa_feed17InvestigatedTrade8quantityE"></span><span id="_CPPv2N8vxa_feed17InvestigatedTrade8quantityE"></span><span id="vxa_feed::InvestigatedTrade::quantity__uint32_t"></span><span class="target" id="structvxa__feed_1_1_investigated_trade_1a43068b49c70137829b8a5c8bff184ffe"></span>uint32_t <code class="sig-name descname">quantity</code><a class="headerlink" href="#_CPPv4N8vxa_feed17InvestigatedTrade8quantityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17InvestigatedTrade6statusE">
+<span id="_CPPv3N8vxa_feed17InvestigatedTrade6statusE"></span><span id="_CPPv2N8vxa_feed17InvestigatedTrade6statusE"></span><span id="vxa_feed::InvestigatedTrade::status__InvestigateStatus"></span><span class="target" id="structvxa__feed_1_1_investigated_trade_1a6ba89514ce57f3df7de93dc0a2cec791"></span><a class="reference internal" href="#_CPPv4N8vxa_feed17InvestigateStatusE" title="vxa_feed::InvestigateStatus">InvestigateStatus</a> <code class="sig-name descname">status</code><a class="headerlink" href="#_CPPv4N8vxa_feed17InvestigatedTrade6statusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed18LimitsBandingEntryE">
+<span id="_CPPv3N8vxa_feed18LimitsBandingEntryE"></span><span id="_CPPv2N8vxa_feed18LimitsBandingEntryE"></span><span id="vxa_feed::LimitsBandingEntry"></span><span class="target" id="structvxa__feed_1_1_limits_banding_entry"></span><em class="property">struct </em><code class="sig-name descname">LimitsBandingEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed18LimitsBandingEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed18LimitsBandingEntry14highLimitPriceE">
+<span id="_CPPv3N8vxa_feed18LimitsBandingEntry14highLimitPriceE"></span><span id="_CPPv2N8vxa_feed18LimitsBandingEntry14highLimitPriceE"></span><span id="vxa_feed::LimitsBandingEntry::highLimitPrice__int64_t"></span><span class="target" id="structvxa__feed_1_1_limits_banding_entry_1aa1997b264f6d28b137e0a8b339f0907c"></span>int64_t <code class="sig-name descname">highLimitPrice</code><a class="headerlink" href="#_CPPv4N8vxa_feed18LimitsBandingEntry14highLimitPriceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed18LimitsBandingEntry13lowLimitPriceE">
+<span id="_CPPv3N8vxa_feed18LimitsBandingEntry13lowLimitPriceE"></span><span id="_CPPv2N8vxa_feed18LimitsBandingEntry13lowLimitPriceE"></span><span id="vxa_feed::LimitsBandingEntry::lowLimitPrice__int64_t"></span><span class="target" id="structvxa__feed_1_1_limits_banding_entry_1a5179d88cbc8e92344f59c32352fe0ac7"></span>int64_t <code class="sig-name descname">lowLimitPrice</code><a class="headerlink" href="#_CPPv4N8vxa_feed18LimitsBandingEntry13lowLimitPriceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed18LimitsBandingEntry17maxPriceVariationE">
+<span id="_CPPv3N8vxa_feed18LimitsBandingEntry17maxPriceVariationE"></span><span id="_CPPv2N8vxa_feed18LimitsBandingEntry17maxPriceVariationE"></span><span id="vxa_feed::LimitsBandingEntry::maxPriceVariation__int64_t"></span><span class="target" id="structvxa__feed_1_1_limits_banding_entry_1ab0e28bfb9a479b325774f7d90a5c45d5"></span>int64_t <code class="sig-name descname">maxPriceVariation</code><a class="headerlink" href="#_CPPv4N8vxa_feed18LimitsBandingEntry17maxPriceVariationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed19SecurityStatusEntryE">
+<span id="_CPPv3N8vxa_feed19SecurityStatusEntryE"></span><span id="_CPPv2N8vxa_feed19SecurityStatusEntryE"></span><span id="vxa_feed::SecurityStatusEntry"></span><span class="target" id="structvxa__feed_1_1_security_status_entry"></span><em class="property">struct </em><code class="sig-name descname">SecurityStatusEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed19SecurityStatusEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed19SecurityStatusEntry13securityGroupE">
+<span id="_CPPv3N8vxa_feed19SecurityStatusEntry13securityGroupE"></span><span id="_CPPv2N8vxa_feed19SecurityStatusEntry13securityGroupE"></span><span id="vxa_feed::SecurityStatusEntry::securityGroup__cA"></span><span class="target" id="structvxa__feed_1_1_security_status_entry_1aed2eedf66ae25f64dbd5cd8cb57c8021"></span>char <code class="sig-name descname">securityGroup</code>[10]<a class="headerlink" href="#_CPPv4N8vxa_feed19SecurityStatusEntry13securityGroupE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed19SecurityStatusEntry5assetE">
+<span id="_CPPv3N8vxa_feed19SecurityStatusEntry5assetE"></span><span id="_CPPv2N8vxa_feed19SecurityStatusEntry5assetE"></span><span id="vxa_feed::SecurityStatusEntry::asset__cA"></span><span class="target" id="structvxa__feed_1_1_security_status_entry_1add492135c52ea0a107ab964aa64969e6"></span>char <code class="sig-name descname">asset</code>[10]<a class="headerlink" href="#_CPPv4N8vxa_feed19SecurityStatusEntry5assetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed19SecurityStatusEntry9tradeDateE">
+<span id="_CPPv3N8vxa_feed19SecurityStatusEntry9tradeDateE"></span><span id="_CPPv2N8vxa_feed19SecurityStatusEntry9tradeDateE"></span><span id="vxa_feed::SecurityStatusEntry::tradeDate__uint16_t"></span><span class="target" id="structvxa__feed_1_1_security_status_entry_1a941f45b2a25771f78504197ab7f711c2"></span>uint16_t <code class="sig-name descname">tradeDate</code><a class="headerlink" href="#_CPPv4N8vxa_feed19SecurityStatusEntry9tradeDateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed19SecurityStatusEntry21securityTradingStatusE">
+<span id="_CPPv3N8vxa_feed19SecurityStatusEntry21securityTradingStatusE"></span><span id="_CPPv2N8vxa_feed19SecurityStatusEntry21securityTradingStatusE"></span><span id="vxa_feed::SecurityStatusEntry::securityTradingStatus__SecurityTradingStatus"></span><span class="target" id="structvxa__feed_1_1_security_status_entry_1ae0576863a39f9c158775fb8abfe0feec"></span><a class="reference internal" href="#_CPPv4N8vxa_feed21SecurityTradingStatusE" title="vxa_feed::SecurityTradingStatus">SecurityTradingStatus</a> <code class="sig-name descname">securityTradingStatus</code><a class="headerlink" href="#_CPPv4N8vxa_feed19SecurityStatusEntry21securityTradingStatusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed19SecurityStatusEntry10haltReasonE">
+<span id="_CPPv3N8vxa_feed19SecurityStatusEntry10haltReasonE"></span><span id="_CPPv2N8vxa_feed19SecurityStatusEntry10haltReasonE"></span><span id="vxa_feed::SecurityStatusEntry::haltReason__HaltReason"></span><span class="target" id="structvxa__feed_1_1_security_status_entry_1a199d8cd457f95f432f3d9fbfcc8fb5db"></span><a class="reference internal" href="#_CPPv4N8vxa_feed10HaltReasonE" title="vxa_feed::HaltReason">HaltReason</a> <code class="sig-name descname">haltReason</code><a class="headerlink" href="#_CPPv4N8vxa_feed19SecurityStatusEntry10haltReasonE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed19SecurityStatusEntry20securityTradingEventE">
+<span id="_CPPv3N8vxa_feed19SecurityStatusEntry20securityTradingEventE"></span><span id="_CPPv2N8vxa_feed19SecurityStatusEntry20securityTradingEventE"></span><span id="vxa_feed::SecurityStatusEntry::securityTradingEvent__SecurityTradingEvent"></span><span class="target" id="structvxa__feed_1_1_security_status_entry_1a7a736ac713f8b548f4d7db42c434649d"></span><a class="reference internal" href="#_CPPv4N8vxa_feed20SecurityTradingEventE" title="vxa_feed::SecurityTradingEvent">SecurityTradingEvent</a> <code class="sig-name descname">securityTradingEvent</code><a class="headerlink" href="#_CPPv4N8vxa_feed19SecurityStatusEntry20securityTradingEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed17SessionStatisticsE">
+<span id="_CPPv3N8vxa_feed17SessionStatisticsE"></span><span id="_CPPv2N8vxa_feed17SessionStatisticsE"></span><span id="vxa_feed::SessionStatistics"></span><span class="target" id="structvxa__feed_1_1_session_statistics"></span><em class="property">struct </em><code class="sig-name descname">SessionStatistics</code><a class="headerlink" href="#_CPPv4N8vxa_feed17SessionStatisticsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17SessionStatistics12instrumentIdE">
+<span id="_CPPv3N8vxa_feed17SessionStatistics12instrumentIdE"></span><span id="_CPPv2N8vxa_feed17SessionStatistics12instrumentIdE"></span><span id="vxa_feed::SessionStatistics::instrumentId__uint32_t"></span><span class="target" id="structvxa__feed_1_1_session_statistics_1a16c0ff9c1213b408b6da392653ecce72"></span>uint32_t <code class="sig-name descname">instrumentId</code><a class="headerlink" href="#_CPPv4N8vxa_feed17SessionStatistics12instrumentIdE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17SessionStatistics5priceE">
+<span id="_CPPv3N8vxa_feed17SessionStatistics5priceE"></span><span id="_CPPv2N8vxa_feed17SessionStatistics5priceE"></span><span id="vxa_feed::SessionStatistics::price__int64_t"></span><span class="target" id="structvxa__feed_1_1_session_statistics_1adf5f9c149d2e1ecf11cfd76d58a61c97"></span>int64_t <code class="sig-name descname">price</code><a class="headerlink" href="#_CPPv4N8vxa_feed17SessionStatistics5priceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17SessionStatistics18openCloseSettlFlagE">
+<span id="_CPPv3N8vxa_feed17SessionStatistics18openCloseSettlFlagE"></span><span id="_CPPv2N8vxa_feed17SessionStatistics18openCloseSettlFlagE"></span><span id="vxa_feed::SessionStatistics::openCloseSettlFlag__OpenCloseSettlFlag"></span><span class="target" id="structvxa__feed_1_1_session_statistics_1a0c429befca047a2d537d41f000182754"></span><a class="reference internal" href="#_CPPv4N8vxa_feed18OpenCloseSettlFlagE" title="vxa_feed::OpenCloseSettlFlag">OpenCloseSettlFlag</a> <code class="sig-name descname">openCloseSettlFlag</code><a class="headerlink" href="#_CPPv4N8vxa_feed17SessionStatistics18openCloseSettlFlagE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17SessionStatistics6actionE">
+<span id="_CPPv3N8vxa_feed17SessionStatistics6actionE"></span><span id="_CPPv2N8vxa_feed17SessionStatistics6actionE"></span><span id="vxa_feed::SessionStatistics::action__BookAction"></span><span class="target" id="structvxa__feed_1_1_session_statistics_1a0e668f224c1d3ecd45a7f52ba204225c"></span><a class="reference internal" href="#_CPPv4N8vxa_feed10BookActionE" title="vxa_feed::BookAction">BookAction</a> <code class="sig-name descname">action</code><a class="headerlink" href="#_CPPv4N8vxa_feed17SessionStatistics6actionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17SessionStatistics8statTypeE">
+<span id="_CPPv3N8vxa_feed17SessionStatistics8statTypeE"></span><span id="_CPPv2N8vxa_feed17SessionStatistics8statTypeE"></span><span id="vxa_feed::SessionStatistics::statType__StatisticsType"></span><span class="target" id="structvxa__feed_1_1_session_statistics_1a58f2b78e98548d2c9b5d6df32005f9f8"></span><a class="reference internal" href="#_CPPv4N8vxa_feed14StatisticsTypeE" title="vxa_feed::StatisticsType">StatisticsType</a> <code class="sig-name descname">statType</code><a class="headerlink" href="#_CPPv4N8vxa_feed17SessionStatistics8statTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17SessionStatistics4sizeE">
+<span id="_CPPv3N8vxa_feed17SessionStatistics4sizeE"></span><span id="_CPPv2N8vxa_feed17SessionStatistics4sizeE"></span><span id="vxa_feed::SessionStatistics::size__int32_t"></span><span class="target" id="structvxa__feed_1_1_session_statistics_1ae656ecacd973f25d066001fc568f595a"></span>int32_t <code class="sig-name descname">size</code><a class="headerlink" href="#_CPPv4N8vxa_feed17SessionStatistics4sizeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed15TradeMatchEntryE">
+<span id="_CPPv3N8vxa_feed15TradeMatchEntryE"></span><span id="_CPPv2N8vxa_feed15TradeMatchEntryE"></span><span id="vxa_feed::TradeMatchEntry"></span><span class="target" id="structvxa__feed_1_1_trade_match_entry"></span><em class="property">struct </em><code class="sig-name descname">TradeMatchEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed15TradeMatchEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed15TradeMatchEntry11isAggressorE">
+<span id="_CPPv3N8vxa_feed15TradeMatchEntry11isAggressorE"></span><span id="_CPPv2N8vxa_feed15TradeMatchEntry11isAggressorE"></span><span id="vxa_feed::TradeMatchEntry::isAggressor__b"></span><span class="target" id="structvxa__feed_1_1_trade_match_entry_1a8f5c19bc241bf0fc18e709184d2b041e"></span>bool <code class="sig-name descname">isAggressor</code><a class="headerlink" href="#_CPPv4N8vxa_feed15TradeMatchEntry11isAggressorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed15TradeMatchEntry11matchNumberE">
+<span id="_CPPv3N8vxa_feed15TradeMatchEntry11matchNumberE"></span><span id="_CPPv2N8vxa_feed15TradeMatchEntry11matchNumberE"></span><span id="vxa_feed::TradeMatchEntry::matchNumber__uint16_t"></span><span class="target" id="structvxa__feed_1_1_trade_match_entry_1a4a844575545d332a9028a881832cc0a4"></span>uint16_t <code class="sig-name descname">matchNumber</code><a class="headerlink" href="#_CPPv4N8vxa_feed15TradeMatchEntry11matchNumberE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed15TradeMatchEntry10matchPriceE">
+<span id="_CPPv3N8vxa_feed15TradeMatchEntry10matchPriceE"></span><span id="_CPPv2N8vxa_feed15TradeMatchEntry10matchPriceE"></span><span id="vxa_feed::TradeMatchEntry::matchPrice__int64_t"></span><span class="target" id="structvxa__feed_1_1_trade_match_entry_1a6a7f294418b4e26bd2e5459ce3ce0075"></span>int64_t <code class="sig-name descname">matchPrice</code><a class="headerlink" href="#_CPPv4N8vxa_feed15TradeMatchEntry10matchPriceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed15TradeMatchEntry7orderIdE">
+<span id="_CPPv3N8vxa_feed15TradeMatchEntry7orderIdE"></span><span id="_CPPv2N8vxa_feed15TradeMatchEntry7orderIdE"></span><span id="vxa_feed::TradeMatchEntry::orderId__uint64_t"></span><span class="target" id="structvxa__feed_1_1_trade_match_entry_1a510008553c9ae99105d9353a4c26ea48"></span>uint64_t <code class="sig-name descname">orderId</code><a class="headerlink" href="#_CPPv4N8vxa_feed15TradeMatchEntry7orderIdE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed15TradeMatchEntry11origOrderIdE">
+<span id="_CPPv3N8vxa_feed15TradeMatchEntry11origOrderIdE"></span><span id="_CPPv2N8vxa_feed15TradeMatchEntry11origOrderIdE"></span><span id="vxa_feed::TradeMatchEntry::origOrderId__uint64_t"></span><span class="target" id="structvxa__feed_1_1_trade_match_entry_1a4a0000d5d356fb5fbdc7c77f5d4b60df"></span>uint64_t <code class="sig-name descname">origOrderId</code><a class="headerlink" href="#_CPPv4N8vxa_feed15TradeMatchEntry11origOrderIdE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed15TradeMatchEntry13tradeQuantityE">
+<span id="_CPPv3N8vxa_feed15TradeMatchEntry13tradeQuantityE"></span><span id="_CPPv2N8vxa_feed15TradeMatchEntry13tradeQuantityE"></span><span id="vxa_feed::TradeMatchEntry::tradeQuantity__int32_t"></span><span class="target" id="structvxa__feed_1_1_trade_match_entry_1aefbae53ff61d81341ca45607805032d4"></span>int32_t <code class="sig-name descname">tradeQuantity</code><a class="headerlink" href="#_CPPv4N8vxa_feed15TradeMatchEntry13tradeQuantityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed15TradeMatchEntry5flagsE">
+<span id="_CPPv3N8vxa_feed15TradeMatchEntry5flagsE"></span><span id="_CPPv2N8vxa_feed15TradeMatchEntry5flagsE"></span><span id="vxa_feed::TradeMatchEntry::flags__int32_t"></span><span class="target" id="structvxa__feed_1_1_trade_match_entry_1ae3217bdc0e8ea534d8342b97e95d3a49"></span>int32_t <code class="sig-name descname">flags</code><a class="headerlink" href="#_CPPv4N8vxa_feed15TradeMatchEntry5flagsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed17TradeSummaryEntryE">
+<span id="_CPPv3N8vxa_feed17TradeSummaryEntryE"></span><span id="_CPPv2N8vxa_feed17TradeSummaryEntryE"></span><span id="vxa_feed::TradeSummaryEntry"></span><span class="target" id="structvxa__feed_1_1_trade_summary_entry"></span><em class="property">struct </em><code class="sig-name descname">TradeSummaryEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed17TradeSummaryEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17TradeSummaryEntry5priceE">
+<span id="_CPPv3N8vxa_feed17TradeSummaryEntry5priceE"></span><span id="_CPPv2N8vxa_feed17TradeSummaryEntry5priceE"></span><span id="vxa_feed::TradeSummaryEntry::price__int64_t"></span><span class="target" id="structvxa__feed_1_1_trade_summary_entry_1a79c8b8c542ff86f0960650e1c1b62fe1"></span>int64_t <code class="sig-name descname">price</code><a class="headerlink" href="#_CPPv4N8vxa_feed17TradeSummaryEntry5priceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17TradeSummaryEntry13tradeQuantityE">
+<span id="_CPPv3N8vxa_feed17TradeSummaryEntry13tradeQuantityE"></span><span id="_CPPv2N8vxa_feed17TradeSummaryEntry13tradeQuantityE"></span><span id="vxa_feed::TradeSummaryEntry::tradeQuantity__int32_t"></span><span class="target" id="structvxa__feed_1_1_trade_summary_entry_1af939817dcda55aef88460777001b9727"></span>int32_t <code class="sig-name descname">tradeQuantity</code><a class="headerlink" href="#_CPPv4N8vxa_feed17TradeSummaryEntry13tradeQuantityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17TradeSummaryEntry15numberOfMatchesE">
+<span id="_CPPv3N8vxa_feed17TradeSummaryEntry15numberOfMatchesE"></span><span id="_CPPv2N8vxa_feed17TradeSummaryEntry15numberOfMatchesE"></span><span id="vxa_feed::TradeSummaryEntry::numberOfMatches__uint32_t"></span><span class="target" id="structvxa__feed_1_1_trade_summary_entry_1a3aebab5cf69d97a9dca0415d8c451f50"></span>uint32_t <code class="sig-name descname">numberOfMatches</code><a class="headerlink" href="#_CPPv4N8vxa_feed17TradeSummaryEntry15numberOfMatchesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17TradeSummaryEntry13aggressorSideE">
+<span id="_CPPv3N8vxa_feed17TradeSummaryEntry13aggressorSideE"></span><span id="_CPPv2N8vxa_feed17TradeSummaryEntry13aggressorSideE"></span><span id="vxa_feed::TradeSummaryEntry::aggressorSide__AggressorSide"></span><span class="target" id="structvxa__feed_1_1_trade_summary_entry_1aa3795a4f5bdd6d95530ffb995ecb8c06"></span><a class="reference internal" href="#_CPPv4N8vxa_feed13AggressorSideE" title="vxa_feed::AggressorSide">AggressorSide</a> <code class="sig-name descname">aggressorSide</code><a class="headerlink" href="#_CPPv4N8vxa_feed17TradeSummaryEntry13aggressorSideE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17TradeSummaryEntry10isImpliedsE">
+<span id="_CPPv3N8vxa_feed17TradeSummaryEntry10isImpliedsE"></span><span id="_CPPv2N8vxa_feed17TradeSummaryEntry10isImpliedsE"></span><span id="vxa_feed::TradeSummaryEntry::isImplieds__b"></span><span class="target" id="structvxa__feed_1_1_trade_summary_entry_1ae2d9ff17fa5ab82f3f400b0276c8941f"></span>bool <code class="sig-name descname">isImplieds</code><a class="headerlink" href="#_CPPv4N8vxa_feed17TradeSummaryEntry10isImpliedsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17TradeSummaryEntry10isSnapShotE">
+<span id="_CPPv3N8vxa_feed17TradeSummaryEntry10isSnapShotE"></span><span id="_CPPv2N8vxa_feed17TradeSummaryEntry10isSnapShotE"></span><span id="vxa_feed::TradeSummaryEntry::isSnapShot__b"></span><span class="target" id="structvxa__feed_1_1_trade_summary_entry_1a277eb0af2c97ce42a858ccaf7380a85d"></span>bool <code class="sig-name descname">isSnapShot</code><a class="headerlink" href="#_CPPv4N8vxa_feed17TradeSummaryEntry10isSnapShotE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17TradeSummaryEntry12marketVolumeE">
+<span id="_CPPv3N8vxa_feed17TradeSummaryEntry12marketVolumeE"></span><span id="_CPPv2N8vxa_feed17TradeSummaryEntry12marketVolumeE"></span><span id="vxa_feed::TradeSummaryEntry::marketVolume__uint32_t"></span><span class="target" id="structvxa__feed_1_1_trade_summary_entry_1afcad4762a3df1fb6b15affb37c511796"></span>uint32_t <code class="sig-name descname">marketVolume</code><a class="headerlink" href="#_CPPv4N8vxa_feed17TradeSummaryEntry12marketVolumeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed22TransactionMarkerEntryE">
+<span id="_CPPv3N8vxa_feed22TransactionMarkerEntryE"></span><span id="_CPPv2N8vxa_feed22TransactionMarkerEntryE"></span><span id="vxa_feed::TransactionMarkerEntry"></span><span class="target" id="structvxa__feed_1_1_transaction_marker_entry"></span><em class="property">struct </em><code class="sig-name descname">TransactionMarkerEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed22TransactionMarkerEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed22TransactionMarkerEntry4typeE">
+<span id="_CPPv3N8vxa_feed22TransactionMarkerEntry4typeE"></span><span id="_CPPv2N8vxa_feed22TransactionMarkerEntry4typeE"></span><span id="vxa_feed::TransactionMarkerEntry::type__TransactionType"></span><span class="target" id="structvxa__feed_1_1_transaction_marker_entry_1a848ce66426765aa72a31468ffba25c9c"></span><a class="reference internal" href="#_CPPv4N8vxa_feed15TransactionTypeE" title="vxa_feed::TransactionType">TransactionType</a> <code class="sig-name descname">type</code><a class="headerlink" href="#_CPPv4N8vxa_feed22TransactionMarkerEntry4typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed17VolumeUpdateEntryE">
+<span id="_CPPv3N8vxa_feed17VolumeUpdateEntryE"></span><span id="_CPPv2N8vxa_feed17VolumeUpdateEntryE"></span><span id="vxa_feed::VolumeUpdateEntry"></span><span class="target" id="structvxa__feed_1_1_volume_update_entry"></span><em class="property">struct </em><code class="sig-name descname">VolumeUpdateEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed17VolumeUpdateEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17VolumeUpdateEntry12marketVolumeE">
+<span id="_CPPv3N8vxa_feed17VolumeUpdateEntry12marketVolumeE"></span><span id="_CPPv2N8vxa_feed17VolumeUpdateEntry12marketVolumeE"></span><span id="vxa_feed::VolumeUpdateEntry::marketVolume__uint32_t"></span><span class="target" id="structvxa__feed_1_1_volume_update_entry_1aa09fe74044991a290926a2d3daa5efe4"></span>uint32_t <code class="sig-name descname">marketVolume</code><a class="headerlink" href="#_CPPv4N8vxa_feed17VolumeUpdateEntry12marketVolumeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed17VolumeUpdateEntry4vwapE">
+<span id="_CPPv3N8vxa_feed17VolumeUpdateEntry4vwapE"></span><span id="_CPPv2N8vxa_feed17VolumeUpdateEntry4vwapE"></span><span id="vxa_feed::VolumeUpdateEntry::vwap__int64_t"></span><span class="target" id="structvxa__feed_1_1_volume_update_entry_1a6af617de8572fc8ece9741185e12daf2"></span>int64_t <code class="sig-name descname">vwap</code><a class="headerlink" href="#_CPPv4N8vxa_feed17VolumeUpdateEntry4vwapE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed8VxaEventE">
+<span id="_CPPv3N8vxa_feed8VxaEventE"></span><span id="_CPPv2N8vxa_feed8VxaEventE"></span><span id="vxa_feed::VxaEvent"></span><span class="target" id="structvxa__feed_1_1_vxa_event"></span><em class="property">struct </em><code class="sig-name descname">VxaEvent</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4NK8vxa_feed8VxaEvent7IsTradeEv">
+<span id="_CPPv3NK8vxa_feed8VxaEvent7IsTradeEv"></span><span id="_CPPv2NK8vxa_feed8VxaEvent7IsTradeEv"></span><span id="vxa_feed::VxaEvent::IsTradeC"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a77628eec82d5c8ce4899b39c353216be"></span>bool <code class="sig-name descname">IsTrade</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8vxa_feed8VxaEvent7IsTradeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK8vxa_feed8VxaEvent12IsEndOfEventEv">
+<span id="_CPPv3NK8vxa_feed8VxaEvent12IsEndOfEventEv"></span><span id="_CPPv2NK8vxa_feed8VxaEvent12IsEndOfEventEv"></span><span id="vxa_feed::VxaEvent::IsEndOfEventC"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a690be8bf079286bb8db2196ad3fc3fed"></span>bool <code class="sig-name descname">IsEndOfEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8vxa_feed8VxaEvent12IsEndOfEventEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK8vxa_feed8VxaEvent12IsLastofTypeEv">
+<span id="_CPPv3NK8vxa_feed8VxaEvent12IsLastofTypeEv"></span><span id="_CPPv2NK8vxa_feed8VxaEvent12IsLastofTypeEv"></span><span id="vxa_feed::VxaEvent::IsLastofTypeC"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a4026c209ea110cce847a272898b48749"></span>bool <code class="sig-name descname">IsLastofType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8vxa_feed8VxaEvent12IsLastofTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8vxa_feed8VxaEvent5ResetEv">
+<span id="_CPPv3N8vxa_feed8VxaEvent5ResetEv"></span><span id="_CPPv2N8vxa_feed8VxaEvent5ResetEv"></span><span id="vxa_feed::VxaEvent::Reset"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1ac8b34dd99332902b2addb06aee47e4df"></span>void <code class="sig-name descname">Reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent5ResetEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent12instrumentIdE">
+<span id="_CPPv3N8vxa_feed8VxaEvent12instrumentIdE"></span><span id="_CPPv2N8vxa_feed8VxaEvent12instrumentIdE"></span><span id="vxa_feed::VxaEvent::instrumentId__uint32_t"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a51e3dd99853db9a1041e31bf30c722f9"></span>uint32_t <code class="sig-name descname">instrumentId</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent12instrumentIdE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent8sequenceE">
+<span id="_CPPv3N8vxa_feed8VxaEvent8sequenceE"></span><span id="_CPPv2N8vxa_feed8VxaEvent8sequenceE"></span><span id="vxa_feed::VxaEvent::sequence__uint32_t"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a0ae5e808d5c1a2b58b6936dbd85cc72b"></span>uint32_t <code class="sig-name descname">sequence</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent8sequenceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent4timeE">
+<span id="_CPPv3N8vxa_feed8VxaEvent4timeE"></span><span id="_CPPv2N8vxa_feed8VxaEvent4timeE"></span><span id="vxa_feed::VxaEvent::time__uint64_t"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a1754a662f20229e3cb479be564b48f45"></span>uint64_t <code class="sig-name descname">time</code> = 0<a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent4timeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent4gseqE">
+<span id="_CPPv3N8vxa_feed8VxaEvent4gseqE"></span><span id="_CPPv2N8vxa_feed8VxaEvent4gseqE"></span><span id="vxa_feed::VxaEvent::gseq__uint32_t"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a7639056fc5c891cc5e530f8e49885d6f"></span>uint32_t <code class="sig-name descname">gseq</code> = 0U<a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent4gseqE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent3seqE">
+<span id="_CPPv3N8vxa_feed8VxaEvent3seqE"></span><span id="_CPPv2N8vxa_feed8VxaEvent3seqE"></span><span id="vxa_feed::VxaEvent::seq__uint32_t"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1acfde21af086d55404c53f863b741a2f6"></span>uint32_t <code class="sig-name descname">seq</code> = 0U<a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent3seqE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent7unionIdE">
+<span id="_CPPv3N8vxa_feed8VxaEvent7unionIdE"></span><span id="_CPPv2N8vxa_feed8VxaEvent7unionIdE"></span><span id="vxa_feed::VxaEvent::unionId__UnionId"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1ae9514a1fc1e05049b99829710a27b446"></span><a class="reference internal" href="#_CPPv4N8vxa_feed7UnionIdE" title="vxa_feed::UnionId">UnionId</a> <code class="sig-name descname">unionId</code> = <a class="reference internal" href="#_CPPv4N8vxa_feed7UnionIdE" title="vxa_feed::UnionId">UnionId</a>::NotSet<a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent7unionIdE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent14eventIndicatorE">
+<span id="_CPPv3N8vxa_feed8VxaEvent14eventIndicatorE"></span><span id="_CPPv2N8vxa_feed8VxaEvent14eventIndicatorE"></span><span id="vxa_feed::VxaEvent::eventIndicator__EventIndicator"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a37739bc886b3946bbc0de581a164c6ed"></span><a class="reference internal" href="#_CPPv4N8vxa_feed14EventIndicatorE" title="vxa_feed::EventIndicator">EventIndicator</a> <code class="sig-name descname">eventIndicator</code> = <a class="reference internal" href="#_CPPv4N8vxa_feed14EventIndicatorE" title="vxa_feed::EventIndicator">EventIndicator</a>::NotSet<a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent14eventIndicatorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent9realEventE">
+<span id="_CPPv3N8vxa_feed8VxaEvent9realEventE"></span><span id="_CPPv2N8vxa_feed8VxaEvent9realEventE"></span><span id="vxa_feed::VxaEvent::realEvent__b"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1af3a00af0c2859eb43fb69389943881cf"></span>bool <code class="sig-name descname">realEvent</code> = true<a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent9realEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent12baseExponentE">
+<span id="_CPPv3N8vxa_feed8VxaEvent12baseExponentE"></span><span id="_CPPv2N8vxa_feed8VxaEvent12baseExponentE"></span><span id="vxa_feed::VxaEvent::baseExponent__uint8_t"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1af23a2f545f1f41e7c751b93737c673ec"></span>uint8_t <code class="sig-name descname">baseExponent</code> = 0U<a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent12baseExponentE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent12tradeSummaryE">
+<span id="_CPPv3N8vxa_feed8VxaEvent12tradeSummaryE"></span><span id="_CPPv2N8vxa_feed8VxaEvent12tradeSummaryE"></span><span id="vxa_feed::VxaEvent::tradeSummary__TradeSummaryEntry"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a19073d4c7f71fb72abcd16105beae892"></span><a class="reference internal" href="#_CPPv4N8vxa_feed17TradeSummaryEntryE" title="vxa_feed::TradeSummaryEntry">TradeSummaryEntry</a> <code class="sig-name descname">tradeSummary</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent12tradeSummaryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent10matchEntryE">
+<span id="_CPPv3N8vxa_feed8VxaEvent10matchEntryE"></span><span id="_CPPv2N8vxa_feed8VxaEvent10matchEntryE"></span><span id="vxa_feed::VxaEvent::matchEntry__TradeMatchEntry"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1ad17abe65e4dd33d404f1b6d8c96b10b4"></span><a class="reference internal" href="#_CPPv4N8vxa_feed15TradeMatchEntryE" title="vxa_feed::TradeMatchEntry">TradeMatchEntry</a> <code class="sig-name descname">matchEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent10matchEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent11volumeEntryE">
+<span id="_CPPv3N8vxa_feed8VxaEvent11volumeEntryE"></span><span id="_CPPv2N8vxa_feed8VxaEvent11volumeEntryE"></span><span id="vxa_feed::VxaEvent::volumeEntry__VolumeUpdateEntry"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a1e9bb1373c720f6c8eb5d99a6e2b835c"></span><a class="reference internal" href="#_CPPv4N8vxa_feed17VolumeUpdateEntryE" title="vxa_feed::VolumeUpdateEntry">VolumeUpdateEntry</a> <code class="sig-name descname">volumeEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent11volumeEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent9bookEntryE">
+<span id="_CPPv3N8vxa_feed8VxaEvent9bookEntryE"></span><span id="_CPPv2N8vxa_feed8VxaEvent9bookEntryE"></span><span id="vxa_feed::VxaEvent::bookEntry__BookLevelEntry"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1abc56dbe60e4387b6832dd4ebf6b3740a"></span><a class="reference internal" href="#_CPPv4N8vxa_feed14BookLevelEntryE" title="vxa_feed::BookLevelEntry">BookLevelEntry</a> <code class="sig-name descname">bookEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent9bookEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent14orderBookEntryE">
+<span id="_CPPv3N8vxa_feed8VxaEvent14orderBookEntryE"></span><span id="_CPPv2N8vxa_feed8VxaEvent14orderBookEntryE"></span><span id="vxa_feed::VxaEvent::orderBookEntry__IncrementalOrderBookEntry"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a29f6af5975342a4a43129d5a94561da3"></span><a class="reference internal" href="#_CPPv4N8vxa_feed25IncrementalOrderBookEntryE" title="vxa_feed::IncrementalOrderBookEntry">IncrementalOrderBookEntry</a> <code class="sig-name descname">orderBookEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent14orderBookEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent14securityStatusE">
+<span id="_CPPv3N8vxa_feed8VxaEvent14securityStatusE"></span><span id="_CPPv2N8vxa_feed8VxaEvent14securityStatusE"></span><span id="vxa_feed::VxaEvent::securityStatus__SecurityStatusEntry"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a6a35cf834b7992b121c5982fe884a2be"></span><a class="reference internal" href="#_CPPv4N8vxa_feed19SecurityStatusEntryE" title="vxa_feed::SecurityStatusEntry">SecurityStatusEntry</a> <code class="sig-name descname">securityStatus</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent14securityStatusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent15dailyStatsEntryE">
+<span id="_CPPv3N8vxa_feed8VxaEvent15dailyStatsEntryE"></span><span id="_CPPv2N8vxa_feed8VxaEvent15dailyStatsEntryE"></span><span id="vxa_feed::VxaEvent::dailyStatsEntry__DailyStatisticsEntry"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1aa0d9853810c8d2af6fe5d90cbf275d55"></span><a class="reference internal" href="#_CPPv4N8vxa_feed20DailyStatisticsEntryE" title="vxa_feed::DailyStatisticsEntry">DailyStatisticsEntry</a> <code class="sig-name descname">dailyStatsEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent15dailyStatsEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent12bandingEntryE">
+<span id="_CPPv3N8vxa_feed8VxaEvent12bandingEntryE"></span><span id="_CPPv2N8vxa_feed8VxaEvent12bandingEntryE"></span><span id="vxa_feed::VxaEvent::bandingEntry__LimitsBandingEntry"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a8a513c94e2946e964da1a86324e67d37"></span><a class="reference internal" href="#_CPPv4N8vxa_feed18LimitsBandingEntryE" title="vxa_feed::LimitsBandingEntry">LimitsBandingEntry</a> <code class="sig-name descname">bandingEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent12bandingEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent17sessionStatsEntryE">
+<span id="_CPPv3N8vxa_feed8VxaEvent17sessionStatsEntryE"></span><span id="_CPPv2N8vxa_feed8VxaEvent17sessionStatsEntryE"></span><span id="vxa_feed::VxaEvent::sessionStatsEntry__SessionStatistics"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a78848b372d1cc4d38ea8388d5e6ede87"></span><a class="reference internal" href="#_CPPv4N8vxa_feed17SessionStatisticsE" title="vxa_feed::SessionStatistics">SessionStatistics</a> <code class="sig-name descname">sessionStatsEntry</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent17sessionStatsEntryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent12channelResetE">
+<span id="_CPPv3N8vxa_feed8VxaEvent12channelResetE"></span><span id="_CPPv2N8vxa_feed8VxaEvent12channelResetE"></span><span id="vxa_feed::VxaEvent::channelReset__ChannelResetEntry"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a966ece6521ae3ae1cb090d3e46ebf8b1"></span><a class="reference internal" href="#_CPPv4N8vxa_feed17ChannelResetEntryE" title="vxa_feed::ChannelResetEntry">ChannelResetEntry</a> <code class="sig-name descname">channelReset</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent12channelResetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent17transactionMarkerE">
+<span id="_CPPv3N8vxa_feed8VxaEvent17transactionMarkerE"></span><span id="_CPPv2N8vxa_feed8VxaEvent17transactionMarkerE"></span><span id="vxa_feed::VxaEvent::transactionMarker__TransactionMarkerEntry"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1ad0e1b0e52b2a1dc5b00f2e06f9aa606b"></span><a class="reference internal" href="#_CPPv4N8vxa_feed22TransactionMarkerEntryE" title="vxa_feed::TransactionMarkerEntry">TransactionMarkerEntry</a> <code class="sig-name descname">transactionMarker</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent17transactionMarkerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent17investigatedTradeE">
+<span id="_CPPv3N8vxa_feed8VxaEvent17investigatedTradeE"></span><span id="_CPPv2N8vxa_feed8VxaEvent17investigatedTradeE"></span><span id="vxa_feed::VxaEvent::investigatedTrade__InvestigatedTrade"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a4ee567028b32bfc450880150aaa02cc5"></span><a class="reference internal" href="#_CPPv4N8vxa_feed17InvestigatedTradeE" title="vxa_feed::InvestigatedTrade">InvestigatedTrade</a> <code class="sig-name descname">investigatedTrade</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent17investigatedTradeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEvent13clearingPriceE">
+<span id="_CPPv3N8vxa_feed8VxaEvent13clearingPriceE"></span><span id="_CPPv2N8vxa_feed8VxaEvent13clearingPriceE"></span><span id="vxa_feed::VxaEvent::clearingPrice__AuctionClearingPrice"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a4c6adabb3f99f34b7f9c3656ef6c10aa"></span><a class="reference internal" href="#_CPPv4N8vxa_feed20AuctionClearingPriceE" title="vxa_feed::AuctionClearingPrice">AuctionClearingPrice</a> <code class="sig-name descname">clearingPrice</code><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEvent13clearingPriceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed8VxaEventUt1_1E">
+<span id="_CPPv3N8vxa_feed8VxaEventUt1_1E"></span><span class="target" id="structvxa__feed_1_1_vxa_event_1a6694e8765462001cf9e7bee60caa8d7c"></span><em class="property">union</em> vxa_feed::<a class="reference internal" href="#_CPPv4N8vxa_feed8VxaEventE" title="vxa_feed::VxaEvent">VxaEvent</a>::<strong>[anonymous]</strong> <strong>[anonymous]</strong><a class="headerlink" href="#_CPPv4N8vxa_feed8VxaEventUt1_1E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N8vxa_feed9VxaHeaderE">
+<span id="_CPPv3N8vxa_feed9VxaHeaderE"></span><span id="_CPPv2N8vxa_feed9VxaHeaderE"></span><span id="vxa_feed::VxaHeader"></span><span class="target" id="structvxa__feed_1_1_vxa_header"></span><em class="property">struct </em><code class="sig-name descname">VxaHeader</code><a class="headerlink" href="#_CPPv4N8vxa_feed9VxaHeaderE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed9VxaHeader8symbolIdE">
+<span id="_CPPv3N8vxa_feed9VxaHeader8symbolIdE"></span><span id="_CPPv2N8vxa_feed9VxaHeader8symbolIdE"></span><span id="vxa_feed::VxaHeader::symbolId__uint32_t"></span><span class="target" id="structvxa__feed_1_1_vxa_header_1a10a239181dd0e257d9f48a18025d7091"></span>uint32_t <code class="sig-name descname">symbolId</code><a class="headerlink" href="#_CPPv4N8vxa_feed9VxaHeader8symbolIdE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed9VxaHeader4sizeE">
+<span id="_CPPv3N8vxa_feed9VxaHeader4sizeE"></span><span id="_CPPv2N8vxa_feed9VxaHeader4sizeE"></span><span id="vxa_feed::VxaHeader::size__uint32_t"></span><span class="target" id="structvxa__feed_1_1_vxa_header_1a3624fc55d308ef50d814b5dbb5244469"></span>uint32_t <code class="sig-name descname">size</code><a class="headerlink" href="#_CPPv4N8vxa_feed9VxaHeader4sizeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed9VxaHeader7recordsE">
+<span id="_CPPv3N8vxa_feed9VxaHeader7recordsE"></span><span id="_CPPv2N8vxa_feed9VxaHeader7recordsE"></span><span id="vxa_feed::VxaHeader::records__uint32_t"></span><span class="target" id="structvxa__feed_1_1_vxa_header_1addf8610c037999f47f5e3f8b0be75b88"></span>uint32_t <code class="sig-name descname">records</code><a class="headerlink" href="#_CPPv4N8vxa_feed9VxaHeader7recordsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N8vxa_feed9VxaHeader4zeroE">
+<span id="_CPPv3N8vxa_feed9VxaHeader4zeroE"></span><span id="_CPPv2N8vxa_feed9VxaHeader4zeroE"></span><span id="vxa_feed::VxaHeader::zero__uint32_tA"></span><span class="target" id="structvxa__feed_1_1_vxa_header_1ae4a6bbaad2fc8980592272929972bc7b"></span>uint32_t <code class="sig-name descname">zero</code>[8 - 3]<a class="headerlink" href="#_CPPv4N8vxa_feed9VxaHeader4zeroE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h2>
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed13AggressorSideE">
+<span id="_CPPv3N8vxa_feed13AggressorSideE"></span><span id="_CPPv2N8vxa_feed13AggressorSideE"></span><span class="target" id="vxa__feed_8h_1a13d5b73cb5bb78532990a999b7d73a91"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">AggressorSide</code><a class="headerlink" href="#_CPPv4N8vxa_feed13AggressorSideE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed11NoAggressorE">
+<span id="_CPPv3N8vxa_feed11NoAggressorE"></span><span id="_CPPv2N8vxa_feed11NoAggressorE"></span><span class="target" id="vxa__feed_8h_1a13d5b73cb5bb78532990a999b7d73a91ab25da2c8c34140b6782849034f362ac5"></span><code class="sig-name descname">NoAggressor</code> = 0<a class="headerlink" href="#_CPPv4N8vxa_feed11NoAggressorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed3BuyE">
+<span id="_CPPv3N8vxa_feed3BuyE"></span><span id="_CPPv2N8vxa_feed3BuyE"></span><span class="target" id="vxa__feed_8h_1a13d5b73cb5bb78532990a999b7d73a91a831a28f1e8df07c553fcd59546465d13"></span><code class="sig-name descname">Buy</code> = 1<a class="headerlink" href="#_CPPv4N8vxa_feed3BuyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed4SellE">
+<span id="_CPPv3N8vxa_feed4SellE"></span><span id="_CPPv2N8vxa_feed4SellE"></span><span class="target" id="vxa__feed_8h_1a13d5b73cb5bb78532990a999b7d73a91a3068c5a98c003498f1fec0c489212e8b"></span><code class="sig-name descname">Sell</code> = 2<a class="headerlink" href="#_CPPv4N8vxa_feed4SellE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed4SideE">
+<span id="_CPPv3N8vxa_feed4SideE"></span><span id="_CPPv2N8vxa_feed4SideE"></span><span class="target" id="vxa__feed_8h_1ac418094743bb4c5e70bcf08e3e1303f4"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">Side</code><a class="headerlink" href="#_CPPv4N8vxa_feed4SideE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed6NotSetE">
+<span id="_CPPv3N8vxa_feed6NotSetE"></span><span id="_CPPv2N8vxa_feed6NotSetE"></span><span class="target" id="vxa__feed_8h_1ac418094743bb4c5e70bcf08e3e1303f4afaf396cbd83927b72a84d2616fac76ff"></span><code class="sig-name descname">NotSet</code> = 0<a class="headerlink" href="#_CPPv4N8vxa_feed6NotSetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed3BuyE">
+<span id="_CPPv3N8vxa_feed3BuyE"></span><span class="target" id="vxa__feed_8h_1ac418094743bb4c5e70bcf08e3e1303f4a831a28f1e8df07c553fcd59546465d13"></span><code class="sig-name descname">Buy</code> = 1<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed4SellE">
+<span id="_CPPv3N8vxa_feed4SellE"></span><span class="target" id="vxa__feed_8h_1ac418094743bb4c5e70bcf08e3e1303f4a3068c5a98c003498f1fec0c489212e8b"></span><code class="sig-name descname">Sell</code> = 2<br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed10HaltReasonE">
+<span id="_CPPv3N8vxa_feed10HaltReasonE"></span><span id="_CPPv2N8vxa_feed10HaltReasonE"></span><span class="target" id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">HaltReason</code><a class="headerlink" href="#_CPPv4N8vxa_feed10HaltReasonE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed6NotSetE">
+<span id="_CPPv3N8vxa_feed6NotSetE"></span><span class="target" id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3afaf396cbd83927b72a84d2616fac76ff"></span><code class="sig-name descname">NotSet</code> = 255<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed13GroupScheduleE">
+<span id="_CPPv3N8vxa_feed13GroupScheduleE"></span><span id="_CPPv2N8vxa_feed13GroupScheduleE"></span><span class="target" id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3aed8aaa2b705fe7d0fd4abe0051d5224d"></span><code class="sig-name descname">GroupSchedule</code> = 0<a class="headerlink" href="#_CPPv4N8vxa_feed13GroupScheduleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed24SurveillanceInterventionE">
+<span id="_CPPv3N8vxa_feed24SurveillanceInterventionE"></span><span id="_CPPv2N8vxa_feed24SurveillanceInterventionE"></span><span class="target" id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3a35926a2d624725ce86477e566a8273c1"></span><code class="sig-name descname">SurveillanceIntervention</code> = 1<a class="headerlink" href="#_CPPv4N8vxa_feed24SurveillanceInterventionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed11MarketEventE">
+<span id="_CPPv3N8vxa_feed11MarketEventE"></span><span id="_CPPv2N8vxa_feed11MarketEventE"></span><span class="target" id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3a6804092ed2ebd0a01531a4ad76201f0e"></span><code class="sig-name descname">MarketEvent</code> = 2<a class="headerlink" href="#_CPPv4N8vxa_feed11MarketEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed20InstrumentActivationE">
+<span id="_CPPv3N8vxa_feed20InstrumentActivationE"></span><span id="_CPPv2N8vxa_feed20InstrumentActivationE"></span><span class="target" id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3aa1aa3a115f948c160be85563b0ca6429"></span><code class="sig-name descname">InstrumentActivation</code> = 3<a class="headerlink" href="#_CPPv4N8vxa_feed20InstrumentActivationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed20InstrumentExpirationE">
+<span id="_CPPv3N8vxa_feed20InstrumentExpirationE"></span><span id="_CPPv2N8vxa_feed20InstrumentExpirationE"></span><span class="target" id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3a824c21359c1208740451ec1257376175"></span><code class="sig-name descname">InstrumentExpiration</code> = 4<a class="headerlink" href="#_CPPv4N8vxa_feed20InstrumentExpirationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed7UnknownE">
+<span id="_CPPv3N8vxa_feed7UnknownE"></span><span id="_CPPv2N8vxa_feed7UnknownE"></span><span class="target" id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3a88183b946cc5f0e8c96b2e66e1c74a7e"></span><code class="sig-name descname">Unknown</code> = 5<a class="headerlink" href="#_CPPv4N8vxa_feed7UnknownE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed17RecoveryInProcessE">
+<span id="_CPPv3N8vxa_feed17RecoveryInProcessE"></span><span id="_CPPv2N8vxa_feed17RecoveryInProcessE"></span><span class="target" id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3a0794d8ab29994c34acfdefc9473c23fa"></span><code class="sig-name descname">RecoveryInProcess</code> = 6<a class="headerlink" href="#_CPPv4N8vxa_feed17RecoveryInProcessE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed21SecurityTradingStatusE">
+<span id="_CPPv3N8vxa_feed21SecurityTradingStatusE"></span><span id="_CPPv2N8vxa_feed21SecurityTradingStatusE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0e"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">SecurityTradingStatus</code><a class="headerlink" href="#_CPPv4N8vxa_feed21SecurityTradingStatusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed6NotSetE">
+<span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0eafaf396cbd83927b72a84d2616fac76ff"></span><code class="sig-name descname">NotSet</code> = 0<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed11TradingHaltE">
+<span id="_CPPv3N8vxa_feed11TradingHaltE"></span><span id="_CPPv2N8vxa_feed11TradingHaltE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0eac21703a39f3b3896a3396b6659ca3e6a"></span><code class="sig-name descname">TradingHalt</code> = 2<a class="headerlink" href="#_CPPv4N8vxa_feed11TradingHaltE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed5CloseE">
+<span id="_CPPv3N8vxa_feed5CloseE"></span><span id="_CPPv2N8vxa_feed5CloseE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ead3d2e617335f08df83599665eef8a418"></span><code class="sig-name descname">Close</code> = 4<a class="headerlink" href="#_CPPv4N8vxa_feed5CloseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed18NewPriceIndicationE">
+<span id="_CPPv3N8vxa_feed18NewPriceIndicationE"></span><span id="_CPPv2N8vxa_feed18NewPriceIndicationE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0eaa82a507d5816cc3149df4a47aff45fc6"></span><code class="sig-name descname">NewPriceIndication</code> = 15<a class="headerlink" href="#_CPPv4N8vxa_feed18NewPriceIndicationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed12ReadyToTradeE">
+<span id="_CPPv3N8vxa_feed12ReadyToTradeE"></span><span id="_CPPv2N8vxa_feed12ReadyToTradeE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ea21efea0900bf80c52de398569564dbbd"></span><code class="sig-name descname">ReadyToTrade</code> = 17<a class="headerlink" href="#_CPPv4N8vxa_feed12ReadyToTradeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed22NotAvailableForTradingE">
+<span id="_CPPv3N8vxa_feed22NotAvailableForTradingE"></span><span id="_CPPv2N8vxa_feed22NotAvailableForTradingE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ea7683cad60dff43823211dd1e3883b582"></span><code class="sig-name descname">NotAvailableForTrading</code> = 18<a class="headerlink" href="#_CPPv4N8vxa_feed22NotAvailableForTradingE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed16UnknownorInvalidE">
+<span id="_CPPv3N8vxa_feed16UnknownorInvalidE"></span><span id="_CPPv2N8vxa_feed16UnknownorInvalidE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ea37f518f0e697d978c367d674a7973450"></span><code class="sig-name descname">UnknownorInvalid</code> = 20<a class="headerlink" href="#_CPPv4N8vxa_feed16UnknownorInvalidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed7PreOpenE">
+<span id="_CPPv3N8vxa_feed7PreOpenE"></span><span id="_CPPv2N8vxa_feed7PreOpenE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0eadd0e3165c6baaeb0fedcd5e5b07485c5"></span><code class="sig-name descname">PreOpen</code> = 21<a class="headerlink" href="#_CPPv4N8vxa_feed7PreOpenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed8PreCrossE">
+<span id="_CPPv3N8vxa_feed8PreCrossE"></span><span id="_CPPv2N8vxa_feed8PreCrossE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0eae27cadf15d5905683cd0189950586326"></span><code class="sig-name descname">PreCross</code> = 24<a class="headerlink" href="#_CPPv4N8vxa_feed8PreCrossE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed5CrossE">
+<span id="_CPPv3N8vxa_feed5CrossE"></span><span id="_CPPv2N8vxa_feed5CrossE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0eae76b449b9fc8536af7557ffa6321d269"></span><code class="sig-name descname">Cross</code> = 25<a class="headerlink" href="#_CPPv4N8vxa_feed5CrossE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed9PostCloseE">
+<span id="_CPPv3N8vxa_feed9PostCloseE"></span><span id="_CPPv2N8vxa_feed9PostCloseE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ea6da26caee50de01a00cfb4f9a8049d7c"></span><code class="sig-name descname">PostClose</code> = 26<a class="headerlink" href="#_CPPv4N8vxa_feed9PostCloseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed8NoChangeE">
+<span id="_CPPv3N8vxa_feed8NoChangeE"></span><span id="_CPPv2N8vxa_feed8NoChangeE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ea4bac8cdf0a968472b519b3b295d0d48b"></span><code class="sig-name descname">NoChange</code> = 103<a class="headerlink" href="#_CPPv4N8vxa_feed8NoChangeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed8PreCloseE">
+<span id="_CPPv3N8vxa_feed8PreCloseE"></span><span id="_CPPv2N8vxa_feed8PreCloseE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ead34f851060f00491e7f20ca9a014e701"></span><code class="sig-name descname">PreClose</code> = 150<a class="headerlink" href="#_CPPv4N8vxa_feed8PreCloseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed10RestrictedE">
+<span id="_CPPv3N8vxa_feed10RestrictedE"></span><span id="_CPPv2N8vxa_feed10RestrictedE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0eaecdee5de15af6876cfab0801bb36f445"></span><code class="sig-name descname">Restricted</code> = 200<a class="headerlink" href="#_CPPv4N8vxa_feed10RestrictedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed6FreezeE">
+<span id="_CPPv3N8vxa_feed6FreezeE"></span><span id="_CPPv2N8vxa_feed6FreezeE"></span><span class="target" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ea65467087a19145f43129bba42781aea0"></span><code class="sig-name descname">Freeze</code> = 201<a class="headerlink" href="#_CPPv4N8vxa_feed6FreezeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed20SecurityTradingEventE">
+<span id="_CPPv3N8vxa_feed20SecurityTradingEventE"></span><span id="_CPPv2N8vxa_feed20SecurityTradingEventE"></span><span class="target" id="vxa__feed_8h_1a200895d919acf24fb656de30eac015a1"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">SecurityTradingEvent</code><a class="headerlink" href="#_CPPv4N8vxa_feed20SecurityTradingEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed7NoEventE">
+<span id="_CPPv3N8vxa_feed7NoEventE"></span><span id="_CPPv2N8vxa_feed7NoEventE"></span><span class="target" id="vxa__feed_8h_1a200895d919acf24fb656de30eac015a1a9b8e7e8d81a268a2240a96b7962a0183"></span><code class="sig-name descname">NoEvent</code> = 0<a class="headerlink" href="#_CPPv4N8vxa_feed7NoEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed8NoCancelE">
+<span id="_CPPv3N8vxa_feed8NoCancelE"></span><span id="_CPPv2N8vxa_feed8NoCancelE"></span><span class="target" id="vxa__feed_8h_1a200895d919acf24fb656de30eac015a1a2b9249c8c0169d8137403ca340c46f0a"></span><code class="sig-name descname">NoCancel</code> = 1<a class="headerlink" href="#_CPPv4N8vxa_feed8NoCancelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed15ResetStatisticsE">
+<span id="_CPPv3N8vxa_feed15ResetStatisticsE"></span><span id="_CPPv2N8vxa_feed15ResetStatisticsE"></span><span class="target" id="vxa__feed_8h_1a200895d919acf24fb656de30eac015a1a15191fe96c80fc1ecf63f67c6ba402fe"></span><code class="sig-name descname">ResetStatistics</code> = 4<a class="headerlink" href="#_CPPv4N8vxa_feed15ResetStatisticsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed17ImpliedMatchingONE">
+<span id="_CPPv3N8vxa_feed17ImpliedMatchingONE"></span><span id="_CPPv2N8vxa_feed17ImpliedMatchingONE"></span><span class="target" id="vxa__feed_8h_1a200895d919acf24fb656de30eac015a1ae0a66fd4c3548c364f6220cdca58cf29"></span><code class="sig-name descname">ImpliedMatchingON</code> = 5<a class="headerlink" href="#_CPPv4N8vxa_feed17ImpliedMatchingONE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed18ImpliedMatchingOFFE">
+<span id="_CPPv3N8vxa_feed18ImpliedMatchingOFFE"></span><span id="_CPPv2N8vxa_feed18ImpliedMatchingOFFE"></span><span class="target" id="vxa__feed_8h_1a200895d919acf24fb656de30eac015a1a1bbd8bd6ee792cad1b455e642ca1dbc1"></span><code class="sig-name descname">ImpliedMatchingOFF</code> = 6<a class="headerlink" href="#_CPPv4N8vxa_feed18ImpliedMatchingOFFE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed8BookTypeE">
+<span id="_CPPv3N8vxa_feed8BookTypeE"></span><span id="_CPPv2N8vxa_feed8BookTypeE"></span><span class="target" id="vxa__feed_8h_1afe58c601dd94989beb81174a8a44c892"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">BookType</code><a class="headerlink" href="#_CPPv4N8vxa_feed8BookTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt>
+<span class="target" id="vxa__feed_8h_1afe58c601dd94989beb81174a8a44c892afaf396cbd83927b72a84d2616fac76ff"></span><code class="sig-name descname">NotSet</code> = 'U'<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed3BidE">
+<span id="_CPPv3N8vxa_feed3BidE"></span><span id="_CPPv2N8vxa_feed3BidE"></span><span class="target" id="vxa__feed_8h_1afe58c601dd94989beb81174a8a44c892ae36ba1e187ae2b3ebcfd0a4c68367caf"></span><code class="sig-name descname">Bid</code> = 'B'<a class="headerlink" href="#_CPPv4N8vxa_feed3BidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed5OfferE">
+<span id="_CPPv3N8vxa_feed5OfferE"></span><span id="_CPPv2N8vxa_feed5OfferE"></span><span class="target" id="vxa__feed_8h_1afe58c601dd94989beb81174a8a44c892a6bb24468956384c482a8b5a901fb6383"></span><code class="sig-name descname">Offer</code> = 'S'<a class="headerlink" href="#_CPPv4N8vxa_feed5OfferE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed10ImpliedBidE">
+<span id="_CPPv3N8vxa_feed10ImpliedBidE"></span><span id="_CPPv2N8vxa_feed10ImpliedBidE"></span><span class="target" id="vxa__feed_8h_1afe58c601dd94989beb81174a8a44c892a7a9c35af684ff695ebe35e50da3f7a53"></span><code class="sig-name descname">ImpliedBid</code> = 'b'<a class="headerlink" href="#_CPPv4N8vxa_feed10ImpliedBidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed12ImpliedOfferE">
+<span id="_CPPv3N8vxa_feed12ImpliedOfferE"></span><span id="_CPPv2N8vxa_feed12ImpliedOfferE"></span><span class="target" id="vxa__feed_8h_1afe58c601dd94989beb81174a8a44c892a16fcfff612f44e33d30e6a78baec3cc7"></span><code class="sig-name descname">ImpliedOffer</code> = 's'<a class="headerlink" href="#_CPPv4N8vxa_feed12ImpliedOfferE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed9BookResetE">
+<span id="_CPPv3N8vxa_feed9BookResetE"></span><span id="_CPPv2N8vxa_feed9BookResetE"></span><span class="target" id="vxa__feed_8h_1afe58c601dd94989beb81174a8a44c892abf654e7f9c03bca75b358efa45ebdc1c"></span><code class="sig-name descname">BookReset</code> = 'R'<a class="headerlink" href="#_CPPv4N8vxa_feed9BookResetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed19DailyStatisticsTypeE">
+<span id="_CPPv3N8vxa_feed19DailyStatisticsTypeE"></span><span id="_CPPv2N8vxa_feed19DailyStatisticsTypeE"></span><span class="target" id="vxa__feed_8h_1a3559104800d274db3a7141958e1a4c02"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">DailyStatisticsType</code><a class="headerlink" href="#_CPPv4N8vxa_feed19DailyStatisticsTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed15SettlementPriceE">
+<span id="_CPPv3N8vxa_feed15SettlementPriceE"></span><span id="_CPPv2N8vxa_feed15SettlementPriceE"></span><span class="target" id="vxa__feed_8h_1a3559104800d274db3a7141958e1a4c02aa9e1b8a1ec396ef4254f8f4a9494c8d3"></span><code class="sig-name descname">SettlementPrice</code> = '6'<a class="headerlink" href="#_CPPv4N8vxa_feed15SettlementPriceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed13ClearedVolumeE">
+<span id="_CPPv3N8vxa_feed13ClearedVolumeE"></span><span id="_CPPv2N8vxa_feed13ClearedVolumeE"></span><span class="target" id="vxa__feed_8h_1a3559104800d274db3a7141958e1a4c02ac49ca0ad1137329b8ebaf17f1f1068ac"></span><code class="sig-name descname">ClearedVolume</code> = 'B'<a class="headerlink" href="#_CPPv4N8vxa_feed13ClearedVolumeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed12OpenInterestE">
+<span id="_CPPv3N8vxa_feed12OpenInterestE"></span><span id="_CPPv2N8vxa_feed12OpenInterestE"></span><span class="target" id="vxa__feed_8h_1a3559104800d274db3a7141958e1a4c02ae7e246aa3fb87bf22f1f1611959cf10f"></span><code class="sig-name descname">OpenInterest</code> = 'C'<a class="headerlink" href="#_CPPv4N8vxa_feed12OpenInterestE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed11FixingPriceE">
+<span id="_CPPv3N8vxa_feed11FixingPriceE"></span><span id="_CPPv2N8vxa_feed11FixingPriceE"></span><span class="target" id="vxa__feed_8h_1a3559104800d274db3a7141958e1a4c02a0ea898a3ccce0a7661b88676b48f4de3"></span><code class="sig-name descname">FixingPrice</code> = 'W'<a class="headerlink" href="#_CPPv4N8vxa_feed11FixingPriceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed14StatisticsTypeE">
+<span id="_CPPv3N8vxa_feed14StatisticsTypeE"></span><span id="_CPPv2N8vxa_feed14StatisticsTypeE"></span><span class="target" id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">StatisticsType</code><a class="headerlink" href="#_CPPv4N8vxa_feed14StatisticsTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt>
+<span class="target" id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23afaf396cbd83927b72a84d2616fac76ff"></span><code class="sig-name descname">NotSet</code> = 127<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed9OpenPriceE">
+<span id="_CPPv3N8vxa_feed9OpenPriceE"></span><span id="_CPPv2N8vxa_feed9OpenPriceE"></span><span class="target" id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23a76309f772fc7962c4fcd57ae3fdb39db"></span><code class="sig-name descname">OpenPrice</code> = 0<a class="headerlink" href="#_CPPv4N8vxa_feed9OpenPriceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed9HighTradeE">
+<span id="_CPPv3N8vxa_feed9HighTradeE"></span><span id="_CPPv2N8vxa_feed9HighTradeE"></span><span class="target" id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23ab070688db493bdee6781fb67d4d1ce97"></span><code class="sig-name descname">HighTrade</code> = 1<a class="headerlink" href="#_CPPv4N8vxa_feed9HighTradeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed8LowTradeE">
+<span id="_CPPv3N8vxa_feed8LowTradeE"></span><span id="_CPPv2N8vxa_feed8LowTradeE"></span><span class="target" id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23ac9ae006eecd393a65a40de7af553b541"></span><code class="sig-name descname">LowTrade</code> = 2<a class="headerlink" href="#_CPPv4N8vxa_feed8LowTradeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed9LastTradeE">
+<span id="_CPPv3N8vxa_feed9LastTradeE"></span><span id="_CPPv2N8vxa_feed9LastTradeE"></span><span class="target" id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23a7aa1ec0a310df29c6d98b0354710655d"></span><code class="sig-name descname">LastTrade</code> = 3<a class="headerlink" href="#_CPPv4N8vxa_feed9LastTradeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed10HighestBidE">
+<span id="_CPPv3N8vxa_feed10HighestBidE"></span><span id="_CPPv2N8vxa_feed10HighestBidE"></span><span class="target" id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23a223604f2229a04250b705ea90440bc4e"></span><code class="sig-name descname">HighestBid</code> = 4<a class="headerlink" href="#_CPPv4N8vxa_feed10HighestBidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed11LowestOfferE">
+<span id="_CPPv3N8vxa_feed11LowestOfferE"></span><span id="_CPPv2N8vxa_feed11LowestOfferE"></span><span class="target" id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23a9e85ae6a006d90832dba15bf74aa6beb"></span><code class="sig-name descname">LowestOffer</code> = 5<a class="headerlink" href="#_CPPv4N8vxa_feed11LowestOfferE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed10ClosePriceE">
+<span id="_CPPv3N8vxa_feed10ClosePriceE"></span><span id="_CPPv2N8vxa_feed10ClosePriceE"></span><span class="target" id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23aaf0930392663e38b05c928f273d92cd6"></span><code class="sig-name descname">ClosePrice</code> = 6<a class="headerlink" href="#_CPPv4N8vxa_feed10ClosePriceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed10BookActionE">
+<span id="_CPPv3N8vxa_feed10BookActionE"></span><span id="_CPPv2N8vxa_feed10BookActionE"></span><span class="target" id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cf"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">BookAction</code><a class="headerlink" href="#_CPPv4N8vxa_feed10BookActionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt>
+<span class="target" id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfafaf396cbd83927b72a84d2616fac76ff"></span><code class="sig-name descname">NotSet</code> = 255<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed3NewE">
+<span id="_CPPv3N8vxa_feed3NewE"></span><span id="_CPPv2N8vxa_feed3NewE"></span><span class="target" id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfa03c2e7e41ffc181a4e84080b4710e81e"></span><code class="sig-name descname">New</code> = 0<a class="headerlink" href="#_CPPv4N8vxa_feed3NewE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed6ChangeE">
+<span id="_CPPv3N8vxa_feed6ChangeE"></span><span id="_CPPv2N8vxa_feed6ChangeE"></span><span class="target" id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfaf4ec5f57bd4d31b803312d873be40da9"></span><code class="sig-name descname">Change</code> = 1<a class="headerlink" href="#_CPPv4N8vxa_feed6ChangeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed6DeleteE">
+<span id="_CPPv3N8vxa_feed6DeleteE"></span><span id="_CPPv2N8vxa_feed6DeleteE"></span><span class="target" id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfaf2a6c498fb90ee345d997f888fce3b18"></span><code class="sig-name descname">Delete</code> = 2<a class="headerlink" href="#_CPPv4N8vxa_feed6DeleteE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed10DeleteThruE">
+<span id="_CPPv3N8vxa_feed10DeleteThruE"></span><span id="_CPPv2N8vxa_feed10DeleteThruE"></span><span class="target" id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfa26410ea6f60dcde9b725607d7d15776f"></span><code class="sig-name descname">DeleteThru</code> = 3<a class="headerlink" href="#_CPPv4N8vxa_feed10DeleteThruE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed10DeleteFromE">
+<span id="_CPPv3N8vxa_feed10DeleteFromE"></span><span id="_CPPv2N8vxa_feed10DeleteFromE"></span><span class="target" id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfa61427503dfd2cdb2fee9add7b953a2c8"></span><code class="sig-name descname">DeleteFrom</code> = 4<a class="headerlink" href="#_CPPv4N8vxa_feed10DeleteFromE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed7OverlayE">
+<span id="_CPPv3N8vxa_feed7OverlayE"></span><span id="_CPPv2N8vxa_feed7OverlayE"></span><span class="target" id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfa6b551379c3c0b59326abdaf3b4395bd3"></span><code class="sig-name descname">Overlay</code> = 5<a class="headerlink" href="#_CPPv4N8vxa_feed7OverlayE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed7ReplaceE">
+<span id="_CPPv3N8vxa_feed7ReplaceE"></span><span id="_CPPv2N8vxa_feed7ReplaceE"></span><span class="target" id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfa0ebe6df8a3ac338e0512acc741823fdb"></span><code class="sig-name descname">Replace</code> = 6<a class="headerlink" href="#_CPPv4N8vxa_feed7ReplaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed18OpenCloseSettlFlagE">
+<span id="_CPPv3N8vxa_feed18OpenCloseSettlFlagE"></span><span id="_CPPv2N8vxa_feed18OpenCloseSettlFlagE"></span><span class="target" id="vxa__feed_8h_1a87fa72b754ff7a4dd9ebd77e1db51933"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">OpenCloseSettlFlag</code><a class="headerlink" href="#_CPPv4N8vxa_feed18OpenCloseSettlFlagE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt>
+<span class="target" id="vxa__feed_8h_1a87fa72b754ff7a4dd9ebd77e1db51933afaf396cbd83927b72a84d2616fac76ff"></span><code class="sig-name descname">NotSet</code> = 255<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed14DailyOpenPriceE">
+<span id="_CPPv3N8vxa_feed14DailyOpenPriceE"></span><span id="_CPPv2N8vxa_feed14DailyOpenPriceE"></span><span class="target" id="vxa__feed_8h_1a87fa72b754ff7a4dd9ebd77e1db51933a7608eba4bc0f7ac9053aa79a11ca9807"></span><code class="sig-name descname">DailyOpenPrice</code> = 0<a class="headerlink" href="#_CPPv4N8vxa_feed14DailyOpenPriceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed22IndicativeOpeningPriceE">
+<span id="_CPPv3N8vxa_feed22IndicativeOpeningPriceE"></span><span id="_CPPv2N8vxa_feed22IndicativeOpeningPriceE"></span><span class="target" id="vxa__feed_8h_1a87fa72b754ff7a4dd9ebd77e1db51933adf30dcf56048300d2b99ee2a72093737"></span><code class="sig-name descname">IndicativeOpeningPrice</code> = 5<a class="headerlink" href="#_CPPv4N8vxa_feed22IndicativeOpeningPriceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed15DailyClosePriceE">
+<span id="_CPPv3N8vxa_feed15DailyClosePriceE"></span><span id="_CPPv2N8vxa_feed15DailyClosePriceE"></span><span class="target" id="vxa__feed_8h_1a87fa72b754ff7a4dd9ebd77e1db51933a98105ae7fd78b6177ed4739960727c5d"></span><code class="sig-name descname">DailyClosePrice</code> = 10<a class="headerlink" href="#_CPPv4N8vxa_feed15DailyClosePriceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed9PutOrCallE">
+<span id="_CPPv3N8vxa_feed9PutOrCallE"></span><span id="_CPPv2N8vxa_feed9PutOrCallE"></span><span class="target" id="vxa__feed_8h_1a555ddbe839c0e16b48f1930562ebc08e"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">PutOrCall</code><a class="headerlink" href="#_CPPv4N8vxa_feed9PutOrCallE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt>
+<span class="target" id="vxa__feed_8h_1a555ddbe839c0e16b48f1930562ebc08eafaf396cbd83927b72a84d2616fac76ff"></span><code class="sig-name descname">NotSet</code> = 255<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed3PutE">
+<span id="_CPPv3N8vxa_feed3PutE"></span><span id="_CPPv2N8vxa_feed3PutE"></span><span class="target" id="vxa__feed_8h_1a555ddbe839c0e16b48f1930562ebc08ead0bf1810982e9728fcf3ac444a015373"></span><code class="sig-name descname">Put</code> = 0<a class="headerlink" href="#_CPPv4N8vxa_feed3PutE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed4CallE">
+<span id="_CPPv3N8vxa_feed4CallE"></span><span id="_CPPv2N8vxa_feed4CallE"></span><span class="target" id="vxa__feed_8h_1a555ddbe839c0e16b48f1930562ebc08eac3755e61202abd74da5885d2e9c9160e"></span><code class="sig-name descname">Call</code> = 1<a class="headerlink" href="#_CPPv4N8vxa_feed4CallE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed14SettlPriceTypeE">
+<span id="_CPPv3N8vxa_feed14SettlPriceTypeE"></span><span id="_CPPv2N8vxa_feed14SettlPriceTypeE"></span><span class="target" id="vxa__feed_8h_1a98a575dd0ff6a8d73bf4a64acdb6c6e8"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">SettlPriceType</code><a class="headerlink" href="#_CPPv4N8vxa_feed14SettlPriceTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed5FinalE">
+<span id="_CPPv3N8vxa_feed5FinalE"></span><span id="_CPPv2N8vxa_feed5FinalE"></span><span class="target" id="vxa__feed_8h_1a98a575dd0ff6a8d73bf4a64acdb6c6e8abeae421a14a34f831c113f61323d1ab3"></span><code class="sig-name descname">Final</code> = 0x01<a class="headerlink" href="#_CPPv4N8vxa_feed5FinalE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed6ActualE">
+<span id="_CPPv3N8vxa_feed6ActualE"></span><span id="_CPPv2N8vxa_feed6ActualE"></span><span class="target" id="vxa__feed_8h_1a98a575dd0ff6a8d73bf4a64acdb6c6e8ad57ceb4533b61b9746f4fc10d958f5c5"></span><code class="sig-name descname">Actual</code> = 0x02<a class="headerlink" href="#_CPPv4N8vxa_feed6ActualE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed7RoundedE">
+<span id="_CPPv3N8vxa_feed7RoundedE"></span><span id="_CPPv2N8vxa_feed7RoundedE"></span><span class="target" id="vxa__feed_8h_1a98a575dd0ff6a8d73bf4a64acdb6c6e8abef2481eda40bd121482f1814d72314f"></span><code class="sig-name descname">Rounded</code> = 0x04<a class="headerlink" href="#_CPPv4N8vxa_feed7RoundedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed8IntradayE">
+<span id="_CPPv3N8vxa_feed8IntradayE"></span><span id="_CPPv2N8vxa_feed8IntradayE"></span><span class="target" id="vxa__feed_8h_1a98a575dd0ff6a8d73bf4a64acdb6c6e8abdbc8fcc2413db6daf161df5698fb50e"></span><code class="sig-name descname">Intraday</code> = 0x08<a class="headerlink" href="#_CPPv4N8vxa_feed8IntradayE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed12ReservedBitsE">
+<span id="_CPPv3N8vxa_feed12ReservedBitsE"></span><span id="_CPPv2N8vxa_feed12ReservedBitsE"></span><span class="target" id="vxa__feed_8h_1a98a575dd0ff6a8d73bf4a64acdb6c6e8aff0a2ffd596b01193ab2e4efbdb5e899"></span><code class="sig-name descname">ReservedBits</code> = 0x10<a class="headerlink" href="#_CPPv4N8vxa_feed12ReservedBitsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed9NullValueE">
+<span id="_CPPv3N8vxa_feed9NullValueE"></span><span id="_CPPv2N8vxa_feed9NullValueE"></span><span class="target" id="vxa__feed_8h_1a98a575dd0ff6a8d73bf4a64acdb6c6e8ae8d27005eb87501714a8a4fc67b6347a"></span><code class="sig-name descname">NullValue</code> = 0x80<a class="headerlink" href="#_CPPv4N8vxa_feed9NullValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed15TransactionTypeE">
+<span id="_CPPv3N8vxa_feed15TransactionTypeE"></span><span id="_CPPv2N8vxa_feed15TransactionTypeE"></span><span class="target" id="vxa__feed_8h_1a9be08bd73da31e099fe07a899bd475e5"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">TransactionType</code><a class="headerlink" href="#_CPPv4N8vxa_feed15TransactionTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt>
+<span class="target" id="vxa__feed_8h_1a9be08bd73da31e099fe07a899bd475e5afaf396cbd83927b72a84d2616fac76ff"></span><code class="sig-name descname">NotSet</code> = 255<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed16TransactionStartE">
+<span id="_CPPv3N8vxa_feed16TransactionStartE"></span><span id="_CPPv2N8vxa_feed16TransactionStartE"></span><span class="target" id="vxa__feed_8h_1a9be08bd73da31e099fe07a899bd475e5a290c12b3f1006027ccadca972d07d02a"></span><code class="sig-name descname">TransactionStart</code> = 0<a class="headerlink" href="#_CPPv4N8vxa_feed16TransactionStartE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed14TransactionEndE">
+<span id="_CPPv3N8vxa_feed14TransactionEndE"></span><span id="_CPPv2N8vxa_feed14TransactionEndE"></span><span class="target" id="vxa__feed_8h_1a9be08bd73da31e099fe07a899bd475e5a2515cb8ee38a93f2934f0877396c1f6f"></span><code class="sig-name descname">TransactionEnd</code> = 1<a class="headerlink" href="#_CPPv4N8vxa_feed14TransactionEndE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed14EventIndicatorE">
+<span id="_CPPv3N8vxa_feed14EventIndicatorE"></span><span id="_CPPv2N8vxa_feed14EventIndicatorE"></span><span class="target" id="vxa__feed_8h_1aa07b250102ccd44306f437035a887ec0"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">EventIndicator</code><a class="headerlink" href="#_CPPv4N8vxa_feed14EventIndicatorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt>
+<span class="target" id="vxa__feed_8h_1aa07b250102ccd44306f437035a887ec0afaf396cbd83927b72a84d2616fac76ff"></span><code class="sig-name descname">NotSet</code> = 0x0<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed10LastOfTypeE">
+<span id="_CPPv3N8vxa_feed10LastOfTypeE"></span><span id="_CPPv2N8vxa_feed10LastOfTypeE"></span><span class="target" id="vxa__feed_8h_1aa07b250102ccd44306f437035a887ec0abb3e7b7dc32bf43f22191107ca0b58a6"></span><code class="sig-name descname">LastOfType</code> = 01<a class="headerlink" href="#_CPPv4N8vxa_feed10LastOfTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed10EndOfEventE">
+<span id="_CPPv3N8vxa_feed10EndOfEventE"></span><span id="_CPPv2N8vxa_feed10EndOfEventE"></span><span class="target" id="vxa__feed_8h_1aa07b250102ccd44306f437035a887ec0a5b659acb92fce4da8e522f22d3cc2782"></span><code class="sig-name descname">EndOfEvent</code> = 0x80<a class="headerlink" href="#_CPPv4N8vxa_feed10EndOfEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed17InvestigateStatusE">
+<span id="_CPPv3N8vxa_feed17InvestigateStatusE"></span><span id="_CPPv2N8vxa_feed17InvestigateStatusE"></span><span class="target" id="vxa__feed_8h_1a9da6f75161934a4973661f21d0e7ab27"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">InvestigateStatus</code><a class="headerlink" href="#_CPPv4N8vxa_feed17InvestigateStatusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt>
+<span class="target" id="vxa__feed_8h_1a9da6f75161934a4973661f21d0e7ab27afaf396cbd83927b72a84d2616fac76ff"></span><code class="sig-name descname">NotSet</code> = 0x0<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed18UnderInvestigationE">
+<span id="_CPPv3N8vxa_feed18UnderInvestigationE"></span><span id="_CPPv2N8vxa_feed18UnderInvestigationE"></span><span class="target" id="vxa__feed_8h_1a9da6f75161934a4973661f21d0e7ab27a96d3ff26ee2dbe63f921b2d497849ac4"></span><code class="sig-name descname">UnderInvestigation</code> = 1<a class="headerlink" href="#_CPPv4N8vxa_feed18UnderInvestigationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed22InvestigationCompletedE">
+<span id="_CPPv3N8vxa_feed22InvestigationCompletedE"></span><span id="_CPPv2N8vxa_feed22InvestigationCompletedE"></span><span class="target" id="vxa__feed_8h_1a9da6f75161934a4973661f21d0e7ab27a92ee32e16ed794e4e9b90b32c2c96237"></span><code class="sig-name descname">InvestigationCompleted</code> = 2<a class="headerlink" href="#_CPPv4N8vxa_feed22InvestigationCompletedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N8vxa_feed7UnionIdE">
+<span id="_CPPv3N8vxa_feed7UnionIdE"></span><span id="_CPPv2N8vxa_feed7UnionIdE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefb"></span><em class="property">enum </em><code class="sig-prename descclassname">vxa_feed<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">UnionId</code><a class="headerlink" href="#_CPPv4N8vxa_feed7UnionIdE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt>
+<span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefbafaf396cbd83927b72a84d2616fac76ff"></span><code class="sig-name descname">NotSet</code> = 255<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed9NotMappedE">
+<span id="_CPPv3N8vxa_feed9NotMappedE"></span><span id="_CPPv2N8vxa_feed9NotMappedE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba4eb65da52d0939135addf53652356235"></span><code class="sig-name descname">NotMapped</code> = 250<a class="headerlink" href="#_CPPv4N8vxa_feed9NotMappedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed12TradeSummaryE">
+<span id="_CPPv3N8vxa_feed12TradeSummaryE"></span><span id="_CPPv2N8vxa_feed12TradeSummaryE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba0b1a53293bee19702c18b9efd748d369"></span><code class="sig-name descname">TradeSummary</code> = 0<a class="headerlink" href="#_CPPv4N8vxa_feed12TradeSummaryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed10TradeMatchE">
+<span id="_CPPv3N8vxa_feed10TradeMatchE"></span><span id="_CPPv2N8vxa_feed10TradeMatchE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefbafbe9b192120827d845a0ffc8c1edc778"></span><code class="sig-name descname">TradeMatch</code> = 1<a class="headerlink" href="#_CPPv4N8vxa_feed10TradeMatchE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed12VolumeUpdateE">
+<span id="_CPPv3N8vxa_feed12VolumeUpdateE"></span><span id="_CPPv2N8vxa_feed12VolumeUpdateE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefbae3635d7b5e16e8f6361a095b1826db9c"></span><code class="sig-name descname">VolumeUpdate</code> = 2<a class="headerlink" href="#_CPPv4N8vxa_feed12VolumeUpdateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed9BookLevelE">
+<span id="_CPPv3N8vxa_feed9BookLevelE"></span><span id="_CPPv2N8vxa_feed9BookLevelE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba73d73a074c8b4521f326fe98e2dfccba"></span><code class="sig-name descname">BookLevel</code> = 3<a class="headerlink" href="#_CPPv4N8vxa_feed9BookLevelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed17DetailedOrderBookE">
+<span id="_CPPv3N8vxa_feed17DetailedOrderBookE"></span><span id="_CPPv2N8vxa_feed17DetailedOrderBookE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefbad548c28eacf506b9ed783ee0de1f48d4"></span><code class="sig-name descname">DetailedOrderBook</code> = 4<a class="headerlink" href="#_CPPv4N8vxa_feed17DetailedOrderBookE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed14SecurityStatusE">
+<span id="_CPPv3N8vxa_feed14SecurityStatusE"></span><span id="_CPPv2N8vxa_feed14SecurityStatusE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba1cd83fe997495a934fc660cf76ce1c1f"></span><code class="sig-name descname">SecurityStatus</code> = 5<a class="headerlink" href="#_CPPv4N8vxa_feed14SecurityStatusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed15DailyStatisticsE">
+<span id="_CPPv3N8vxa_feed15DailyStatisticsE"></span><span id="_CPPv2N8vxa_feed15DailyStatisticsE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba4866192451b902dd6f3f10724cd5ffcd"></span><code class="sig-name descname">DailyStatistics</code> = 6<a class="headerlink" href="#_CPPv4N8vxa_feed15DailyStatisticsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed17SessionStatisticsE">
+<span id="_CPPv3N8vxa_feed17SessionStatisticsE"></span><span id="_CPPv2N8vxa_feed17SessionStatisticsE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefbaede2a46b4a06ffa216462cde395cab84"></span><code class="sig-name descname">SessionStatistics</code> = 7<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed13LimitsBandingE">
+<span id="_CPPv3N8vxa_feed13LimitsBandingE"></span><span id="_CPPv2N8vxa_feed13LimitsBandingE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba2287f1f6fc1c806a7e9e0387a8a83f5f"></span><code class="sig-name descname">LimitsBanding</code> = 8<a class="headerlink" href="#_CPPv4N8vxa_feed13LimitsBandingE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed12ChannelResetE">
+<span id="_CPPv3N8vxa_feed12ChannelResetE"></span><span id="_CPPv2N8vxa_feed12ChannelResetE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba29eeee6a248d1648875bcf6c933d3ed6"></span><code class="sig-name descname">ChannelReset</code> = 9<a class="headerlink" href="#_CPPv4N8vxa_feed12ChannelResetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed17TransactionMarkerE">
+<span id="_CPPv3N8vxa_feed17TransactionMarkerE"></span><span id="_CPPv2N8vxa_feed17TransactionMarkerE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba27c1e275321d28f067b5cbe0e5b1b945"></span><code class="sig-name descname">TransactionMarker</code> = 10<a class="headerlink" href="#_CPPv4N8vxa_feed17TransactionMarkerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed17InvestigatedTradeE">
+<span id="_CPPv3N8vxa_feed17InvestigatedTradeE"></span><span id="_CPPv2N8vxa_feed17InvestigatedTradeE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba55a294284d405a98b0727d34174e9a4d"></span><code class="sig-name descname">InvestigatedTrade</code> = 11<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N8vxa_feed20AuctionClearingPriceE">
+<span id="_CPPv3N8vxa_feed20AuctionClearingPriceE"></span><span id="_CPPv2N8vxa_feed20AuctionClearingPriceE"></span><span class="target" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba14ed408c995290caa4f03bedbcf86354"></span><code class="sig-name descname">AuctionClearingPrice</code> = 12<br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="csvOutput.html" class="btn btn-neutral float-left" title="Web API Output" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Blake Boris
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

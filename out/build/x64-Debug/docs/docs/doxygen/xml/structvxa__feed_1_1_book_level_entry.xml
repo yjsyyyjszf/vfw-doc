@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structvxa__feed_1_1_book_level_entry" kind="struct" language="C++" prot="public">
+    <compoundname>vxa_feed::BookLevelEntry</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvxa__feed_1_1_book_level_entry_1ae5d74f13f77d4aa1888e837b0810de79" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t vxa_feed::BookLevelEntry::price</definition>
+        <argsstring></argsstring>
+        <name>price</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="249" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_book_level_entry_1a07c56e1fa609aaba62c0eef8487114ce" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t vxa_feed::BookLevelEntry::aggQty</definition>
+        <argsstring></argsstring>
+        <name>aggQty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="250" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_book_level_entry_1a780bca461d2d794cdc2cd5fa504e4851" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t vxa_feed::BookLevelEntry::numberOfOrders</definition>
+        <argsstring></argsstring>
+        <name>numberOfOrders</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="251" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_book_level_entry_1a8f43db64be7c45af03f63b7fb3d2e7af" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t vxa_feed::BookLevelEntry::impliedsAggQty</definition>
+        <argsstring></argsstring>
+        <name>impliedsAggQty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="252" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_book_level_entry_1a1e8b2bd9e7763408edc2cdf40c2b7ff1" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t vxa_feed::BookLevelEntry::impliedNumberOfOrders</definition>
+        <argsstring></argsstring>
+        <name>impliedNumberOfOrders</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="253" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_book_level_entry_1a20752748f0ace4778e754a0cd89f3c9b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t vxa_feed::BookLevelEntry::priceLevel</definition>
+        <argsstring></argsstring>
+        <name>priceLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="254" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_book_level_entry_1a60a27f9e642abd423ce9b363aab49131" prot="public" static="no" mutable="no">
+        <type>BookAction</type>
+        <definition>BookAction vxa_feed::BookLevelEntry::action</definition>
+        <argsstring></argsstring>
+        <name>action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="255" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_book_level_entry_1afed02c347d0271373010530983c44335" prot="public" static="no" mutable="no">
+        <type>BookType</type>
+        <definition>BookType vxa_feed::BookLevelEntry::bookType</definition>
+        <argsstring></argsstring>
+        <name>bookType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="256" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_book_level_entry_1ad1f309a36cd0964658df04e7f53ffc8c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool vxa_feed::BookLevelEntry::bookEndEvent</definition>
+        <argsstring></argsstring>
+        <name>bookEndEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="257" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="248" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="247" bodyend="258"/>
+    <listofallmembers>
+      <member refid="structvxa__feed_1_1_book_level_entry_1a60a27f9e642abd423ce9b363aab49131" prot="public" virt="non-virtual"><scope>vxa_feed::BookLevelEntry</scope><name>action</name></member>
+      <member refid="structvxa__feed_1_1_book_level_entry_1a07c56e1fa609aaba62c0eef8487114ce" prot="public" virt="non-virtual"><scope>vxa_feed::BookLevelEntry</scope><name>aggQty</name></member>
+      <member refid="structvxa__feed_1_1_book_level_entry_1ad1f309a36cd0964658df04e7f53ffc8c" prot="public" virt="non-virtual"><scope>vxa_feed::BookLevelEntry</scope><name>bookEndEvent</name></member>
+      <member refid="structvxa__feed_1_1_book_level_entry_1afed02c347d0271373010530983c44335" prot="public" virt="non-virtual"><scope>vxa_feed::BookLevelEntry</scope><name>bookType</name></member>
+      <member refid="structvxa__feed_1_1_book_level_entry_1a1e8b2bd9e7763408edc2cdf40c2b7ff1" prot="public" virt="non-virtual"><scope>vxa_feed::BookLevelEntry</scope><name>impliedNumberOfOrders</name></member>
+      <member refid="structvxa__feed_1_1_book_level_entry_1a8f43db64be7c45af03f63b7fb3d2e7af" prot="public" virt="non-virtual"><scope>vxa_feed::BookLevelEntry</scope><name>impliedsAggQty</name></member>
+      <member refid="structvxa__feed_1_1_book_level_entry_1a780bca461d2d794cdc2cd5fa504e4851" prot="public" virt="non-virtual"><scope>vxa_feed::BookLevelEntry</scope><name>numberOfOrders</name></member>
+      <member refid="structvxa__feed_1_1_book_level_entry_1ae5d74f13f77d4aa1888e837b0810de79" prot="public" virt="non-virtual"><scope>vxa_feed::BookLevelEntry</scope><name>price</name></member>
+      <member refid="structvxa__feed_1_1_book_level_entry_1a20752748f0ace4778e754a0cd89f3c9b" prot="public" virt="non-virtual"><scope>vxa_feed::BookLevelEntry</scope><name>priceLevel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

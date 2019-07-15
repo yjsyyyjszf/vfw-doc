@@ -1,0 +1,17 @@
+# ninja log v5
+11	378	584577658	build.ninja	fb10a45ff4f1222f
+1	171	584578827	build.ninja	fb10a45ff4f1222f
+1	679	584578828	vxp-cmk/CMakeFiles/vxp-doc.dir/vxp-cmk.cpp.obj	e6d9bcd9647188ba
+6	693	584578828	vxp-cmk/CMakeFiles/vxp-cmk.dir/vxp-cmk.cpp.obj	4752382c25113602
+680	723	584578828	vxp-cmk/vxp-doc.lib	f51c47fef51d1e39
+693	1120	584578828	vxp-cmk/vxp-cmk.exe	f6b875aa5ceddfea
+1	937	584579693	vxp-cmk/CMakeFiles/vxp-cmk.dir/vxp-cmk.cpp.obj	4752382c25113602
+5	950	584579693	vxp-cmk/CMakeFiles/vxp-doc.dir/vxp-cmk.cpp.obj	e6d9bcd9647188ba
+950	992	584579693	vxp-cmk/vxp-doc.lib	f51c47fef51d1e39
+937	1240	584579693	vxp-cmk/vxp-cmk.exe	f6b875aa5ceddfea
+1	655	584585015	build.ninja	fb10a45ff4f1222f
+2	755	584585015	docs/docs/doxygen/html/index.html	a3f1c2a3100e2532
+6	1053	584585016	vxp-cmk/CMakeFiles/vxp-cmk.dir/vxp-cmk.cpp.obj	51dadae12cfa67b1
+1054	1096	584585016	vxp-cmk/vxp-cmk.lib	dc348df5fe6f9bfe
+1	639	584585675	build.ninja	fb10a45ff4f1222f
+1	733	584585676	docs/docs/doxygen/html/index.html	a3f1c2a3100e2532

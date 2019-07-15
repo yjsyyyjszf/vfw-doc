@@ -1,0 +1,1310 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Rest API Output &mdash; vNineFeed Web API 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/fixAll.css" type="text/css" />
+  <link rel="stylesheet" href="_static/fixBreathe.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Web API Output" href="csvOutput.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> vNineFeed Web API
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About vNineFeed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest.html">vNineFeed Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="csv.html">CSV Web API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Output</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Rest API Output</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#message-keys">Message Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#all-events">All Events</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#file-format-version">FILE FORMAT VERSION</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#instrument-info">INSTRUMENT INFO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-comment">FILE COMMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#order-directive">ORDER DIRECTIVE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#level-directive">LEVEL DIRECTIVE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#trade-summary">TRADE SUMMARY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#trade-match">TRADE MATCH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#volume">VOLUME</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#daily-statistics">DAILY STATISTICS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#limit-bands">LIMIT BANDS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#session-statistics">SESSION STATISTICS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#security-status">SECURITY STATUS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#channel-reset">CHANNEL RESET</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#transaction-bundle-marker">TRANSACTION BUNDLE MARKER</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#markup">MARKUP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#end-of-session">END OF SESSION</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="csvOutput.html">Web API Output</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="vxa_feed.h.html">vxa_feed.h</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">vNineFeed Web API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Rest API Output</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="rest-api-output">
+<h1>Rest API Output<a class="headerlink" href="#rest-api-output" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="message-keys">
+<h2>Message Keys<a class="headerlink" href="#message-keys" title="Permalink to this headline">¶</a></h2>
+<p>The message key indicates the type of event for that line and is the first field in every message. The key is always two letters in length and in the upper/lower case specified in this section of the document.</p>
+<img alt="_images/sample-output.png" src="_images/sample-output.png" />
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 3%" />
+<col style="width: 9%" />
+<col style="width: 88%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>FV</p></td>
+<td><p>FILE FORMAT VERSION</p></td>
+<td><p>The Vertex Standard Format (VSF) version contained in the file and what version this file is compatible with. Always the first message in the file.</p></td>
+</tr>
+<tr class="row-even"><td><p>FC</p></td>
+<td><p>FILE COMMENT</p></td>
+<td><p>Diagnostic or information to help a person examining the exported file. Can also be used for whitespace and visual separators.</p></td>
+</tr>
+<tr class="row-odd"><td><p>IX</p></td>
+<td><p>INSTRUMENT INFO</p></td>
+<td><p>Details about the instrument(s) contained in the file. For most files, there will only be one instrument info message, and it will usually appear immediately afte the file format version message.</p></td>
+</tr>
+<tr class="row-even"><td><p>OD</p></td>
+<td><p>ORDER DIRECTIVE</p></td>
+<td><p>Message that contains information on a quote for all price levels.</p></td>
+</tr>
+<tr class="row-odd"><td><p>LD</p></td>
+<td><p>LEVEL DIRECTIVE</p></td>
+<td><p>Message that contains information on a quote that occurred in the first n levels of the book. The instrument definition from the exchange specifies the exact number of levels. This message can show up alongside an OD message.</p></td>
+</tr>
+<tr class="row-even"><td><p>TR</p></td>
+<td><p>TRADE SUMMARY</p></td>
+<td><p>Message that contains summary information about trades.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tm</p></td>
+<td><p>TRADE MATCH</p></td>
+<td><p>Message that contains information on a match of a trade event. The lowercase ‘m’ is intentional to visually indicate it is a sub-message of the TR message.</p></td>
+</tr>
+<tr class="row-even"><td><p>VU</p></td>
+<td><p>VOLUME</p></td>
+<td><p>Message that updates volume data after a trade event. On certain exchanges if two implied quotes are matched, a VU message will appear in the stream showing the change in the total volume, but it will not be tied to a TR event</p></td>
+</tr>
+<tr class="row-odd"><td><p>ST</p></td>
+<td><p>DAILY STATISTICS</p></td>
+<td><p>Message that provides information about a complete session</p></td>
+</tr>
+<tr class="row-even"><td><p>LM</p></td>
+<td><p>LIMITS BANDS</p></td>
+<td><p>Message that provides the daily limits for the current session</p></td>
+</tr>
+<tr class="row-odd"><td><p>SE</p></td>
+<td><p>SESSION STATISTICS</p></td>
+<td><p>Message that provides information about the session during the session</p></td>
+</tr>
+<tr class="row-even"><td><p>SS</p></td>
+<td><p>SECURITY STATUS</p></td>
+<td><p>Message that provides the security group market state change</p></td>
+</tr>
+<tr class="row-odd"><td><p>CR</p></td>
+<td><p>CHANNEL RESET</p></td>
+<td><p>Message that indicates if the channel the contract is on was reset and at what time</p></td>
+</tr>
+<tr class="row-even"><td><p>TS / TE</p></td>
+<td><p>TRANSACTION BUNDLE MARKER</p></td>
+<td><p>The TS message marks the start of a bundle, and the TE message marks the end of that bundle. The exchange considers all the messages between the start and end marker to have been processed together, regardless of how the packets were split during exchange transmission.</p></td>
+</tr>
+<tr class="row-odd"><td><p>IT</p></td>
+<td><p>INVESTIGATED TRADE</p></td>
+<td><p>Indicates when a trade is related to an examination by the exchange.</p></td>
+</tr>
+<tr class="row-even"><td><p>MU</p></td>
+<td><p>MARKUP</p></td>
+<td><p>An alert, automated analysis, or user comment about a particular message or point in time.</p></td>
+</tr>
+<tr class="row-odd"><td><p>EO</p></td>
+<td><p>END OF SESSION</p></td>
+<td><p>Message that indicates that the session has ended and relays important statistics of the session.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="all-events">
+<h2>All Events<a class="headerlink" href="#all-events" title="Permalink to this headline">¶</a></h2>
+<p>Below lists every event type and their detailed attributes. They correspond to the keys listed above.</p>
+<div class="section" id="file-format-version">
+<h3>FILE FORMAT VERSION<a class="headerlink" href="#file-format-version" title="Permalink to this headline">¶</a></h3>
+<p>(Vertex Exclusive)</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 86%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;Compatible Version&gt;,&lt;Current Version&gt;,&lt;ProdtNameVersion&gt;,&lt;File Contents&gt;,&lt;GeneratedDateTime&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>FV,V,3.0,3.0,Exporter 3.0,Events,file created on 20180322 09:09:08</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>FV = File Format Version</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Compatible Version</p></td>
+<td><p>A floating point number that indicates this file is compatible with programs written to read this version, assuming
+they follow the best practices in the “Processing the CSV” section of this document. If this number is larger than
+you program understands, don’t process the file.</p></td>
+</tr>
+<tr class="row-even"><td><p>Current Version</p></td>
+<td><p>A floating point number that indicates this file has enhancements. The enhancements are compatible with Compatible
+Version, but may have extra fields, new message types, and bug fixes that a newer reader can take advantage of.</p>
+<p>For example, if Compatible Version is “3.0” but Current Version is “3.1”, then it means a “3.0” reader will work, but
+a “3.1” reader will benefit from improvements in the file format. If this number is larger than you program
+understands, that’s okay - continue to process the file. At your convenience, you should obtain the latest copy of
+this documentation and upgrade your program to receive all the benefits</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A real message is a message that was received literally from that specific exchange. A generated message has the same format, but it was assembled by Vertex from other message types to provide a consistent output.</p>
+</div>
+</div>
+<div class="section" id="instrument-info">
+<h3>INSTRUMENT INFO<a class="headerlink" href="#instrument-info" title="Permalink to this headline">¶</a></h3>
+<p>(Vertex Exclusive)</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 4%" />
+<col style="width: 96%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;InstrID&gt;,&lt;Index&gt;,&lt;Exchange&gt;,&lt;Contract&gt;,&lt;Session Date&gt;,&lt;UTC Offset&gt;,&lt;Channel&gt;,&lt;Root&gt;,&lt;Description&gt;,&lt;VDescription&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>IX,V,23252,23252,CME,ESM8,20180321,UTC 0,310,ES,,</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>IX = Instrument Info</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>InstrID</p></td>
+<td><p>Unique instrument ID per exchange</p></td>
+</tr>
+<tr class="row-even"><td><p>Index</p></td>
+<td><p>Reserved for future use. (Always matches InstrID)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Exchange</p></td>
+<td><p>The name of the exchange that this instrument is from. (This may be useful for decoding exchange specific flags)</p></td>
+</tr>
+<tr class="row-even"><td><p>Contract</p></td>
+<td><p>The contract symbol. (See Symbol Formatting in vNineFeed Rest API; if a wildcard or less specific symbol was provided to the API, this is the exact contract symbol that it selected)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Session Date</p></td>
+<td><p>The date of the session for the events in this file.</p></td>
+</tr>
+<tr class="row-even"><td><p>UTC Offset</p></td>
+<td><p>The difference between the exchange time and UTC time on the session date. (This should be left blank if unknown)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Channel</p></td>
+<td><p>Which channel this instrument trades on for a particular exchange. (Timestamps on the same channel for the same date for the same exchange are usually comparable, because they usually come from the same server. In any other circumstance, the timestamps are usually not accurate to the microsecond)</p></td>
+</tr>
+<tr class="row-even"><td><p>Root</p></td>
+<td><p>The Root Symbol of the contract.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Description</p></td>
+<td><p>The exchange provided instrument description. (May be blank)</p></td>
+</tr>
+<tr class="row-even"><td><p>VDescription</p></td>
+<td><p>The Vertex provided instrument description. (May be blank)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="file-comment">
+<h3>FILE COMMENT<a class="headerlink" href="#file-comment" title="Permalink to this headline">¶</a></h3>
+<p>(Vertex Exclusive)</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 94%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;Type&gt;,&lt;Description&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>FC,V,END,generation time 27391 mSec</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>FC = File Comment</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Type</p></td>
+<td><div class="line-block">
+<div class="line">DATA = Regarding data - possibly because there isn’t any data. Reason is in the description. This isn’t necessarily a problem if a lack of data is expected depending on the instrument, date, or query type</div>
+<div class="line">END = indicates that this is the expected end of the file for processing.</div>
+<div class="line">STAT = Progress or other message appropriate to show on a UI.</div>
+<div class="line">LOG = write the Description to your log</div>
+<div class="line">WARN = log and alert operator, but continue processing</div>
+<div class="line">ERROR = log, alert operator, stop processing</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Description</p></td>
+<td><p>Text related to the message type. Usually quoted due to commas. Can be blank</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="order-directive">
+<h3>ORDER DIRECTIVE<a class="headerlink" href="#order-directive" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 92%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;Time&gt;,&lt;cSeq&gt;,&lt;iSeq&gt;,&lt;InstrID&gt;,&lt;Book Type&gt;,&lt;Event Indicator&gt;,&lt;Price&gt;, &lt;Qty&gt;,&lt;PriorityID&gt;,&lt;OrigOrderID&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>OD,R,21:00:00.008519490,15379216,0,23252,S,D,271800.000000,1,5875793362,644724607591</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>OD = Order Directive</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Time</p></td>
+<td><p>Timestamp of when the event was recorded by the exchange</p></td>
+</tr>
+<tr class="row-even"><td><p>Description</p></td>
+<td><p>Text related to the message type. Usually quoted due to commas. Can be blank</p></td>
+</tr>
+<tr class="row-odd"><td><p>cSeq</p></td>
+<td><p>Channel level sequence number</p></td>
+</tr>
+<tr class="row-even"><td><p>iSeq</p></td>
+<td><p>Instrument level sequence number</p></td>
+</tr>
+<tr class="row-odd"><td><p>InstrID</p></td>
+<td><p>Unique instrument ID per exchange</p></td>
+</tr>
+<tr class="row-even"><td><p>Book Type</p></td>
+<td><div class="line-block">
+<div class="line">B = Bid</div>
+<div class="line">S = Offer/Sell</div>
+<div class="line">EOE = End of directive sequence</div>
+<div class="line">iB = Implied Bid, iS = Implied Offer/Sell,</div>
+<div class="line">R = Reset Book</div>
+<div class="line">U = Unknown or not set</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Event Indicator</p></td>
+<td><div class="line-block">
+<div class="line">C = Change</div>
+<div class="line">D = Delete, DF = Delete From, DT = Delete Thru</div>
+<div class="line">N = New</div>
+<div class="line">O = Overlay (i.e. building book from good til cancelled)</div>
+<div class="line">R = Replace</div>
+<div class="line">U = Unknown or not set</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Price</p></td>
+<td><p>Price at which the event occurred</p></td>
+</tr>
+<tr class="row-odd"><td><p>Qty</p></td>
+<td><p>Total quantity matched for this trade event</p></td>
+</tr>
+<tr class="row-even"><td><p>PriorityID</p></td>
+<td><p>Order priority for execution on the order book. A lower value is a higher priority</p></td>
+</tr>
+<tr class="row-odd"><td><p>OrigOrderID</p></td>
+<td><p>The first OrderID assigned. Some exchanges change the orderID of an order. This field allows you to always know what the original ID was for any order. CME ‘OD’ messages will only have up to this field</p></td>
+</tr>
+<tr class="row-even"><td><p>CurrentOrderID</p></td>
+<td><p>If an exchange changes an order’s OrderID, this is the new OrderID it was changed to. ICE ‘OD’ messages stop at this field</p></td>
+</tr>
+<tr class="row-odd"><td><p>PrevOrderID</p></td>
+<td><p>If an orders ID is changed multiple times this is the ID that was just replaced. Eurex ‘OD’ messages have up to this field.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="level-directive">
+<h3>LEVEL DIRECTIVE<a class="headerlink" href="#level-directive" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 89%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;Time&gt;,&lt;cSeq&gt;,&lt;iSeq&gt;,&lt;InstrID&gt;,&lt;Book Type&gt;,&lt;Event Indicator&gt;,&lt;PriceLevel&gt;,&lt;Price&gt;,&lt;AggQty&gt;, &lt;NumOrders&gt;,&lt;ImpliedAggQty&gt;,&lt;ImpliedNumOrders&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>LD,R,19:05:14.432725899,14376680,15065699,23252,S,N,10,272600.000000,268,102,0,0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>LD = Level Directive</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Time</p></td>
+<td><p>Timestamp of when the event was recorded by the exchange</p></td>
+</tr>
+<tr class="row-even"><td><p>cSeq</p></td>
+<td><p>Channel level sequence number</p></td>
+</tr>
+<tr class="row-odd"><td><p>iSeq</p></td>
+<td><p>Instrument level sequence number</p></td>
+</tr>
+<tr class="row-even"><td><p>InstrID</p></td>
+<td><p>Unique instrument ID per exchange</p></td>
+</tr>
+<tr class="row-odd"><td><p>Book Type</p></td>
+<td><div class="line-block">
+<div class="line">B = Bid</div>
+<div class="line">S = Offer/Sell</div>
+<div class="line">EOE = End of directive sequence</div>
+<div class="line">iB = Implied Bid, iS = Implied Offer/Sell,</div>
+<div class="line">R = Reset Book</div>
+<div class="line">U = Unknown or not set</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Event Indicator</p></td>
+<td><div class="line-block">
+<div class="line">C = Change</div>
+<div class="line">D = Delete, DF = Delete From, DT = Delete Thru</div>
+<div class="line">N = New</div>
+<div class="line">O = Overlay (i.e. building book from good til cancelled)</div>
+<div class="line">R = Replace</div>
+<div class="line">U = Unknown or not set</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Price Level</p></td>
+<td><p>Price level at which the event occurred</p></td>
+</tr>
+<tr class="row-even"><td><p>Price</p></td>
+<td><p>Price at which the event occurred</p></td>
+</tr>
+<tr class="row-odd"><td><p>AggQty</p></td>
+<td><p>Total quantity at the price level</p></td>
+</tr>
+<tr class="row-even"><td><p>NumOrders</p></td>
+<td><p>Total number of orders at the price level</p></td>
+</tr>
+<tr class="row-odd"><td><p>Implied AggQty</p></td>
+<td><p>Total implied quantity at the price level</p></td>
+</tr>
+<tr class="row-even"><td><p>Implied NumOrders</p></td>
+<td><p>Total number of implied orders at the price level</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="trade-summary">
+<h3>TRADE SUMMARY<a class="headerlink" href="#trade-summary" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 85%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;Time&gt;,&lt;cSeq&gt;,&lt;iSeq&gt;,&lt;InstrID&gt;,&lt;AggressorSide&gt;,&lt;Price&gt;,&lt;TradeQty&gt;,&lt;NumMatches&gt;,&lt;Implied Indication&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>TR,R,23:04:10.230954967,10451092,10982857,23252,BA,272225.000000,1,2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>TR = Trade Summary</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Time</p></td>
+<td><p>Timestamp of when the event was recorded by the exchange</p></td>
+</tr>
+<tr class="row-even"><td><p>cSeq</p></td>
+<td><p>Channel level sequence number</p></td>
+</tr>
+<tr class="row-odd"><td><p>iSeq</p></td>
+<td><p>Instrument level sequence number</p></td>
+</tr>
+<tr class="row-even"><td><p>InstrID</p></td>
+<td><p>Unique instrument ID per exchange</p></td>
+</tr>
+<tr class="row-odd"><td><p>Aggressor Side</p></td>
+<td><div class="line-block">
+<div class="line">BA = Buy Aggressor</div>
+<div class="line">SA = Sell Aggressor</div>
+<div class="line">NA = No Aggressor</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Price</p></td>
+<td><p>Price at which the event occurred</p></td>
+</tr>
+<tr class="row-odd"><td><p>Trade Qty</p></td>
+<td><p>Total quantity matched for this trade event</p></td>
+</tr>
+<tr class="row-even"><td><p>NumMatches</p></td>
+<td><p>Identifies the total number of orders that participated in this match event</p></td>
+</tr>
+<tr class="row-odd"><td><p>Implied Indication</p></td>
+<td><p>I = implied aggressor. Otherwise, this option is left blank</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="trade-match">
+<h3>TRADE MATCH<a class="headerlink" href="#trade-match" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 91%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;Time&gt;,&lt;cSeq&gt;,&lt;iSeq&gt;,&lt;InstrID&gt;,&lt;AggressorIndication&gt;,&lt;MatchNum&gt;,&lt;OrderID&gt;,&lt;Qty&gt;,&lt;Flags&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>Tm,R,23:04:10.230389983,10451088,10982854,23252,,4,644721959581,1,‘00000000’</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>Tm = Trade Match</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Time</p></td>
+<td><p>Timestamp of when the event was recorded by the exchange</p></td>
+</tr>
+<tr class="row-even"><td><p>cSeq</p></td>
+<td><p>Channel level sequence number</p></td>
+</tr>
+<tr class="row-odd"><td><p>iSeq</p></td>
+<td><p>Instrument level sequence number</p></td>
+</tr>
+<tr class="row-even"><td><p>InstrID</p></td>
+<td><p>Unique instrument ID per exchange</p></td>
+</tr>
+<tr class="row-odd"><td><p>Aggressor Indication</p></td>
+<td><p>All Trade match messages currently have this field blank</p></td>
+</tr>
+<tr class="row-even"><td><p>MatchNum</p></td>
+<td><p>OrderID’s assigned Match number</p></td>
+</tr>
+<tr class="row-odd"><td><p>OrderID</p></td>
+<td><p>OrderID for the order that was matched</p></td>
+</tr>
+<tr class="row-even"><td><p>Qty</p></td>
+<td><p>Quantity matched for this order</p></td>
+</tr>
+<tr class="row-odd"><td><p>Flags</p></td>
+<td><div class="line-block">
+<div class="line">These bits are exchange specific. If you don’t know which exchange this file came from, the exchange for this instrId is located in the Instrument Information message.</div>
+<div class="line"><br /></div>
+<div class="line">00000001: IsRFCCrossing - indicates this is a RFC Crossing Deal</div>
+<div class="line">00000010: IsLegDealOutsideIPL - indicates the deal is outside of IPL (if IPL enabled)</div>
+<div class="line">When set, the deal should not be included in market stats. This could only happen in leg markets due to implied orders</div>
+<div class="line">00000100: IsImplied - indicates that the originator side of the deal resulted from implied order.</div>
+<div class="line">This field should not be used to determine how market statistics are calculated</div>
+<div class="line">00001000: isVerticalSplit - indicates if the trade is a system priced leg from a composite strategy</div>
+<div class="line">11110000: Reserved for future use</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The lowercase ‘m’ in Tm is intentional. It is there to visually indicate it is a sub-message of the TR message</p>
+</div>
+</div>
+<div class="section" id="volume">
+<h3>VOLUME<a class="headerlink" href="#volume" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 87%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;Time&gt;,&lt;cSeq&gt;,&lt;iSeq&gt;,&lt;InstrID&gt;,&lt;Vol&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>VU,R,23:04:10.230389983,10451089,10982855,23252,6243</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>VU = Volume</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Time</p></td>
+<td><p>Timestamp of when the event was recorded by the exchange</p></td>
+</tr>
+<tr class="row-even"><td><p>cSeq</p></td>
+<td><p>Channel level sequence number</p></td>
+</tr>
+<tr class="row-odd"><td><p>iSeq</p></td>
+<td><p>Instrument level sequence number</p></td>
+</tr>
+<tr class="row-even"><td><p>InstrID</p></td>
+<td><p>Unique instrument ID per exchange</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vol</p></td>
+<td><p>Total volume for the session including the last trade event</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="daily-statistics">
+<h3>DAILY STATISTICS<a class="headerlink" href="#daily-statistics" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 92%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;Time&gt;,&lt;cSeq&gt;,&lt;iSeq&gt;,&lt;InstrID&gt;,&lt;Type&gt;,&lt;Flags&gt;,&lt;Price&gt;,&lt;Qty&gt;,&lt;Date&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>ST,R,23:10:08.211654892,10452851,10984078,23252,SettlementPrice,‘00000111’,272350.000000,0,20180320</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>ST = Statistics</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Time</p></td>
+<td><p>Timestamp of when the event was recorded by the exchange</p></td>
+</tr>
+<tr class="row-even"><td><p>cSeq</p></td>
+<td><p>Channel level sequence number</p></td>
+</tr>
+<tr class="row-odd"><td><p>iSeq</p></td>
+<td><p>Instrument level sequence number</p></td>
+</tr>
+<tr class="row-even"><td><p>InstrID</p></td>
+<td><p>Unique instrument ID per exchange</p></td>
+</tr>
+<tr class="row-odd"><td><p>Type</p></td>
+<td><div class="line-block">
+<div class="line">SettlementPrice</div>
+<div class="line">ClearedVolume</div>
+<div class="line">OpenInterest</div>
+<div class="line">FixingPrice</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Flags</p></td>
+<td><div class="line-block">
+<div class="line">00000001: Final</div>
+<div class="line">00000010: Actual</div>
+<div class="line">00000100: Rounded</div>
+<div class="line">00001000: Intraday</div>
+<div class="line">01110000: Reserved flags</div>
+<div class="line">10000000: Null value</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Price</p></td>
+<td><p>Price of the statistic</p></td>
+</tr>
+<tr class="row-even"><td><p>Qty</p></td>
+<td><p>Total Quantity</p></td>
+</tr>
+<tr class="row-odd"><td><p>Date</p></td>
+<td><p>Date of the trading session for this statistic</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="limit-bands">
+<h3>LIMIT BANDS<a class="headerlink" href="#limit-bands" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;Time&gt;,&lt;cSeq&gt;,&lt;iSeq&gt;,&lt;InstrID&gt;,&lt;LowLimitPrice&gt;,&lt;HighLimitPrice&gt;,&lt;Max Price Variation&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>LM,R,23:10:08.211654892,10452852,10984079,23252,258400.000000,285500.000000,600.000000</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>LM = Limit</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Time</p></td>
+<td><p>Timestamp of when the event was recorded by the exchange</p></td>
+</tr>
+<tr class="row-even"><td><p>cSeq</p></td>
+<td><p>Channel level sequence number</p></td>
+</tr>
+<tr class="row-odd"><td><p>iSeq</p></td>
+<td><p>Instrument level sequence number</p></td>
+</tr>
+<tr class="row-even"><td><p>InstrID</p></td>
+<td><p>Unique instrument ID per exchange</p></td>
+</tr>
+<tr class="row-odd"><td><p>LowLimitPrice</p></td>
+<td><p>Lowest price level the contract can trade in this session</p></td>
+</tr>
+<tr class="row-even"><td><p>HighLimitPrice</p></td>
+<td><p>Highest price level the contract can trade in this session</p></td>
+</tr>
+<tr class="row-odd"><td><p>Max Price Variation</p></td>
+<td><p>Max tradable range for this session</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="session-statistics">
+<h3>SESSION STATISTICS<a class="headerlink" href="#session-statistics" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 92%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;Time&gt;,&lt;cSeq&gt;,&lt;iSeq&gt;,&lt;InstrID&gt;,&lt;Type&gt;,&lt;SubType&gt;,&lt;Price&gt;,&lt;Qty&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>SE,R,21:45:03.816284575,10421360,10963420,23252,OpenPrice,IndicativeOpeningPrice,272325.000000,4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>SE = Session</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Time</p></td>
+<td><p>Timestamp of when the event was recorded by the exchange</p></td>
+</tr>
+<tr class="row-even"><td><p>cSeq</p></td>
+<td><p>Channel level sequence number</p></td>
+</tr>
+<tr class="row-odd"><td><p>iSeq</p></td>
+<td><p>Instrument level sequence number</p></td>
+</tr>
+<tr class="row-even"><td><p>InstrID</p></td>
+<td><p>Unique instrument ID per exchange</p></td>
+</tr>
+<tr class="row-odd"><td><p>Type</p></td>
+<td><div class="line-block">
+<div class="line">OpenPrice</div>
+<div class="line">HighTrade</div>
+<div class="line">LowTrade</div>
+<div class="line">HighBid</div>
+<div class="line">LowOffer</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>SubType</p></td>
+<td><div class="line-block">
+<div class="line">DailyOpenPrice</div>
+<div class="line">IndicativeOpeningPrice</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Price</p></td>
+<td><p>Price of the statistic</p></td>
+</tr>
+<tr class="row-even"><td><p>Qty</p></td>
+<td><p>Quantity at the price level, if null the value 2147483647 will be there</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="security-status">
+<h3>SECURITY STATUS<a class="headerlink" href="#security-status" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 87%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;Time&gt;,&lt;cSeq&gt;,&lt;iSeq&gt;,&lt;InstrID&gt;,&lt;Type&gt;,&lt;SubType&gt;,&lt;Price&gt;,&lt;Qty&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>SE,R,21:45:03.816284575,10421360,10963420,23252,OpenPrice,IndicativeOpeningPrice,272325.000000,4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>SE = Session</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Time</p></td>
+<td><p>Timestamp of when the event was recorded by the exchange</p></td>
+</tr>
+<tr class="row-even"><td><p>cSeq</p></td>
+<td><p>Channel level sequence number</p></td>
+</tr>
+<tr class="row-odd"><td><p>iSeq</p></td>
+<td><p>Instrument level sequence number</p></td>
+</tr>
+<tr class="row-even"><td><p>InstrID</p></td>
+<td><p>Unique instrument ID per exchange</p></td>
+</tr>
+<tr class="row-odd"><td><p>Status</p></td>
+<td><div class="line-block">
+<div class="line">TradingHalt</div>
+<div class="line">Close</div>
+<div class="line">NewPriceIndication</div>
+<div class="line">ReadyToTrade</div>
+<div class="line">NotAvailableForTrading</div>
+<div class="line">UnknownorInvalid</div>
+<div class="line">PreOpen</div>
+<div class="line">PreCross</div>
+<div class="line">Cross</div>
+<div class="line">PostClose</div>
+<div class="line">NoChange</div>
+<div class="line">Restricted</div>
+<div class="line">Freeze</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Reason</p></td>
+<td><div class="line-block">
+<div class="line">GroupSchedule</div>
+<div class="line">SurveillanceIntervention</div>
+<div class="line">MarketEvent</div>
+<div class="line">InstrumentActivation</div>
+<div class="line">InstrumentExpiration</div>
+<div class="line">Unknown</div>
+<div class="line">RecoverInProcess</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Trading Event</p></td>
+<td><div class="line-block">
+<div class="line">“Blank” - there could be no value</div>
+<div class="line">NoCancel</div>
+<div class="line">ResetStatistics</div>
+<div class="line">ImpliedMatchingON</div>
+<div class="line">ImpliedMatchingOFF</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Date</p></td>
+<td><p>Date of the trading session for this statistic</p></td>
+</tr>
+<tr class="row-odd"><td><p>Group</p></td>
+<td><p>An exchange specific code assigned to a group of related securities, which are concurrently
+affected by market events</p></td>
+</tr>
+<tr class="row-even"><td><p>Asset</p></td>
+<td><p>String field that indicates the underlying asset code</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="channel-reset">
+<h3>CHANNEL RESET<a class="headerlink" href="#channel-reset" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;Time&gt;,&lt;cSeq&gt;,&lt;InstrID&gt;,&lt;Description&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>CR,R,18:58:00.063000000,25765,222454, “Channel Reset”</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>CR = Channel Reset</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Time</p></td>
+<td><p>Timestamp of when the event was recorded by the exchange</p></td>
+</tr>
+<tr class="row-even"><td><p>cSeq</p></td>
+<td><p>Channel level sequence number</p></td>
+</tr>
+<tr class="row-odd"><td><p>iSeq</p></td>
+<td><p>Instrument level sequence number</p></td>
+</tr>
+<tr class="row-even"><td><p>InstrID</p></td>
+<td><p>Unique instrument ID per exchange</p></td>
+</tr>
+<tr class="row-odd"><td><p>Description</p></td>
+<td><p>Reason for the CR message</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="transaction-bundle-marker">
+<h3>TRANSACTION BUNDLE MARKER<a class="headerlink" href="#transaction-bundle-marker" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;InsterID&gt;,&lt;Visual Marker&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Examples</p></td>
+<td><div class="line-block">
+<div class="line">TS,G,222454,vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvTS</div>
+<div class="line">TE,G,222454,^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^TE</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><div class="line-block">
+<div class="line">TS = Transaction Start</div>
+<div class="line">TE = Transaction End</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>InstrID</p></td>
+<td><p>Unique instrument ID per exchange</p></td>
+</tr>
+<tr class="row-even"><td><p>Visual Marker</p></td>
+<td><p>Please ignore. This is for visuals only</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="markup">
+<h3>MARKUP<a class="headerlink" href="#markup" title="Permalink to this headline">¶</a></h3>
+<p>(Vertex Exclusive)</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 94%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;Time&gt;,&lt;cSeq&gt;,&lt;iSeq&gt;,&lt;InstrID&gt;,&lt;Type&gt;,&lt;MarkupID&gt;,&lt;Price&gt;,&lt;Color&gt;,&lt;Marker&gt;,&lt;Title&gt;,&lt;Description&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>MU,V,23:04:10.230389983,10451088,10982854,23252,U,1257,64.8200,#FF0000,9733,ryan,Big Move</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>MU = MarkUp</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Time</p></td>
+<td><p>Point in the event timeline of which the markup refers. (This allows markup even in periods when an event did not occur)</p></td>
+</tr>
+<tr class="row-even"><td><p>cSeq</p></td>
+<td><p>Channel level sequence number that the markup refers to. (Can be 0)</p></td>
+</tr>
+<tr class="row-odd"><td><p>iSeq</p></td>
+<td><p>Instrument level sequence number that the markup refers to. (Can be 0)</p></td>
+</tr>
+<tr class="row-even"><td><p>InstrID</p></td>
+<td><p>Instrument ID that the markup refers to. (Can be 0)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Type</p></td>
+<td><div class="line-block">
+<div class="line">A = Association. Two or more exchange messages are related to each other in a manner indicated by the Title.</div>
+<div class="line">F = Trade Activity Feed. One or more events/quotes are yours.</div>
+<div class="line">P = Pattern. One or more messages are a detectable pattern in a manner indicated by the Title.</div>
+<div class="line">R = Result (i.e. how the quote turned out), indicated by the Title.</div>
+<div class="line">S = Scan. One or more messages came from a vNine client scan.</div>
+<div class="line">U = User comment, with the user name in the Title.</div>
+<div class="line">V = Vertex analysis, with the detection in the Title.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MarkupID</p></td>
+<td><p>A unique ID within the context of the file. (If the markup has multiple parts, such a comment on a range, it will consist of a message at the start and a message at the end with the same markup ID)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Price</p></td>
+<td><p>This is either where the comment should be drawn on the vertical axis for user comments, or the final price for price changes and trades.</p></td>
+</tr>
+<tr class="row-even"><td><p>Color</p></td>
+<td><p>A color denoted in HTML hexadecimal #RRGGBB format. (Usually for comment display purposes)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Marker</p></td>
+<td><p>Unicode character in integer decimal format. For example, 9888 is the warning
+symbol. (Used for display and show significance of analysis)</p></td>
+</tr>
+<tr class="row-even"><td><p>Title</p></td>
+<td><p>This is either the name of the user who entered the comment, or the indication of the analysis/pattern. (It may also be the name of the automated trading algorithm)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Description</p></td>
+<td><p>The user’s comment or details on the analysis/pattern.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is not when the user created a comment or when the analysis engine ran</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Other markup types may be added in the future</p>
+</div>
+</div>
+<div class="section" id="end-of-session">
+<h3>END OF SESSION<a class="headerlink" href="#end-of-session" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 86%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>&lt;Key&gt;,&lt;MsgType&gt;,&lt;contract&gt;,&lt;Date&gt;,&lt;Open&gt;,&lt;High&gt;,&lt;Low&gt;,&lt;Close&gt;,&lt;Actual Settle&gt;,&lt;Theoretical Settle&gt;,&lt;Volume&gt;,&lt;Open Interest&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>EO,G,ESZ6,161304,221125.000000, 224125.000000, 220675.000000, 223650.000000, 223675.000000,223670.000000,2316709,2747403</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key</p></td>
+<td><p>EO = End of</p></td>
+</tr>
+<tr class="row-even"><td><p>MsgType</p></td>
+<td><div class="line-block">
+<div class="line">R = Real</div>
+<div class="line">V = Vertex</div>
+<div class="line">G = Generated</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Contract</p></td>
+<td><p>Contract’s symbol. (See Symbol Formatting in vNineFeed Rest API)</p></td>
+</tr>
+<tr class="row-even"><td><p>Date</p></td>
+<td><p>Date of the trading session.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Open</p></td>
+<td><p>Opening price of the trading session.</p></td>
+</tr>
+<tr class="row-even"><td><p>High</p></td>
+<td><p>Highest price of the trading session.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Low</p></td>
+<td><p>Lowest price of the trading session.</p></td>
+</tr>
+<tr class="row-even"><td><p>Close</p></td>
+<td><p>Closing price of the trading session.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Actual Settle</p></td>
+<td><p>Actual settle price of the trading session.</p></td>
+</tr>
+<tr class="row-even"><td><p>Theoretical Settle</p></td>
+<td><p>Theoretical settle price of the trading session.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Volume</p></td>
+<td><p>Total volume of the trading session.</p></td>
+</tr>
+<tr class="row-even"><td><p>Open Interest</p></td>
+<td><p>Total open interest of the trading session.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>//TODO Possibly reorder and section off message types</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>//TODO Have links to structs in vxa_feed.h</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="csvOutput.html" class="btn btn-neutral float-right" title="Web API Output" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Blake Boris
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structvxa__feed_1_1_security_status_entry" kind="struct" language="C++" prot="public">
+    <compoundname>vxa_feed::SecurityStatusEntry</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvxa__feed_1_1_security_status_entry_1aed2eedf66ae25f64dbd5cd8cb57c8021" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char vxa_feed::SecurityStatusEntry::securityGroup[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>securityGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="275" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_security_status_entry_1add492135c52ea0a107ab964aa64969e6" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char vxa_feed::SecurityStatusEntry::asset[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>asset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="276" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_security_status_entry_1a941f45b2a25771f78504197ab7f711c2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t vxa_feed::SecurityStatusEntry::tradeDate</definition>
+        <argsstring></argsstring>
+        <name>tradeDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="277" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_security_status_entry_1ae0576863a39f9c158775fb8abfe0feec" prot="public" static="no" mutable="no">
+        <type>SecurityTradingStatus</type>
+        <definition>SecurityTradingStatus vxa_feed::SecurityStatusEntry::securityTradingStatus</definition>
+        <argsstring></argsstring>
+        <name>securityTradingStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="278" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_security_status_entry_1a199d8cd457f95f432f3d9fbfcc8fb5db" prot="public" static="no" mutable="no">
+        <type>HaltReason</type>
+        <definition>HaltReason vxa_feed::SecurityStatusEntry::haltReason</definition>
+        <argsstring></argsstring>
+        <name>haltReason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="279" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_security_status_entry_1a7a736ac713f8b548f4d7db42c434649d" prot="public" static="no" mutable="no">
+        <type>SecurityTradingEvent</type>
+        <definition>SecurityTradingEvent vxa_feed::SecurityStatusEntry::securityTradingEvent</definition>
+        <argsstring></argsstring>
+        <name>securityTradingEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="280" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" line="274" column="1" bodyfile="C:/Users/Blake Reset/source/repos/PlGGS/vxp-doc/vxp-cmk/vxa_feed.h" bodystart="273" bodyend="281"/>
+    <listofallmembers>
+      <member refid="structvxa__feed_1_1_security_status_entry_1add492135c52ea0a107ab964aa64969e6" prot="public" virt="non-virtual"><scope>vxa_feed::SecurityStatusEntry</scope><name>asset</name></member>
+      <member refid="structvxa__feed_1_1_security_status_entry_1a199d8cd457f95f432f3d9fbfcc8fb5db" prot="public" virt="non-virtual"><scope>vxa_feed::SecurityStatusEntry</scope><name>haltReason</name></member>
+      <member refid="structvxa__feed_1_1_security_status_entry_1aed2eedf66ae25f64dbd5cd8cb57c8021" prot="public" virt="non-virtual"><scope>vxa_feed::SecurityStatusEntry</scope><name>securityGroup</name></member>
+      <member refid="structvxa__feed_1_1_security_status_entry_1a7a736ac713f8b548f4d7db42c434649d" prot="public" virt="non-virtual"><scope>vxa_feed::SecurityStatusEntry</scope><name>securityTradingEvent</name></member>
+      <member refid="structvxa__feed_1_1_security_status_entry_1ae0576863a39f9c158775fb8abfe0feec" prot="public" virt="non-virtual"><scope>vxa_feed::SecurityStatusEntry</scope><name>securityTradingStatus</name></member>
+      <member refid="structvxa__feed_1_1_security_status_entry_1a941f45b2a25771f78504197ab7f711c2" prot="public" virt="non-virtual"><scope>vxa_feed::SecurityStatusEntry</scope><name>tradeDate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
