@@ -5,34 +5,34 @@ Variables
 ---------
 
 .. doxygenvariable:: PRICE_NULL
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenvariable:: PRICE_NULL_32
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenvariable:: PRICE_NULL_64
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenvariable:: PRICE_CONSTANT
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenvariable:: sNullInstrumentID
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenvariable:: sGroupSettleID
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 Structs
 -------
 
 .. doxygenstruct:: vxa_feed::AuctionClearingPrice
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -40,7 +40,7 @@ Structs
    :undoc-members:
 
 .. doxygenstruct:: vxa_feed::BookLevelEntry
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -48,7 +48,7 @@ Structs
    :undoc-members:
 
 .. doxygenstruct:: vxa_feed::ChannelResetEntry
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -56,7 +56,7 @@ Structs
    :undoc-members:
 
 .. doxygenstruct:: vxa_feed::DailyStatisticsEntry
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -64,7 +64,7 @@ Structs
    :undoc-members:
 
 .. doxygenstruct:: vxa_feed::IncrementalOrderBookEntry
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -72,7 +72,7 @@ Structs
    :undoc-members:
 
 .. doxygenstruct:: vxa_feed::InvestigatedTrade
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -80,7 +80,7 @@ Structs
    :undoc-members:
 
 .. doxygenstruct:: vxa_feed::LimitsBandingEntry
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -88,7 +88,7 @@ Structs
    :undoc-members:
 
 .. doxygenstruct:: vxa_feed::SecurityStatusEntry
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -96,7 +96,7 @@ Structs
    :undoc-members:
 
 .. doxygenstruct:: vxa_feed::SessionStatistics
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -104,7 +104,7 @@ Structs
    :undoc-members:
 
 .. doxygenstruct:: vxa_feed::TradeMatchEntry
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -112,7 +112,7 @@ Structs
    :undoc-members:
 
 .. doxygenstruct:: vxa_feed::TradeSummaryEntry
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -120,7 +120,7 @@ Structs
    :undoc-members:
 
 .. doxygenstruct:: vxa_feed::TransactionMarkerEntry
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -128,7 +128,7 @@ Structs
    :undoc-members:
 
 .. doxygenstruct:: vxa_feed::VolumeUpdateEntry
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -136,7 +136,7 @@ Structs
    :undoc-members:
 
 .. doxygenstruct:: vxa_feed::VxaEvent
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -144,7 +144,7 @@ Structs
    :undoc-members:
 
 .. doxygenstruct:: vxa_feed::VxaHeader
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
    :members:
    :protected-members:
@@ -155,65 +155,65 @@ Enums
 -----
 
 .. doxygenenum:: AggressorSide
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: Side
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: HaltReason
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: SecurityTradingStatus
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: SecurityTradingEvent
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: BookType
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: DailyStatisticsType
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: StatisticsType
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: BookAction
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: OpenCloseSettlFlag
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: PutOrCall
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: SettlPriceType
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: TransactionType
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: EventIndicator
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: InvestigateStatus
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:
 
 .. doxygenenum:: UnionId
-   :project: vxp-cmk
+   :project: vxa-cmk
    :outline:

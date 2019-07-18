@@ -15,7 +15,8 @@ Vertex Analytics | vNineFeed Web API
    installation
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Reference
 
    vxa_feed.h
+   vxa_util.h

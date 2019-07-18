@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structvxa__feed_1_1_investigated_trade" kind="struct" language="C++" prot="public">
+    <compoundname>vxa_feed::InvestigatedTrade</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvxa__feed_1_1_investigated_trade_1affa51a5a578636f6e4b2ef0d0eb612c0" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t vxa_feed::InvestigatedTrade::OrderID</definition>
+        <argsstring></argsstring>
+        <name>OrderID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="312" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_investigated_trade_1a999347abd3ab87366e4529b0f407262e" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t vxa_feed::InvestigatedTrade::price</definition>
+        <argsstring></argsstring>
+        <name>price</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="313" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_investigated_trade_1a43068b49c70137829b8a5c8bff184ffe" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t vxa_feed::InvestigatedTrade::quantity</definition>
+        <argsstring></argsstring>
+        <name>quantity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="314" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_investigated_trade_1a6ba89514ce57f3df7de93dc0a2cec791" prot="public" static="no" mutable="no">
+        <type>InvestigateStatus</type>
+        <definition>InvestigateStatus vxa_feed::InvestigatedTrade::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="315" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vxa-cmk/vxa_feed.h" line="311" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="310" bodyend="316"/>
+    <listofallmembers>
+      <member refid="structvxa__feed_1_1_investigated_trade_1affa51a5a578636f6e4b2ef0d0eb612c0" prot="public" virt="non-virtual"><scope>vxa_feed::InvestigatedTrade</scope><name>OrderID</name></member>
+      <member refid="structvxa__feed_1_1_investigated_trade_1a999347abd3ab87366e4529b0f407262e" prot="public" virt="non-virtual"><scope>vxa_feed::InvestigatedTrade</scope><name>price</name></member>
+      <member refid="structvxa__feed_1_1_investigated_trade_1a43068b49c70137829b8a5c8bff184ffe" prot="public" virt="non-virtual"><scope>vxa_feed::InvestigatedTrade</scope><name>quantity</name></member>
+      <member refid="structvxa__feed_1_1_investigated_trade_1a6ba89514ce57f3df7de93dc0a2cec791" prot="public" virt="non-virtual"><scope>vxa_feed::InvestigatedTrade</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

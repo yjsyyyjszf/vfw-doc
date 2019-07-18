@@ -33,7 +33,7 @@ release = '1.0'
 extensions = ["breathe"]
 
 breathe_projects = {
-    "vxp-cmk": "../out/build/x64-Debug/docs/docs/doxygen/xml",
+    "vxa-cmk": "../docs/doxygen/xml",
 }
 breathe_default_project = "vxp-cmk"
 todo_include_todos=True

@@ -1,0 +1,1094 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="namespacevxa__feed" kind="namespace" language="C++">
+    <compoundname>vxa_feed</compoundname>
+    <innerclass refid="structvxa__feed_1_1_auction_clearing_price" prot="public">vxa_feed::AuctionClearingPrice</innerclass>
+    <innerclass refid="structvxa__feed_1_1_book_level_entry" prot="public">vxa_feed::BookLevelEntry</innerclass>
+    <innerclass refid="structvxa__feed_1_1_channel_reset_entry" prot="public">vxa_feed::ChannelResetEntry</innerclass>
+    <innerclass refid="structvxa__feed_1_1_daily_statistics_entry" prot="public">vxa_feed::DailyStatisticsEntry</innerclass>
+    <innerclass refid="structvxa__feed_1_1_incremental_order_book_entry" prot="public">vxa_feed::IncrementalOrderBookEntry</innerclass>
+    <innerclass refid="structvxa__feed_1_1_investigated_trade" prot="public">vxa_feed::InvestigatedTrade</innerclass>
+    <innerclass refid="structvxa__feed_1_1_limits_banding_entry" prot="public">vxa_feed::LimitsBandingEntry</innerclass>
+    <innerclass refid="structvxa__feed_1_1_security_status_entry" prot="public">vxa_feed::SecurityStatusEntry</innerclass>
+    <innerclass refid="structvxa__feed_1_1_session_statistics" prot="public">vxa_feed::SessionStatistics</innerclass>
+    <innerclass refid="structvxa__feed_1_1_trade_match_entry" prot="public">vxa_feed::TradeMatchEntry</innerclass>
+    <innerclass refid="structvxa__feed_1_1_trade_summary_entry" prot="public">vxa_feed::TradeSummaryEntry</innerclass>
+    <innerclass refid="structvxa__feed_1_1_transaction_marker_entry" prot="public">vxa_feed::TransactionMarkerEntry</innerclass>
+    <innerclass refid="structvxa__feed_1_1_volume_update_entry" prot="public">vxa_feed::VolumeUpdateEntry</innerclass>
+    <innerclass refid="structvxa__feed_1_1_vxa_event" prot="public">vxa_feed::VxaEvent</innerclass>
+    <innerclass refid="structvxa__feed_1_1_vxa_header" prot="public">vxa_feed::VxaHeader</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="vxa__feed_8h_1a13d5b73cb5bb78532990a999b7d73a91" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>AggressorSide</name>
+        <enumvalue id="vxa__feed_8h_1a13d5b73cb5bb78532990a999b7d73a91ab25da2c8c34140b6782849034f362ac5" prot="public">
+          <name>NoAggressor</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a13d5b73cb5bb78532990a999b7d73a91a831a28f1e8df07c553fcd59546465d13" prot="public">
+          <name>Buy</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a13d5b73cb5bb78532990a999b7d73a91a3068c5a98c003498f1fec0c489212e8b" prot="public">
+          <name>Sell</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="38" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="37" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1ac418094743bb4c5e70bcf08e3e1303f4" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>Side</name>
+        <enumvalue id="vxa__feed_8h_1ac418094743bb4c5e70bcf08e3e1303f4afaf396cbd83927b72a84d2616fac76ff" prot="public">
+          <name>NotSet</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ac418094743bb4c5e70bcf08e3e1303f4a831a28f1e8df07c553fcd59546465d13" prot="public">
+          <name>Buy</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ac418094743bb4c5e70bcf08e3e1303f4a3068c5a98c003498f1fec0c489212e8b" prot="public">
+          <name>Sell</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="45" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>HaltReason</name>
+        <enumvalue id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3afaf396cbd83927b72a84d2616fac76ff" prot="public">
+          <name>NotSet</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3aed8aaa2b705fe7d0fd4abe0051d5224d" prot="public">
+          <name>GroupSchedule</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3a35926a2d624725ce86477e566a8273c1" prot="public">
+          <name>SurveillanceIntervention</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3a6804092ed2ebd0a01531a4ad76201f0e" prot="public">
+          <name>MarketEvent</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3aa1aa3a115f948c160be85563b0ca6429" prot="public">
+          <name>InstrumentActivation</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3a824c21359c1208740451ec1257376175" prot="public">
+          <name>InstrumentExpiration</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3a88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad56ccf16146e782ae8c7f8b63ba7d1e3a0794d8ab29994c34acfdefc9473c23fa" prot="public">
+          <name>RecoveryInProcess</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="52" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="51" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0e" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>SecurityTradingStatus</name>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0eafaf396cbd83927b72a84d2616fac76ff" prot="public">
+          <name>NotSet</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0eac21703a39f3b3896a3396b6659ca3e6a" prot="public">
+          <name>TradingHalt</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ead3d2e617335f08df83599665eef8a418" prot="public">
+          <name>Close</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0eaa82a507d5816cc3149df4a47aff45fc6" prot="public">
+          <name>NewPriceIndication</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ea21efea0900bf80c52de398569564dbbd" prot="public">
+          <name>ReadyToTrade</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ea7683cad60dff43823211dd1e3883b582" prot="public">
+          <name>NotAvailableForTrading</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ea37f518f0e697d978c367d674a7973450" prot="public">
+          <name>UnknownorInvalid</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0eadd0e3165c6baaeb0fedcd5e5b07485c5" prot="public">
+          <name>PreOpen</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0eae27cadf15d5905683cd0189950586326" prot="public">
+          <name>PreCross</name>
+          <initializer>= 24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0eae76b449b9fc8536af7557ffa6321d269" prot="public">
+          <name>Cross</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ea6da26caee50de01a00cfb4f9a8049d7c" prot="public">
+          <name>PostClose</name>
+          <initializer>= 26</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ea4bac8cdf0a968472b519b3b295d0d48b" prot="public">
+          <name>NoChange</name>
+          <initializer>= 103</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ead34f851060f00491e7f20ca9a014e701" prot="public">
+          <name>PreClose</name>
+          <initializer>= 150</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0eaecdee5de15af6876cfab0801bb36f445" prot="public">
+          <name>Restricted</name>
+          <initializer>= 200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a71ca41ecf83b70aa263fdd0ed1362b0ea65467087a19145f43129bba42781aea0" prot="public">
+          <name>Freeze</name>
+          <initializer>= 201</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="64" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="63" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1a200895d919acf24fb656de30eac015a1" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>SecurityTradingEvent</name>
+        <enumvalue id="vxa__feed_8h_1a200895d919acf24fb656de30eac015a1a9b8e7e8d81a268a2240a96b7962a0183" prot="public">
+          <name>NoEvent</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a200895d919acf24fb656de30eac015a1a2b9249c8c0169d8137403ca340c46f0a" prot="public">
+          <name>NoCancel</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a200895d919acf24fb656de30eac015a1a15191fe96c80fc1ecf63f67c6ba402fe" prot="public">
+          <name>ResetStatistics</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a200895d919acf24fb656de30eac015a1ae0a66fd4c3548c364f6220cdca58cf29" prot="public">
+          <name>ImpliedMatchingON</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a200895d919acf24fb656de30eac015a1a1bbd8bd6ee792cad1b455e642ca1dbc1" prot="public">
+          <name>ImpliedMatchingOFF</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="85" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="84" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1afe58c601dd94989beb81174a8a44c892" prot="public" static="no" strong="yes">
+        <type>char</type>
+        <name>BookType</name>
+        <enumvalue id="vxa__feed_8h_1afe58c601dd94989beb81174a8a44c892afaf396cbd83927b72a84d2616fac76ff" prot="public">
+          <name>NotSet</name>
+          <initializer>= &apos;U&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1afe58c601dd94989beb81174a8a44c892ae36ba1e187ae2b3ebcfd0a4c68367caf" prot="public">
+          <name>Bid</name>
+          <initializer>= &apos;B&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1afe58c601dd94989beb81174a8a44c892a6bb24468956384c482a8b5a901fb6383" prot="public">
+          <name>Offer</name>
+          <initializer>= &apos;S&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1afe58c601dd94989beb81174a8a44c892a7a9c35af684ff695ebe35e50da3f7a53" prot="public">
+          <name>ImpliedBid</name>
+          <initializer>= &apos;b&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1afe58c601dd94989beb81174a8a44c892a16fcfff612f44e33d30e6a78baec3cc7" prot="public">
+          <name>ImpliedOffer</name>
+          <initializer>= &apos;s&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1afe58c601dd94989beb81174a8a44c892abf654e7f9c03bca75b358efa45ebdc1c" prot="public">
+          <name>BookReset</name>
+          <initializer>= &apos;R&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="94" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="93" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1a3559104800d274db3a7141958e1a4c02" prot="public" static="no" strong="yes">
+        <type>char</type>
+        <name>DailyStatisticsType</name>
+        <enumvalue id="vxa__feed_8h_1a3559104800d274db3a7141958e1a4c02aa9e1b8a1ec396ef4254f8f4a9494c8d3" prot="public">
+          <name>SettlementPrice</name>
+          <initializer>= &apos;6&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a3559104800d274db3a7141958e1a4c02ac49ca0ad1137329b8ebaf17f1f1068ac" prot="public">
+          <name>ClearedVolume</name>
+          <initializer>= &apos;B&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a3559104800d274db3a7141958e1a4c02ae7e246aa3fb87bf22f1f1611959cf10f" prot="public">
+          <name>OpenInterest</name>
+          <initializer>= &apos;C&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a3559104800d274db3a7141958e1a4c02a0ea898a3ccce0a7661b88676b48f4de3" prot="public">
+          <name>FixingPrice</name>
+          <initializer>= &apos;W&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="104" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="103" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23" prot="public" static="no" strong="yes">
+        <type>char</type>
+        <name>StatisticsType</name>
+        <enumvalue id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23afaf396cbd83927b72a84d2616fac76ff" prot="public">
+          <name>NotSet</name>
+          <initializer>= 127</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23a76309f772fc7962c4fcd57ae3fdb39db" prot="public">
+          <name>OpenPrice</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23ab070688db493bdee6781fb67d4d1ce97" prot="public">
+          <name>HighTrade</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23ac9ae006eecd393a65a40de7af553b541" prot="public">
+          <name>LowTrade</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23a7aa1ec0a310df29c6d98b0354710655d" prot="public">
+          <name>LastTrade</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23a223604f2229a04250b705ea90440bc4e" prot="public">
+          <name>HighestBid</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23a9e85ae6a006d90832dba15bf74aa6beb" prot="public">
+          <name>LowestOffer</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a28480a5429537d164a3dd4a69fd31e23aaf0930392663e38b05c928f273d92cd6" prot="public">
+          <name>ClosePrice</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="112" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="111" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cf" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>BookAction</name>
+        <enumvalue id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfafaf396cbd83927b72a84d2616fac76ff" prot="public">
+          <name>NotSet</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfa03c2e7e41ffc181a4e84080b4710e81e" prot="public">
+          <name>New</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfaf4ec5f57bd4d31b803312d873be40da9" prot="public">
+          <name>Change</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfaf2a6c498fb90ee345d997f888fce3b18" prot="public">
+          <name>Delete</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfa26410ea6f60dcde9b725607d7d15776f" prot="public">
+          <name>DeleteThru</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfa61427503dfd2cdb2fee9add7b953a2c8" prot="public">
+          <name>DeleteFrom</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfa6b551379c3c0b59326abdaf3b4395bd3" prot="public">
+          <name>Overlay</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a2469fca712217dcbb258080867ec04cfa0ebe6df8a3ac338e0512acc741823fdb" prot="public">
+          <name>Replace</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="124" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="123" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1a87fa72b754ff7a4dd9ebd77e1db51933" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>OpenCloseSettlFlag</name>
+        <enumvalue id="vxa__feed_8h_1a87fa72b754ff7a4dd9ebd77e1db51933afaf396cbd83927b72a84d2616fac76ff" prot="public">
+          <name>NotSet</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a87fa72b754ff7a4dd9ebd77e1db51933a7608eba4bc0f7ac9053aa79a11ca9807" prot="public">
+          <name>DailyOpenPrice</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a87fa72b754ff7a4dd9ebd77e1db51933adf30dcf56048300d2b99ee2a72093737" prot="public">
+          <name>IndicativeOpeningPrice</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a87fa72b754ff7a4dd9ebd77e1db51933a98105ae7fd78b6177ed4739960727c5d" prot="public">
+          <name>DailyClosePrice</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="136" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="135" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1a555ddbe839c0e16b48f1930562ebc08e" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>PutOrCall</name>
+        <enumvalue id="vxa__feed_8h_1a555ddbe839c0e16b48f1930562ebc08eafaf396cbd83927b72a84d2616fac76ff" prot="public">
+          <name>NotSet</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a555ddbe839c0e16b48f1930562ebc08ead0bf1810982e9728fcf3ac444a015373" prot="public">
+          <name>Put</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a555ddbe839c0e16b48f1930562ebc08eac3755e61202abd74da5885d2e9c9160e" prot="public">
+          <name>Call</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="144" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="143" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1a98a575dd0ff6a8d73bf4a64acdb6c6e8" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>SettlPriceType</name>
+        <enumvalue id="vxa__feed_8h_1a98a575dd0ff6a8d73bf4a64acdb6c6e8abeae421a14a34f831c113f61323d1ab3" prot="public">
+          <name>Final</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a98a575dd0ff6a8d73bf4a64acdb6c6e8ad57ceb4533b61b9746f4fc10d958f5c5" prot="public">
+          <name>Actual</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a98a575dd0ff6a8d73bf4a64acdb6c6e8abef2481eda40bd121482f1814d72314f" prot="public">
+          <name>Rounded</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a98a575dd0ff6a8d73bf4a64acdb6c6e8abdbc8fcc2413db6daf161df5698fb50e" prot="public">
+          <name>Intraday</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a98a575dd0ff6a8d73bf4a64acdb6c6e8aff0a2ffd596b01193ab2e4efbdb5e899" prot="public">
+          <name>ReservedBits</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a98a575dd0ff6a8d73bf4a64acdb6c6e8ae8d27005eb87501714a8a4fc67b6347a" prot="public">
+          <name>NullValue</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="151" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="150" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1a9be08bd73da31e099fe07a899bd475e5" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>TransactionType</name>
+        <enumvalue id="vxa__feed_8h_1a9be08bd73da31e099fe07a899bd475e5afaf396cbd83927b72a84d2616fac76ff" prot="public">
+          <name>NotSet</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a9be08bd73da31e099fe07a899bd475e5a290c12b3f1006027ccadca972d07d02a" prot="public">
+          <name>TransactionStart</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a9be08bd73da31e099fe07a899bd475e5a2515cb8ee38a93f2934f0877396c1f6f" prot="public">
+          <name>TransactionEnd</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="161" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="160" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1aa07b250102ccd44306f437035a887ec0" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>EventIndicator</name>
+        <enumvalue id="vxa__feed_8h_1aa07b250102ccd44306f437035a887ec0afaf396cbd83927b72a84d2616fac76ff" prot="public">
+          <name>NotSet</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1aa07b250102ccd44306f437035a887ec0abb3e7b7dc32bf43f22191107ca0b58a6" prot="public">
+          <name>LastOfType</name>
+          <initializer>= 01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1aa07b250102ccd44306f437035a887ec0a5b659acb92fce4da8e522f22d3cc2782" prot="public">
+          <name>EndOfEvent</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="167" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="166" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1a9da6f75161934a4973661f21d0e7ab27" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>InvestigateStatus</name>
+        <enumvalue id="vxa__feed_8h_1a9da6f75161934a4973661f21d0e7ab27afaf396cbd83927b72a84d2616fac76ff" prot="public">
+          <name>NotSet</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a9da6f75161934a4973661f21d0e7ab27a96d3ff26ee2dbe63f921b2d497849ac4" prot="public">
+          <name>UnderInvestigation</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1a9da6f75161934a4973661f21d0e7ab27a92ee32e16ed794e4e9b90b32c2c96237" prot="public">
+          <name>InvestigationCompleted</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="174" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="173" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="enum" id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefb" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>UnionId</name>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefbafaf396cbd83927b72a84d2616fac76ff" prot="public">
+          <name>NotSet</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba4eb65da52d0939135addf53652356235" prot="public">
+          <name>NotMapped</name>
+          <initializer>= 250</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba0b1a53293bee19702c18b9efd748d369" prot="public">
+          <name>TradeSummary</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefbafbe9b192120827d845a0ffc8c1edc778" prot="public">
+          <name>TradeMatch</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefbae3635d7b5e16e8f6361a095b1826db9c" prot="public">
+          <name>VolumeUpdate</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba73d73a074c8b4521f326fe98e2dfccba" prot="public">
+          <name>BookLevel</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefbad548c28eacf506b9ed783ee0de1f48d4" prot="public">
+          <name>DetailedOrderBook</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba1cd83fe997495a934fc660cf76ce1c1f" prot="public">
+          <name>SecurityStatus</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba4866192451b902dd6f3f10724cd5ffcd" prot="public">
+          <name>DailyStatistics</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefbaede2a46b4a06ffa216462cde395cab84" prot="public">
+          <name>SessionStatistics</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba2287f1f6fc1c806a7e9e0387a8a83f5f" prot="public">
+          <name>LimitsBanding</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba29eeee6a248d1648875bcf6c933d3ed6" prot="public">
+          <name>ChannelReset</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba27c1e275321d28f067b5cbe0e5b1b945" prot="public">
+          <name>TransactionMarker</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba55a294284d405a98b0727d34174e9a4d" prot="public">
+          <name>InvestigatedTrade</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vxa__feed_8h_1ad5bb51a4dcab3fece2bf643bbf8eeefba14ed408c995290caa4f03bedbcf86354" prot="public">
+          <name>AuctionClearingPrice</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="189" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="188" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="vxa__feed_8h_1af079e3c48838cb09514a66efff46d32f" prot="public" static="yes" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t vxa_feed::PRICE_NULL</definition>
+        <argsstring></argsstring>
+        <name>PRICE_NULL</name>
+        <initializer>= 2147483647</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="13" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vxa__feed_8h_1acf3ebc458a01261017a44106d9f16e30" prot="public" static="yes" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t vxa_feed::PRICE_NULL_32</definition>
+        <argsstring></argsstring>
+        <name>PRICE_NULL_32</name>
+        <initializer>= std::numeric_limits&lt;int32_t&gt;::max()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="14" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vxa__feed_8h_1ac6abdba4a96a73b9b97c24ec700713a4" prot="public" static="yes" mutable="no">
+        <type>const int64_t</type>
+        <definition>const int64_t vxa_feed::PRICE_NULL_64</definition>
+        <argsstring></argsstring>
+        <name>PRICE_NULL_64</name>
+        <initializer>= std::numeric_limits&lt;int64_t&gt;::max()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="15" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vxa__feed_8h_1ad269b2c88ba72c03b7a9b19d2fe0554a" prot="public" static="yes" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t vxa_feed::PRICE_CONSTANT</definition>
+        <argsstring></argsstring>
+        <name>PRICE_CONSTANT</name>
+        <initializer>= 10000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="16" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vxa__feed_8h_1a58059e67071ccb063259628e04816bab" prot="public" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t vxa_feed::sNullInstrumentID</definition>
+        <argsstring></argsstring>
+        <name>sNullInstrumentID</name>
+        <initializer>= std::numeric_limits&lt;int32_t&gt;::max()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="30" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vxa__feed_8h_1a63b034739a8450e61bed262f3181b126" prot="public" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t vxa_feed::sGroupSettleID</definition>
+        <argsstring></argsstring>
+        <name>sGroupSettleID</name>
+        <initializer>= (std::numeric_limits&lt;uint32_t&gt;::max() - 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="31" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vxa__feed_8h_1ac0facd1b07b0b6a894e3dbf9ca62dd30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename EnumBitValueType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool vxa_feed::IsEnumBitSet</definition>
+        <argsstring>(EnumBitValueType bitValues, EnumBitValueType enumValue)</argsstring>
+        <name>IsEnumBitSet</name>
+        <param>
+          <type>EnumBitValueType</type>
+          <declname>bitValues</declname>
+        </param>
+        <param>
+          <type>EnumBitValueType</type>
+          <declname>enumValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="182" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="182" bodyend="185"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vxa-cmk/vxa_feed.h" line="4" column="1"/>
+  </compounddef>
+</doxygen>

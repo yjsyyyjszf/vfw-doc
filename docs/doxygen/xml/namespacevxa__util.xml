@@ -1,0 +1,923 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="namespacevxa__util" kind="namespace" language="C++">
+    <compoundname>vxa_util</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="vxa__util_8h_1a360df289fb504ad163ec2ccde940ecb1" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double vxa_util::pow10[]</definition>
+        <argsstring>[]</argsstring>
+        <name>pow10</name>
+        <initializer>= { 1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="565" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vxa__util_8h_1a60d9370d985bdd2df365913cf1d30252" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char vxa_util::hexChars[]</definition>
+        <argsstring>[]</argsstring>
+        <name>hexChars</name>
+        <initializer>= {&apos;0&apos;, &apos;1&apos;, &apos;2&apos;, &apos;3&apos;, &apos;4&apos;, &apos;5&apos;, &apos;6&apos;, &apos;7&apos;, &apos;8&apos;, &apos;9&apos;, &apos;A&apos;, &apos;B&apos;, &apos;C&apos;, &apos;D&apos;, &apos;E&apos;, &apos;F&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1093" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1093" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vxa__util_8h_1a34c1218bee006079972a36dadb75b51c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double vxa_util::Pow10</definition>
+        <argsstring>(uint8_t exponent)</argsstring>
+        <name>Pow10</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>exponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="12" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="12" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a1eee3348909cd25255247de28f13dd36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t vxa_util::GetExponent</definition>
+        <argsstring>(int64_t value)</argsstring>
+        <name>GetExponent</name>
+        <param>
+          <type>int64_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="17" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="17" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1ab3a3a89b6f4b24b20b3f7b3fd7f6493f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double vxa_util::DoublePriceFromIntWithDefault</definition>
+        <argsstring>(int64_t price, uint8_t exponent, int64_t priceNullValue)</argsstring>
+        <name>DoublePriceFromIntWithDefault</name>
+        <param>
+          <type>int64_t</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>exponent</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>priceNullValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="29" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="29" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a513d5c5e6befc5e4ffa824b05d5b61dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double vxa_util::DoublePriceFromInt</definition>
+        <argsstring>(int64_t price, uint8_t exponent)</argsstring>
+        <name>DoublePriceFromInt</name>
+        <param>
+          <type>int64_t</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>exponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="53" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="53" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a140eca3bc9726f6e7af712c2dd559ebb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double vxa_util::GetDoubleValue</definition>
+        <argsstring>(double value, int exp)</argsstring>
+        <name>GetDoubleValue</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>exp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="78" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="78" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1adecd29b78634a5a5f5594a44889b309d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t vxa_util::IntPriceFromDouble</definition>
+        <argsstring>(double price, uint8_t exponent)</argsstring>
+        <name>IntPriceFromDouble</name>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>exponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="108" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="108" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a8657f201b21adea8f82fe304ef7f7ec2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t vxa_util::IntPriceFromDoubleAddNull</definition>
+        <argsstring>(double price, uint8_t exponent, int64_t oldPriceNull)</argsstring>
+        <name>IntPriceFromDoubleAddNull</name>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>exponent</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>oldPriceNull</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="137" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="137" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a801af9896a776660efcc8be63c47564f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int vxa_util::GetDisplayFactor</definition>
+        <argsstring>(double dv)</argsstring>
+        <name>GetDisplayFactor</name>
+        <param>
+          <type>double</type>
+          <declname>dv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="166" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="166" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1aa55052609607e5dc5aa1827ba2b704e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int vxa_util::GetDisplayFactor</definition>
+        <argsstring>(const char *value)</argsstring>
+        <name>GetDisplayFactor</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="202" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="202" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a7eeac0d0c8a020f52fe21d969c22b3d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double vxa_util::GetDisplayFactorAsDouble</definition>
+        <argsstring>(int displayFactor)</argsstring>
+        <name>GetDisplayFactorAsDouble</name>
+        <param>
+          <type>int</type>
+          <declname>displayFactor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="206" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="206" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a84d3e23e45d904b79ab47dbdb7147410" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void vxa_util::strreverse</definition>
+        <argsstring>(char *begin, char *end)</argsstring>
+        <name>strreverse</name>
+        <param>
+          <type>char *</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="237" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="237" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a4a4e4a64824437f159df983bc1217f5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t vxa_util::ulltoa10</definition>
+        <argsstring>(uint64_t value, char *str, size_t buffsize)</argsstring>
+        <name>ulltoa10</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="255" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="255" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a2ccce93137b1c0492a79f343b2df6887" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t vxa_util::lltoa10</definition>
+        <argsstring>(int64_t value, char *str, size_t buffsize)</argsstring>
+        <name>lltoa10</name>
+        <param>
+          <type>int64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="282" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="282" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a55c2ee8bdb600bbbdc77c6d7a0e2474f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t vxa_util::atoull10</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>atoull10</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="321" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="321" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a7513916fbeb6a383e5fbc77de599c03e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t vxa_util::atoull10</definition>
+        <argsstring>(const char *s, uint32_t count, uint32_t &amp;consumed)</argsstring>
+        <name>atoull10</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>uint32_t &amp;</type>
+          <declname>consumed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="337" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="337" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a74f80b79af0c6ecc58492fb4ca35a02a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t vxa_util::atoull10</definition>
+        <argsstring>(const char *s, uint32_t maxSize)</argsstring>
+        <name>atoull10</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>maxSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="352" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="352" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a19b2b668a4d33e6676b8de469866c43a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t vxa_util::atoll10</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>atoll10</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="367" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="367" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1acc8bd1787e0e34e82603a1869dfe5def" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t vxa_util::dtoa</definition>
+        <argsstring>(double value, int prec, char *str, size_t strLen)</argsstring>
+        <name>dtoa</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prec</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>strLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="567" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="567" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a4919b8d520fcc8176c063b721c45d03d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t vxa_util::TradeDateToMilt</definition>
+        <argsstring>(uint16_t daysSinceEpoch)</argsstring>
+        <name>TradeDateToMilt</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>daysSinceEpoch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="869" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="869" bodyend="879"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1aeb596448384a2761b3d86a16613fa283" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void vxa_util::Append</definition>
+        <argsstring>(char *&amp;line, const char *item, char next)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>char *&amp;</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="881" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="881" bodyend="890"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a6f633e2e310ba77674ef2e9eb411ef5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* vxa_util::timeToString</definition>
+        <argsstring>(char *&amp;timeBuf, size_t bufSize, uint64_t time, int16_t timeBias, char next)</argsstring>
+        <name>timeToString</name>
+        <param>
+          <type>char *&amp;</type>
+          <declname>timeBuf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bufSize</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>timeBias</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="891" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="891" bodyend="994"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1aa55dc3e551ace1307ac0df8734977f1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void vxa_util::Append</definition>
+        <argsstring>(char *&amp;strInt, size_t buffSize, int64_t value, char next)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>char *&amp;</type>
+          <declname>strInt</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffSize</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="996" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="996" bodyend="1009"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a17dedeef4f76fd59a4f1f0ec5982ce9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void vxa_util::Append</definition>
+        <argsstring>(char *&amp;strInt, size_t buffSize, uint64_t value, char next)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>char *&amp;</type>
+          <declname>strInt</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffSize</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1010" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1010" bodyend="1024"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a0fb1f57740696fe341a69176394f8d76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void vxa_util::Append</definition>
+        <argsstring>(char *&amp;strInt, size_t buffSize, int32_t value, char next)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>char *&amp;</type>
+          <declname>strInt</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffSize</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1025" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1025" bodyend="1039"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1af7258751a6f0b85299a5385e023c61f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void vxa_util::Append</definition>
+        <argsstring>(char *&amp;strInt, size_t buffSize, uint32_t value, char next)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>char *&amp;</type>
+          <declname>strInt</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffSize</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1040" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1040" bodyend="1054"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a2b5b9646e78cee40e66a0907bf5ee036" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void vxa_util::doubleToString</definition>
+        <argsstring>(char *&amp;strInt, size_t buffSize, int64_t price, uint8_t exponent, char next)</argsstring>
+        <name>doubleToString</name>
+        <param>
+          <type>char *&amp;</type>
+          <declname>strInt</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffSize</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>exponent</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1055" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1055" bodyend="1075"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a100a6e0a8a09bdd65eec4866f7ca6472" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* vxa_util::bitmapAsString</definition>
+        <argsstring>(char *bitString, size_t size, uint8_t bm)</argsstring>
+        <name>bitmapAsString</name>
+        <param>
+          <type>char *</type>
+          <declname>bitString</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1079" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1079" bodyend="1091"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a411f5fe41ccdb78d12ba80515be1dd17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* vxa_util::optRectAsByteArray</definition>
+        <argsstring>(char *outBuffer, const vxa_feed::VxaEvent &amp;rec)</argsstring>
+        <name>optRectAsByteArray</name>
+        <param>
+          <type>char *</type>
+          <declname>outBuffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structvxa__feed_1_1_vxa_event" kindref="compound">vxa_feed::VxaEvent</ref> &amp;</type>
+          <declname>rec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1095" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1095" bodyend="1109"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a1b6d51853c365669b8cd9c446d35cc6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* vxa_util::ToString</definition>
+        <argsstring>(vxa_feed::BookAction type)</argsstring>
+        <name>ToString</name>
+        <param>
+          <type>vxa_feed::BookAction</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1111" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1111" bodyend="1127"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a04e1f717eac50615e7f92edbdab8428c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* vxa_util::ToString</definition>
+        <argsstring>(vxa_feed::AggressorSide value)</argsstring>
+        <name>ToString</name>
+        <param>
+          <type>vxa_feed::AggressorSide</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1128" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1128" bodyend="1136"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a9388f3978d462afb9c3e3d444665ef84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* vxa_util::ToString</definition>
+        <argsstring>(vxa_feed::HaltReason value)</argsstring>
+        <name>ToString</name>
+        <param>
+          <type>vxa_feed::HaltReason</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1137" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1137" bodyend="1150"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a3abfaaea1e6d1b646b81d4d0323d9212" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* vxa_util::ToString</definition>
+        <argsstring>(vxa_feed::SecurityTradingStatus value)</argsstring>
+        <name>ToString</name>
+        <param>
+          <type>vxa_feed::SecurityTradingStatus</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1151" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1151" bodyend="1172"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a739039994a35a44216527f6d87a24198" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* vxa_util::ToString</definition>
+        <argsstring>(vxa_feed::BookType value)</argsstring>
+        <name>ToString</name>
+        <param>
+          <type>vxa_feed::BookType</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1173" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1173" bodyend="1184"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1ae8b990cd3c54bfcbc4b5a73d05f7db42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* vxa_util::ToString</definition>
+        <argsstring>(vxa_feed::StatisticsType value)</argsstring>
+        <name>ToString</name>
+        <param>
+          <type>vxa_feed::StatisticsType</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1185" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1185" bodyend="1196"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1aaecfb21c3514caf1e9722d7b95e93ab4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* vxa_util::ToString</definition>
+        <argsstring>(vxa_feed::DailyStatisticsType value)</argsstring>
+        <name>ToString</name>
+        <param>
+          <type>vxa_feed::DailyStatisticsType</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1198" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1198" bodyend="1208"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a739ac25bc261f528cee98a05bbe9f4c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* vxa_util::ToString</definition>
+        <argsstring>(vxa_feed::OpenCloseSettlFlag value)</argsstring>
+        <name>ToString</name>
+        <param>
+          <type>vxa_feed::OpenCloseSettlFlag</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1210" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1210" bodyend="1218"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1ae3b6c24bdb91b2be5a69a6165e941cb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* vxa_util::ToString</definition>
+        <argsstring>(vxa_feed::SecurityTradingEvent value)</argsstring>
+        <name>ToString</name>
+        <param>
+          <type>vxa_feed::SecurityTradingEvent</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1220" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1220" bodyend="1230"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a316a607178da52643070423887d884dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t vxa_util::VxaEventAsString</definition>
+        <argsstring>(char *outBuffer, size_t bufferSize, const vxa_feed::VxaEvent &amp;rec, uint8_t exponent, int16_t timeBias)</argsstring>
+        <name>VxaEventAsString</name>
+        <param>
+          <type>char *</type>
+          <declname>outBuffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bufferSize</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structvxa__feed_1_1_vxa_event" kindref="compound">vxa_feed::VxaEvent</ref> &amp;</type>
+          <declname>rec</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>exponent</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>timeBias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1231" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1231" bodyend="1490"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1ab944006e37a6e001da4cf1ee08111d43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* vxa_util::ReverseBitmapAsString</definition>
+        <argsstring>(char *bitString, uint8_t bm)</argsstring>
+        <name>ReverseBitmapAsString</name>
+        <param>
+          <type>char *</type>
+          <declname>bitString</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1492" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1492" bodyend="1503"/>
+      </memberdef>
+      <memberdef kind="function" id="vxa__util_8h_1a551d3441ebac88bab363c9bb36082b51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t vxa_util::VxaEventLegacySSAsString</definition>
+        <argsstring>(char *outBuffer, size_t bufferSize, const vxa_feed::VxaEvent &amp;rec)</argsstring>
+        <name>VxaEventLegacySSAsString</name>
+        <param>
+          <type>char *</type>
+          <declname>outBuffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bufferSize</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structvxa__feed_1_1_vxa_event" kindref="compound">vxa_feed::VxaEvent</ref> &amp;</type>
+          <declname>rec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_util.h" line="1504" column="1" bodyfile="vxa-cmk/vxa_util.h" bodystart="1504" bodyend="1528"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vxa-cmk/vxa_util.h" line="10" column="1"/>
+  </compounddef>
+</doxygen>

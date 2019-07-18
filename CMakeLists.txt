@@ -6,4 +6,4 @@ cmake_minimum_required (VERSION 3.8)
 project ("vfw-doc")
 
 # Include sub-projects.
-add_subdirectory ("vxp-cmk")
+add_subdirectory ("vfw-cmk")

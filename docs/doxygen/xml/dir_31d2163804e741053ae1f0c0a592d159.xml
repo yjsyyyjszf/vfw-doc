@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_31d2163804e741053ae1f0c0a592d159" kind="dir">
+    <compoundname>vxa-cmk</compoundname>
+    <innerfile refid="vxa-cmk_8cpp">vxa-cmk.cpp</innerfile>
+    <innerfile refid="vxa-cmk_8h">vxa-cmk.h</innerfile>
+    <innerfile refid="vxa__feed_8h">vxa_feed.h</innerfile>
+    <innerfile refid="vxa__util_8h">vxa_util.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vxa-cmk/"/>
+  </compounddef>
+</doxygen>

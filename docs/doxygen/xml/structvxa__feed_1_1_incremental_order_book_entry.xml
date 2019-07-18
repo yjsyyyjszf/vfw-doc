@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structvxa__feed_1_1_incremental_order_book_entry" kind="struct" language="C++" prot="public">
+    <compoundname>vxa_feed::IncrementalOrderBookEntry</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvxa__feed_1_1_incremental_order_book_entry_1a430837f2bc295d3434dca389850a086b" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t vxa_feed::IncrementalOrderBookEntry::orderID</definition>
+        <argsstring></argsstring>
+        <name>orderID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="262" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_incremental_order_book_entry_1a5f21ba2214b9256ad62ca221ad6d5e21" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t vxa_feed::IncrementalOrderBookEntry::origOrderId</definition>
+        <argsstring></argsstring>
+        <name>origOrderId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="263" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_incremental_order_book_entry_1a9c6360d09e56391347d14ce35b0d22a5" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t vxa_feed::IncrementalOrderBookEntry::priority</definition>
+        <argsstring></argsstring>
+        <name>priority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="264" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_incremental_order_book_entry_1a0c19b5a733c923ca64fac6558c31a971" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t vxa_feed::IncrementalOrderBookEntry::price</definition>
+        <argsstring></argsstring>
+        <name>price</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="265" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_incremental_order_book_entry_1a0ccd2326c06c70c5bfa99b756c09d251" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t vxa_feed::IncrementalOrderBookEntry::prevOrderId</definition>
+        <argsstring></argsstring>
+        <name>prevOrderId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="266" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_incremental_order_book_entry_1aecea0fd519c21740caef79d81aeeb202" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t vxa_feed::IncrementalOrderBookEntry::displayQuantity</definition>
+        <argsstring></argsstring>
+        <name>displayQuantity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="267" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_incremental_order_book_entry_1a08922f3e7fa99d9c681e32ea98211350" prot="public" static="no" mutable="no">
+        <type>BookAction</type>
+        <definition>BookAction vxa_feed::IncrementalOrderBookEntry::action</definition>
+        <argsstring></argsstring>
+        <name>action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="268" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_incremental_order_book_entry_1a8dab0793fca05724edff12f9b312e199" prot="public" static="no" mutable="no">
+        <type>BookType</type>
+        <definition>BookType vxa_feed::IncrementalOrderBookEntry::bookType</definition>
+        <argsstring></argsstring>
+        <name>bookType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="269" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvxa__feed_1_1_incremental_order_book_entry_1a01ba1f3377563b09a5a4ccf9b376ab34" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool vxa_feed::IncrementalOrderBookEntry::isSnapShot</definition>
+        <argsstring></argsstring>
+        <name>isSnapShot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="270" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vxa-cmk/vxa_feed.h" line="261" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="260" bodyend="271"/>
+    <listofallmembers>
+      <member refid="structvxa__feed_1_1_incremental_order_book_entry_1a08922f3e7fa99d9c681e32ea98211350" prot="public" virt="non-virtual"><scope>vxa_feed::IncrementalOrderBookEntry</scope><name>action</name></member>
+      <member refid="structvxa__feed_1_1_incremental_order_book_entry_1a8dab0793fca05724edff12f9b312e199" prot="public" virt="non-virtual"><scope>vxa_feed::IncrementalOrderBookEntry</scope><name>bookType</name></member>
+      <member refid="structvxa__feed_1_1_incremental_order_book_entry_1aecea0fd519c21740caef79d81aeeb202" prot="public" virt="non-virtual"><scope>vxa_feed::IncrementalOrderBookEntry</scope><name>displayQuantity</name></member>
+      <member refid="structvxa__feed_1_1_incremental_order_book_entry_1a01ba1f3377563b09a5a4ccf9b376ab34" prot="public" virt="non-virtual"><scope>vxa_feed::IncrementalOrderBookEntry</scope><name>isSnapShot</name></member>
+      <member refid="structvxa__feed_1_1_incremental_order_book_entry_1a430837f2bc295d3434dca389850a086b" prot="public" virt="non-virtual"><scope>vxa_feed::IncrementalOrderBookEntry</scope><name>orderID</name></member>
+      <member refid="structvxa__feed_1_1_incremental_order_book_entry_1a5f21ba2214b9256ad62ca221ad6d5e21" prot="public" virt="non-virtual"><scope>vxa_feed::IncrementalOrderBookEntry</scope><name>origOrderId</name></member>
+      <member refid="structvxa__feed_1_1_incremental_order_book_entry_1a0ccd2326c06c70c5bfa99b756c09d251" prot="public" virt="non-virtual"><scope>vxa_feed::IncrementalOrderBookEntry</scope><name>prevOrderId</name></member>
+      <member refid="structvxa__feed_1_1_incremental_order_book_entry_1a0c19b5a733c923ca64fac6558c31a971" prot="public" virt="non-virtual"><scope>vxa_feed::IncrementalOrderBookEntry</scope><name>price</name></member>
+      <member refid="structvxa__feed_1_1_incremental_order_book_entry_1a9c6360d09e56391347d14ce35b0d22a5" prot="public" virt="non-virtual"><scope>vxa_feed::IncrementalOrderBookEntry</scope><name>priority</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

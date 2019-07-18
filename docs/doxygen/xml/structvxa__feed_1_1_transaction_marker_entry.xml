@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structvxa__feed_1_1_transaction_marker_entry" kind="struct" language="C++" prot="public">
+    <compoundname>vxa_feed::TransactionMarkerEntry</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvxa__feed_1_1_transaction_marker_entry_1a848ce66426765aa72a31468ffba25c9c" prot="public" static="no" mutable="no">
+        <type>TransactionType</type>
+        <definition>TransactionType vxa_feed::TransactionMarkerEntry::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vxa-cmk/vxa_feed.h" line="211" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vxa-cmk/vxa_feed.h" line="210" column="1" bodyfile="vxa-cmk/vxa_feed.h" bodystart="209" bodyend="212"/>
+    <listofallmembers>
+      <member refid="structvxa__feed_1_1_transaction_marker_entry_1a848ce66426765aa72a31468ffba25c9c" prot="public" virt="non-virtual"><scope>vxa_feed::TransactionMarkerEntry</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
